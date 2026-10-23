@@ -1,0 +1,15 @@
+# Python packages needed by the released scripts.
+#
+# Tier 1 scripts (code/, scripts/04, scripts/10, scripts/12, scripts/14):
+#   pandas, pyyaml (scripts/17 needs matplotlib; scripts/04 needs openpyxl).
+# Tier 2 scripts (06, 08, 13, 15, 16) additionally need the parent project's
+#   src_python package, which is not released here.
+# The display figures need R with ggplot2, patchwork, dplyr, readr, tidyr, scales.
+
+numpy
+pandas
+openpyxl
+scipy
+pyyaml
+pyarrow
+matplotlib

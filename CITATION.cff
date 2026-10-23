@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+title: "Replication materials for \"From antenatal pertussis vaccine effectiveness to infant population impact\""
+message: >-
+  These are the public replication materials for a Letter to the Editor
+  submitted to the Journal of Infection in response to Walker et al. (2026).
+abstract: >-
+  Replication materials linking published antenatal pertussis vaccine
+  effectiveness estimates to observed English coverage through Farrington's
+  screening identity, together with an age-structured transmission-model
+  diagnostic of the same national coverage targets. Contains the analysis
+  protocol, configuration, pipeline scripts, staged inputs with provenance
+  hashes, derived figure and table ledgers, display figures and audit reports.
+  The submitted manuscript text and the parent ODE engine are not included.
+authors:
+  - family-names: Li
+    given-names: Kangguo
+    affiliation: Xiamen University
+repository-code: "https://github.com/xmusphlkg/UK_BP_vaccine"
+license: MIT
+keywords:
+  - pertussis
+  - antenatal vaccination
+  - vaccine effectiveness
+  - screening method
+  - coverage
+  - mathematical model
+  - England
+references:
+  - type: article
+    authors:
+      - family-names: Walker
+        given-names: J. L.
+    title: "Antenatal pertussis vaccine effectiveness in England remains high post COVID-19"
+    journal: "Journal of Infection"
+    year: 2026
+    volume: 93
+    start: 106836
+    doi: 10.1016/j.jinf.2026.106836
+  - type: article
+    authors:
+      - family-names: Farrington
+        given-names: C. P.
+    title: "Estimation of vaccine effectiveness using the screening method"
+    journal: "International Journal of Epidemiology"
+    year: 1993
+    volume: 22
+    start: 742
+    end: 746
+    doi: 10.1093/ije/22.4.742

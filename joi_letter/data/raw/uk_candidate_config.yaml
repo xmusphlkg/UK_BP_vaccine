@@ -1,0 +1,5553 @@
+simulation:
+  start_time: 0
+  time_step: 1
+  output_time_step: 30.0
+  burn_in_years: 15.0
+  initial_state_strategy: fixed_calendar_origin
+  history_start_date: '2005-01-01'
+  solver_method: RK45
+  rhs_backend: numba
+  strict_likelihood_errors: true
+  rtol: 1.0e-08
+  atol: 1.0e-10
+  n_jobs: -1
+  end_time: 3647.0
+calendar:
+  enabled: true
+  analysis_start_date: '2015-01-05'
+  analysis_end_date: '2035-12-31'
+  note: 'Simulation time is stored as days since analysis_start_date; end_time is
+    the half-open solver boundary immediately after the inclusive analysis_end_date.
+    Output rows include calendar_date/calendar_year. Calibration overrides these dates
+    to the observed surveillance window so modelled and observed annual cases align
+    by real calendar year, with reporting intervals split across calendar-year boundaries.
+    Rolling-origin validation withholds each eligible historical final year; the prospective
+    policy horizon begins on 2027-01-01 after calibration has excluded any incomplete
+    terminal surveillance year.
+
+    '
+age_groups:
+- label: infant_0_2m
+  population: 172845.25
+  vaccine_coverage: 0.34208000000000005
+  symptom_probability: 0.75
+  reporting_rate: 0.6
+  pep_detection_rate: 0.6
+- label: infant_3_11m
+  population: 518535.75
+  vaccine_coverage: 0.8703120000000001
+  symptom_probability: 0.65
+  reporting_rate: 0.5
+  pep_detection_rate: 0.5
+- label: child_1_4y
+  population: 2856855.0
+  vaccine_coverage: 0.8436400000000001
+  symptom_probability: 0.45
+  reporting_rate: 0.25
+  pep_detection_rate: 0.25
+- label: child_5_9y
+  population: 4039489.0
+  vaccine_coverage: 0.7886200000000001
+  symptom_probability: 0.4
+  reporting_rate: 0.18
+  pep_detection_rate: 0.18
+- label: adolescent_10_17y
+  population: 6804037.0
+  vaccine_coverage: 0.6143900000000001
+  symptom_probability: 0.28
+  reporting_rate: 0.08
+  pep_detection_rate: 0.08
+- label: young_adult_18_39y
+  population: 19296288.0
+  vaccine_coverage: 0.22928
+  symptom_probability: 0.2
+  reporting_rate: 0.05
+  pep_detection_rate: 0.05
+- label: middle_adult_40_64y
+  population: 21968350.0
+  vaccine_coverage: 0.131712
+  symptom_probability: 0.18
+  reporting_rate: 0.03
+  pep_detection_rate: 0.03
+- label: elderly_65plus
+  population: 13481785.0
+  vaccine_coverage: 0.08
+  symptom_probability: 0.25
+  reporting_rate: 0.04
+  pep_detection_rate: 0.04
+contact_matrix:
+  reciprocity_correction:
+    enabled: true
+    method: population_weighted_average
+    tolerance: 0.05
+  rows:
+  - - 0.144183
+    - 0.43255
+    - 2.383117
+    - 1.062149
+    - 0.880449
+    - 4.084869
+    - 1.923539
+    - 0.623056
+  - - 0.144183
+    - 0.43255
+    - 2.383117
+    - 1.062149
+    - 0.880449
+    - 4.084869
+    - 1.923539
+    - 0.623056
+  - - 0.144183
+    - 0.43255
+    - 2.383117
+    - 1.062149
+    - 0.880449
+    - 4.084869
+    - 1.923539
+    - 0.623056
+  - - 0.045448
+    - 0.136345
+    - 0.751185
+    - 6.77964
+    - 1.895192
+    - 4.165599
+    - 2.597564
+    - 0.597441
+  - - 0.022366
+    - 0.067099
+    - 0.36968
+    - 1.125157
+    - 8.240049
+    - 4.914061
+    - 3.304091
+    - 0.791357
+  - - 0.03659
+    - 0.10977
+    - 0.604773
+    - 0.872027
+    - 1.73274
+    - 5.760285
+    - 3.89919
+    - 0.946365
+  - - 0.015134
+    - 0.045403
+    - 0.250145
+    - 0.477634
+    - 1.023343
+    - 3.424922
+    - 4.458916
+    - 1.352872
+  - - 0.007988
+    - 0.023964
+    - 0.132028
+    - 0.179009
+    - 0.399385
+    - 1.35452
+    - 2.204483
+    - 1.498914
+  setting_rows:
+    home:
+    - - 0.030202
+      - 0.090606
+      - 0.499192
+      - 0.635735
+      - 0.613052
+      - 2.264136
+      - 1.201035
+      - 0.525339
+    - - 0.030202
+      - 0.090606
+      - 0.499192
+      - 0.635735
+      - 0.613052
+      - 2.264136
+      - 1.201035
+      - 0.525339
+    - - 0.030202
+      - 0.090606
+      - 0.499192
+      - 0.635735
+      - 0.613052
+      - 2.264136
+      - 1.201035
+      - 0.525339
+    - - 0.027202
+      - 0.081607
+      - 0.449612
+      - 1.12195
+      - 1.018256
+      - 2.270789
+      - 1.358499
+      - 0.471584
+    - - 0.015574
+      - 0.046721
+      - 0.257406
+      - 0.604528
+      - 1.286307
+      - 1.707757
+      - 1.914637
+      - 0.592774
+    - - 0.020281
+      - 0.060843
+      - 0.33521
+      - 0.475367
+      - 0.60217
+      - 1.591117
+      - 1.236842
+      - 0.469888
+    - - 0.00945
+      - 0.028349
+      - 0.156188
+      - 0.249798
+      - 0.593001
+      - 1.086402
+      - 1.371037
+      - 0.55503
+    - - 0.006735
+      - 0.020206
+      - 0.111322
+      - 0.141299
+      - 0.299163
+      - 0.672545
+      - 0.904412
+      - 0.921117
+    school:
+    - - 0.095592
+      - 0.286776
+      - 1.579982
+      - 0.214073
+      - 0.063283
+      - 0.457755
+      - 0.121086
+      - 0.00948
+    - - 0.095592
+      - 0.286776
+      - 1.579982
+      - 0.214073
+      - 0.063283
+      - 0.457755
+      - 0.121086
+      - 0.00948
+    - - 0.095592
+      - 0.286776
+      - 1.579982
+      - 0.214073
+      - 0.063283
+      - 0.457755
+      - 0.121086
+      - 0.00948
+    - - 0.00916
+      - 0.02748
+      - 0.151399
+      - 4.78758
+      - 0.455696
+      - 0.367161
+      - 0.321468
+      - 0.002736
+    - - 0.001608
+      - 0.004823
+      - 0.026571
+      - 0.270542
+      - 5.15555
+      - 1.508741
+      - 0.356993
+      - 0.001641
+    - - 0.0041
+      - 0.012301
+      - 0.067772
+      - 0.076862
+      - 0.531995
+      - 0.496491
+      - 0.050916
+      - 0.003079
+    - - 0.000953
+      - 0.002858
+      - 0.015747
+      - 0.059111
+      - 0.110568
+      - 0.044723
+      - 0.030591
+      - 0.000638
+    - - 0.000122
+      - 0.000365
+      - 0.002009
+      - 0.00082
+      - 0.000828
+      - 0.004407
+      - 0.001039
+      - 0.0
+    work:
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.237529
+      - 0.071971
+      - 0.0
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.237529
+      - 0.071971
+      - 0.0
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.237529
+      - 0.071971
+      - 0.0
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.005876
+      - 0.630284
+      - 0.114108
+      - 0.0
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.003488
+      - 0.107588
+      - 0.42698
+      - 0.333891
+      - 0.013222
+    - - 0.002128
+      - 0.006383
+      - 0.035167
+      - 0.131944
+      - 0.150557
+      - 1.658779
+      - 1.268602
+      - 0.086655
+    - - 0.000566
+      - 0.001699
+      - 0.009359
+      - 0.020982
+      - 0.103413
+      - 1.114299
+      - 1.267976
+      - 0.088554
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.006673
+      - 0.124028
+      - 0.144297
+      - 0.0
+    other:
+    - - 0.018389
+      - 0.055167
+      - 0.303943
+      - 0.212341
+      - 0.204114
+      - 1.125449
+      - 0.529446
+      - 0.088236
+    - - 0.018389
+      - 0.055167
+      - 0.303943
+      - 0.212341
+      - 0.204114
+      - 1.125449
+      - 0.529446
+      - 0.088236
+    - - 0.018389
+      - 0.055167
+      - 0.303943
+      - 0.212341
+      - 0.204114
+      - 1.125449
+      - 0.529446
+      - 0.088236
+    - - 0.009086
+      - 0.027258
+      - 0.150175
+      - 0.87011
+      - 0.415365
+      - 0.897365
+      - 0.80349
+      - 0.12312
+    - - 0.005185
+      - 0.015556
+      - 0.085703
+      - 0.246598
+      - 1.690604
+      - 1.270582
+      - 0.698571
+      - 0.183721
+    - - 0.010081
+      - 0.030243
+      - 0.166625
+      - 0.187855
+      - 0.448018
+      - 2.013898
+      - 1.342829
+      - 0.386743
+    - - 0.004166
+      - 0.012497
+      - 0.068851
+      - 0.147744
+      - 0.216361
+      - 1.179497
+      - 1.789312
+      - 0.708651
+    - - 0.001131
+      - 0.003394
+      - 0.018698
+      - 0.03689
+      - 0.092721
+      - 0.55354
+      - 1.154735
+      - 0.577797
+  setting_reconciliation:
+    anchor: all
+    source_sum_tolerance: 5.0e-06
+    source_sum_max_abs_residual: 1.000000000139778e-06
+    residual_recipient: other
+    orientation_contract: Rows and columns are copied unchanged from contact_matrix;
+      the force-of-infection recipient/partner interpretation is defined by the model,
+      not by the processed CSV field names.
+transmission:
+  beta_S: 0.01180507907776829
+  fitness_R: 1.0
+  relative_infectiousness_asymptomatic: 0.35
+  seasonal_amplitude: 0.1959377729440335
+  seasonal_phase: 133.5627586469978
+  multi_year_amplitude: 0.0
+  multi_year_period_years: 4.0
+  multi_year_phase: 0
+  npi_contact_reduction:
+    enabled: true
+    reduction_column: contact_reduction_mean
+    note: 'Loads country-specific COVID-19/NPI effective contact-reduction periods
+      from data/raw/covid_npi_contact_reduction_timeline.csv. The baseline uses the
+      declared external-evidence proxy. For Australia, this is a time-varying Google
+      mobility-derived proxy rather than a direct measure of contact or age-specific
+      mixing; its one-to-one transmission translation is a structural assumption.
+      Lower/upper values are reserved for temporal sensitivity analyses. Contact shocks
+      must not be encoded in diagnostic/reporting multipliers.
+
+      '
+    periods_loaded: 1
+    future_start_periods_excluded: 0
+    active_periods_clipped_at_evidence_cutoff: 0
+    future_duration_policy: not_applicable_no_evidence_cutoff
+  npi_contact_reduction_periods:
+  - start_date: '2020-03-23'
+    end_date: '2021-07-19'
+    reduction: 0.4
+    baseline_reduction: 0.0
+    reduction_mean: 0.4
+    reduction_lower: 0.2
+    reduction_upper: 0.65
+    ramp_days: 180.0
+    evidence_strength: moderate
+    notes: Proxy all-setting effective contact reduction for national lockdowns school
+      closures distancing and masking; sensitivity-only in baseline calibration because
+      nonzero values worsen interval fit.
+  npi_ramp_days: 180.0
+  log_beta_time_variation:
+    enabled: true
+    interpretation: latent_AR1_process_MAP_point_estimate
+    ar1_rho: 0.5
+    innovation_sd: 0.6
+    state_interval_months: 3
+    transition_time_unit: annual_parameters_scaled_by_calendar_midpoints
+    periods:
+    - start_date: '2015-01-01'
+      end_date: '2015-03-31'
+      log_multiplier: 0.9318899731169588
+    - start_date: '2015-04-01'
+      end_date: '2015-06-30'
+      log_multiplier: -0.37735725465172676
+    - start_date: '2015-07-01'
+      end_date: '2015-09-30'
+      log_multiplier: 0.19826996919178946
+    - start_date: '2015-10-01'
+      end_date: '2015-12-31'
+      log_multiplier: 0.3341882219801344
+    - start_date: '2016-01-01'
+      end_date: '2016-03-31'
+      log_multiplier: 0.13800849975322033
+    - start_date: '2016-04-01'
+      end_date: '2016-06-30'
+      log_multiplier: -0.12287866951847773
+    - start_date: '2016-07-01'
+      end_date: '2016-09-30'
+      log_multiplier: 0.12512658566427692
+    - start_date: '2016-10-01'
+      end_date: '2016-12-31'
+      log_multiplier: 0.21491587099913068
+    - start_date: '2017-01-01'
+      end_date: '2017-03-31'
+      log_multiplier: -0.06055848190871956
+    - start_date: '2017-04-01'
+      end_date: '2017-06-30'
+      log_multiplier: -0.20307244394334412
+    - start_date: '2017-07-01'
+      end_date: '2017-09-30'
+      log_multiplier: 0.1194577074164583
+    - start_date: '2017-10-01'
+      end_date: '2017-12-31'
+      log_multiplier: 0.1578626878678125
+    - start_date: '2018-01-01'
+      end_date: '2018-03-31'
+      log_multiplier: -0.1164390435304193
+    - start_date: '2018-04-01'
+      end_date: '2018-06-30'
+      log_multiplier: -0.21657044798682312
+    - start_date: '2018-07-01'
+      end_date: '2018-09-30'
+      log_multiplier: 0.0033510042719342233
+    - start_date: '2018-10-01'
+      end_date: '2018-12-31'
+      log_multiplier: 0.15662372644656736
+    - start_date: '2019-01-01'
+      end_date: '2019-03-31'
+      log_multiplier: 0.019091555794154943
+    - start_date: '2019-04-01'
+      end_date: '2019-06-30'
+      log_multiplier: -0.23042625572137276
+    - start_date: '2019-07-01'
+      end_date: '2019-09-30'
+      log_multiplier: 0.03820605492466109
+    - start_date: '2019-10-01'
+      end_date: '2019-12-31'
+      log_multiplier: 0.18690093458126497
+    - start_date: '2020-01-01'
+      end_date: '2020-03-31'
+      log_multiplier: -0.22689670587102592
+    - start_date: '2020-04-01'
+      end_date: '2020-06-30'
+      log_multiplier: -0.749128086392763
+    - start_date: '2020-07-01'
+      end_date: '2020-09-30'
+      log_multiplier: -0.1346428634118121
+    - start_date: '2020-10-01'
+      end_date: '2020-12-31'
+      log_multiplier: 0.4874617960364546
+    - start_date: '2021-01-01'
+      end_date: '2021-03-31'
+      log_multiplier: 0.41009285375605553
+    - start_date: '2021-04-01'
+      end_date: '2021-06-30'
+      log_multiplier: 0.41730045311289915
+    - start_date: '2021-07-01'
+      end_date: '2021-09-30'
+      log_multiplier: -0.00431894433545446
+    - start_date: '2021-10-01'
+      end_date: '2021-12-31'
+      log_multiplier: 0.33353258967355554
+    - start_date: '2022-01-01'
+      end_date: '2022-03-31'
+      log_multiplier: -0.4208352394328724
+    - start_date: '2022-04-01'
+      end_date: '2022-06-30'
+      log_multiplier: -0.9935562766260013
+    - start_date: '2022-07-01'
+      end_date: '2022-09-30'
+      log_multiplier: -0.037282814266390116
+    - start_date: '2022-10-01'
+      end_date: '2022-12-31'
+      log_multiplier: 0.31823332835808854
+    - start_date: '2023-01-01'
+      end_date: '2023-03-31'
+      log_multiplier: -0.40218801951542804
+    - start_date: '2023-04-01'
+      end_date: '2023-06-30'
+      log_multiplier: -0.21134113562228385
+    - start_date: '2023-07-01'
+      end_date: '2023-09-30'
+      log_multiplier: -0.14333950876309323
+    - start_date: '2023-10-01'
+      end_date: '2023-12-31'
+      log_multiplier: 0.45374601652598096
+    - start_date: '2024-01-01'
+      end_date: '2024-03-31'
+      log_multiplier: 0.4014832412302697
+    - start_date: '2024-04-01'
+      end_date: '2024-06-30'
+      log_multiplier: -0.15927454237524538
+    - start_date: '2024-07-01'
+      end_date: '2024-09-30'
+      log_multiplier: -0.6178635121841335
+    - start_date: '2024-10-01'
+      end_date: '2024-12-31'
+      log_multiplier: -0.14723085190495253
+importation:
+  enabled: true
+  rate_per_100k_per_year: 0.2
+  resistant_fraction: 0.003
+  age_distribution:
+    infant_0_2m: 0.02
+    infant_3_11m: 0.05
+    child_1_4y: 0.12
+    child_5_9y: 0.13
+    adolescent_10_17y: 0.2
+    young_adult_18_39y: 0.23
+    middle_adult_40_64y: 0.16
+    elderly_65plus: 0.09
+natural_history:
+  latent_duration: 9.0
+  infectious_duration_symptomatic: 24.0
+  infectious_duration_asymptomatic: 17.3
+  maternal_protection_duration: 90.0
+  recovered_immunity_duration: 12227.5
+  vaccine_protection_duration: 798.0
+  R_to_W_duration: 6113.75
+  W_to_S_duration: 6113.75
+immunity_model:
+  mode: maternal_dose_history
+  maternal_coverage_to_birth_exposure:
+    intercept: 0.02
+    slope: 0.55
+    upper: 0.75
+  boosting_enabled: true
+  boosting_efficiency: 0.7
+  waned_natural_infection_susceptibility: 0.35
+  boosting_note: 'Immune boosting (Wearing & Rohani 2009; Lavine et al. 2011): individuals
+    in the W (waned) state who are re-exposed to circulating pertussis have their
+    immunity restored to R without developing symptomatic infection. boosting_efficiency
+    (0-1) controls what fraction of force-of-infection exposure events successfully
+    boost a W individual back to R. At 0.70, approximately 70% of exposures result
+    in successful boosting. This mechanism naturally produces immunity debt during
+    periods of reduced circulation (COVID-19 NPIs) and subsequent post-pandemic surges.
+
+    '
+  waned_relative_effect: 0.35
+  maternal_relative_effect: 0.75
+  dose1_relative_effect: 0.45
+  dose2_relative_effect: 0.75
+  waned_vaccine_duration: 798.0
+  initial_recent_fraction: 0.35
+  initial_recent_fraction_by_age:
+    infant_0_2m: 1.0
+    infant_3_11m: 0.85
+    child_1_4y: 0.6
+    child_5_9y: 0.45
+    adolescent_10_17y: 0.25
+    young_adult_18_39y: 0.12
+    middle_adult_40_64y: 0.08
+    elderly_65plus: 0.06
+  initial_origin_distribution_by_age:
+    infant_0_2m:
+      maternal: 1.0
+    infant_3_11m:
+      dose1_recent: 0.12827225130890052
+      dose2_recent: 0.12827225130890052
+      recent: 0.743455497382199
+    child_1_4y:
+      recent: 1.0
+    child_5_9y:
+      recent: 0.5166666666666667
+      waned: 0.48333333333333334
+    adolescent_10_17y:
+      waned: 1.0
+    young_adult_18_39y:
+      waned: 1.0
+    middle_adult_40_64y:
+      waned: 1.0
+    elderly_65plus:
+      waned: 1.0
+observation_model:
+  enabled: true
+  structure: symptomatic_to_care_to_test_to_report
+  case_event_definition: symptomatic_onset
+  diagnostic_standards:
+    enabled: true
+    multiplier_column: relative_detection_prior_mean
+    note: 'Applies a literature-coded, country-specific diagnostic/reporting-regime
+      multiplier from data/raw/pertussis_diagnostic_standards_timeline.csv to reported-case
+      outputs. This is an observation-layer adjustment only; it does not alter infection
+      dynamics.
+
+      '
+    periods_loaded: 3
+  note: 'Runtime reported cases use the age-specific final reporting probabilities
+    in age_groups/reporting_rate, with calibration allowed to multiply those probabilities.
+    The explicit care/test/report split is retained as the intended observation contract
+    for country calibration. IMPORTANT: reporting_rate and reporting_multiplier affect
+    ONLY the observation layer (how many true cases appear in surveillance). Treatment
+    rates in the ODE are scaled by diagnosis_probability, which defaults to the baseline
+    reporting_rate but is NOT modified by reporting_multiplier or reporting-rate sensitivity
+    scenarios. This decoupling ensures that reporting-rate sensitivity analyses do
+    not inadvertently alter resistance selection pressure through the treatment pathway.
+
+    '
+severity_model:
+  residual_maternal_protection_for_unvaccinated_origin: false
+  age_hospitalization_probability:
+    infant_0_2m: 0.6
+    infant_3_11m: 0.25
+    child_1_4y: 0.02
+    child_5_9y: 0.003
+    adolescent_10_17y: 0.001
+    young_adult_18_39y: 0.0008
+    middle_adult_40_64y: 0.002
+    elderly_65plus: 0.008
+  age_death_given_hospitalization:
+    infant_0_2m: 0.02
+    infant_3_11m: 0.005
+    child_1_4y: 0.0003
+    child_5_9y: 0.0001
+    adolescent_10_17y: 5.0e-05
+    young_adult_18_39y: 5.0e-05
+    middle_adult_40_64y: 0.0003
+    elderly_65plus: 0.002
+  origin_conditional_ve_hospitalization:
+    unvaccinated: 0.0
+    maternal: 0.5
+    dose1_recent: 0.5
+    dose1_waned: 0.2
+    dose2_recent: 0.65
+    dose2_waned: 0.3
+    recent: 0.75
+    waned: 0.35
+  origin_conditional_ve_death:
+    unvaccinated: 0.0
+    maternal: 0.8
+    dose1_recent: 0.6
+    dose1_waned: 0.25
+    dose2_recent: 0.7
+    dose2_waned: 0.35
+    recent: 0.8
+    waned: 0.4
+  note: 'Maternal protection against hospitalization/death is applied to the explicit
+    maternal-origin compartment. Population-average maternal coverage is not applied
+    to all unvaccinated-origin infants in the baseline, because that would assign
+    protection to infants whose mothers were not vaccinated. The maternal 0.50 VE
+    against hospitalization given symptomatic disease is a structural cascade mapping,
+    not a directly estimated conditional effect: with maternal_relative_effect=0.75,
+    maternal_VE_sus=0.55, and maternal_VE_sym=0.92, it gives approximately 91% overall
+    effectiveness against hospitalization [1-(1-0.75*0.55)(1-0.75*0.92)(1-0.50)].
+    Other origin-specific conditional effects are structural severity assumptions
+    rather than direct estimates at every dose/waning state.
+
+    '
+resistance:
+  target_prevalence_at_analysis_start: 0.003
+  importation_fraction: 0.003
+  prevalence_mode: dynamic
+  prevalence_mode_note: '``dynamic`` evolves sensitive and resistant strains from
+    their initial composition. ``exogenous_fixed`` is a separately declared structural
+    proxy that fixes incident strain composition to an external prevalence input when
+    strain surveillance is insufficient to identify evolution.
+
+    '
+  rebalance_after_burn_in: true
+  prevalence_anchor_rate_per_year: 2.0
+  anchor_during_dynamics: false
+  initial_resistance_prevalence_deprecated: true
+  use_country_resistance_timeline: true
+  country_timeline:
+    country: United_Kingdom
+    iso3: GBR
+    resistance_anchor_year: 2025
+    resistant_fraction: 0.003
+    lower: 0.0
+    upper: 0.011
+    method: nearest_past_year
+    evidence_years: '2024'
+    evidence_type: measured_national_surveillance_fraction
+    source: https://www.postersessiononline.eu/173580348_eu/congresos/UKHSA2025/aula/-P_58_UKHSA2025.pdf
+    notes: 'UKHSA national reference laboratory poster: 661 B. pertussis isolates
+      received from June 2023 to November 2024, with 2 predicted and phenotypically
+      confirmed macrolide-resistant isolates.'
+stochastic_resistance:
+  enabled: false
+  effective_population_size: 2000
+  min_strain_fraction: 0.001
+  random_seed: 20260515
+  note: 'Experimental tau-leaping stochastic layer for resistance strain dynamics.
+    It is disabled for the submitted deterministic analyses. The effective_population_size
+    controls the magnitude of genetic drift: smaller values produce more stochastic
+    fluctuation and slower fixation. A value of 2000 represents the effective number
+    of independent transmission events determining strain composition per output time
+    step, accounting for household clustering (SAR~0.8) that reduces the effective
+    number of independent events well below the total infectious population. This
+    addresses the known limitation that deterministic ODE models produce unrealistically
+    fast resistance fixation (model: 2-3 years vs observed: 6-8 years in China) by
+    introducing the genetic drift that naturally slows selection in finite populations.
+
+    '
+calibration:
+  enabled: false
+  default_country_profile: Australia
+  method: state_space_map
+  objective: negative_binomial_reporting_interval_cases_plus_total_count_calibration_moment
+  likelihood_observation_frequency: native
+  dispersion: 50.0
+  measurement_model:
+    estimate_dispersion: true
+    scale_by_interval_exposure: true
+    dispersion_reference_days: 365.2425
+    dispersion_prior_center: 50.0
+    log_dispersion_prior_sd: 1.0
+    dispersion_bounds:
+    - 1.0
+    - 10000.0
+  maxiter: 12
+  n_starts: 1
+  beta_grid_points: 11
+  beta_grid_refinements: 2
+  initial_phase_grid_points: 9
+  recent_years: 10
+  country_observation_contracts:
+    Australia:
+      id: australia_nndss_diagnosis_month_snapshot_20260908
+      source_regime: official_nndss_diagnosis_month_snapshot
+      minimum_observation_years: 10
+      minimum_process_state_years: 10
+      minimum_native_intervals: 120
+      input_path: data/processed/analysis_observations/Australia.csv
+      input_file_sha256: 532028392cc66f7a4537a0fa2ae55f169429c7a237e3e9bccdda6b2fda5c9862
+      source_content_sha256: efbe8efdb394b75cf1c4752359dc75716b24d2c0e70fd566f43d745872b92172
+      allowed_period_start: '2016-01-01'
+      allowed_period_end_exclusive: '2026-01-01'
+      required_reporting_years:
+      - 2016
+      - 2017
+      - 2018
+      - 2019
+      - 2020
+      - 2021
+      - 2022
+      - 2023
+      - 2024
+      - 2025
+      required_reporting_frequency: monthly
+      required_source_family: Australian CDC NNDSS public dashboard snapshot
+      required_case_metric: reported_notifications_by_diagnosis_month
+      required_provenance_values:
+        nndss_disease_code: NNDSS_024
+        nndss_time_axis: diagnosis_date
+        nndss_geographic_scope: Australia_national
+      required_provenance_columns:
+      - source_family
+      - source_file
+      - source_sha256
+      - source_url
+      - source_snapshot_sha256
+      - case_metric
+      - source_reporting_year
+      - nndss_disease_code
+      - nndss_time_axis
+      - nndss_geographic_scope
+      - nndss_extraction_timestamp_utc
+      - nndss_dashboard_data_refresh_utc
+      - nndss_revision_status
+      - noncanonical_staging_only
+      reporting_year_column: source_reporting_year
+      integer_provenance_columns:
+      - source_reporting_year
+      terminal_year: 2025
+      required_hindcast_test_years:
+      - 2023
+      - 2024
+      - 2025
+      allow_out_of_contract_rows_in_likelihood: false
+      release_status: approved
+      source_evidence_status: official_nndss_public_dashboard_snapshot_revisable
+      approval_scope: source_selection_only; predictive_and_age_adequacy_are_separate_checks
+      selection_policy_id: analysis_observation_selection_20260908
+      selection_interval_grid: calendar_month
+      selection_boundary_limitations: none
+    Brazil:
+      id: brazil_native_source_freeze_20260905
+      source_regime: harmonised_notification_snapshot
+      minimum_observation_years: 10
+      minimum_process_state_years: 10
+      minimum_native_intervals: 120
+      input_path: data/processed/analysis_observations/Brazil.csv
+      input_file_sha256: 69564077bc180e3ace62672d89d5cf40c0a087e588612a33e5ba641695a79ad1
+      source_content_sha256: 35cdf4006e3c9128e7b4b2d576ed3c2a6a4ffc17bde461963280016afb2576ac
+      allowed_period_start: '2016-01-01'
+      allowed_period_end_exclusive: '2026-01-01'
+      required_reporting_years:
+      - 2016
+      - 2017
+      - 2018
+      - 2019
+      - 2020
+      - 2021
+      - 2022
+      - 2023
+      - 2024
+      - 2025
+      required_reporting_frequency: monthly
+      required_source_family: Harmonised pertussis incidence source workbook
+      required_case_metric: reported_notifications_by_source_interval
+      required_provenance_values: {}
+      required_provenance_columns:
+      - source_family
+      - source_file
+      - source_sha256
+      - source_url
+      - source_snapshot_sha256
+      - case_metric
+      - source_reporting_year
+      - noncanonical_staging_only
+      reporting_year_column: source_reporting_year
+      integer_provenance_columns:
+      - source_reporting_year
+      terminal_year: 2025
+      required_hindcast_test_years:
+      - 2023
+      - 2024
+      - 2025
+      allow_out_of_contract_rows_in_likelihood: false
+      release_status: approved
+      source_evidence_status: harmonised_snapshot_upstream_finalisation_not_independently_verified
+      approval_scope: source_selection_only; predictive_and_age_adequacy_are_separate_checks
+      selection_policy_id: analysis_observation_selection_20260908
+      selection_interval_grid: calendar_month
+      selection_boundary_limitations: none
+    China:
+      id: china_native_source_freeze_20260905
+      source_regime: harmonised_notification_snapshot
+      minimum_observation_years: 10
+      minimum_process_state_years: 10
+      minimum_native_intervals: 120
+      input_path: data/processed/analysis_observations/China.csv
+      input_file_sha256: 15c25e3fcc2a9289dc4f15e376b4632a55f056c2f7ce9df579f74b54c568fb7e
+      source_content_sha256: 80e6b759e2e148d04c45aee9bdf739247cdfdbe185db4e902d5088aa08269dcf
+      allowed_period_start: '2016-01-01'
+      allowed_period_end_exclusive: '2026-01-01'
+      required_reporting_years:
+      - 2016
+      - 2017
+      - 2018
+      - 2019
+      - 2020
+      - 2021
+      - 2022
+      - 2023
+      - 2024
+      - 2025
+      required_reporting_frequency: monthly
+      required_source_family: Harmonised pertussis incidence source workbook
+      required_case_metric: reported_notifications_by_source_interval
+      required_provenance_values: {}
+      required_provenance_columns:
+      - source_family
+      - source_file
+      - source_sha256
+      - source_url
+      - source_snapshot_sha256
+      - case_metric
+      - source_reporting_year
+      - noncanonical_staging_only
+      reporting_year_column: source_reporting_year
+      integer_provenance_columns:
+      - source_reporting_year
+      terminal_year: 2025
+      required_hindcast_test_years:
+      - 2023
+      - 2024
+      - 2025
+      allow_out_of_contract_rows_in_likelihood: false
+      release_status: approved
+      source_evidence_status: harmonised_snapshot_upstream_finalisation_not_independently_verified
+      approval_scope: source_selection_only; predictive_and_age_adequacy_are_separate_checks
+      selection_policy_id: analysis_observation_selection_20260908
+      selection_interval_grid: calendar_month
+      selection_boundary_limitations: none
+    Japan:
+      id: japan_native_source_freeze_20260905
+      source_regime: final_all_case_notifications_single_regime
+      minimum_observation_years: 7
+      minimum_process_state_years: 7
+      minimum_native_intervals: 365
+      input_path: data/processed/analysis_observations/Japan.csv
+      input_file_sha256: 1877771db837c0746a00f3f4b122b44870d71dadc96404a7e263522fa55bba8f
+      source_content_sha256: 816c6ca0522ee4cf7af3260ea6204c842d5bd4c579179f88a7ec5b53ef0f2168
+      allowed_period_start: '2018-01-01'
+      allowed_period_end_exclusive: '2024-12-30'
+      required_reporting_years:
+      - 2018
+      - 2019
+      - 2020
+      - 2021
+      - 2022
+      - 2023
+      - 2024
+      required_reporting_frequency: weekly
+      required_source_family: JIHS NESID annual Table 1-1
+      required_case_metric: final_all_case_notifications_by_reporting_week
+      required_provenance_values: {}
+      required_provenance_columns:
+      - source_family
+      - source_file
+      - source_sha256
+      - source_url
+      - source_id
+      - source_vintage
+      - finalization_status
+      - case_metric
+      - jihs_reporting_year
+      - jihs_reporting_week
+      - noncanonical_staging_only
+      reporting_year_column: jihs_reporting_year
+      integer_provenance_columns:
+      - jihs_reporting_year
+      - jihs_reporting_week
+      terminal_year: 2024
+      required_hindcast_test_years:
+      - 2022
+      - 2023
+      - 2024
+      allow_out_of_contract_rows_in_likelihood: false
+      release_status: approved
+      source_evidence_status: official_final_weekly_cells_verified
+      approval_scope: source_selection_only; predictive_and_age_adequacy_are_separate_checks
+      selection_policy_id: analysis_observation_selection_20260908
+      selection_interval_grid: monday_week
+      selection_boundary_limitations: none
+    New_Zealand:
+      id: new_zealand_native_source_freeze_20260905
+      source_regime: harmonised_notification_snapshot
+      minimum_observation_years: 10
+      minimum_process_state_years: 10
+      minimum_native_intervals: 120
+      input_path: data/processed/analysis_observations/New_Zealand.csv
+      input_file_sha256: 9ef477a71ee5073643131f94d24c14f23bd7291a15c15cbaf74ad1ad32819e92
+      source_content_sha256: ebeb69e8bdaa570b1c5a5bad892a347cd42cb191e1a9b6c7c397f42d159b444d
+      allowed_period_start: '2016-01-01'
+      allowed_period_end_exclusive: '2026-01-01'
+      required_reporting_years:
+      - 2016
+      - 2017
+      - 2018
+      - 2019
+      - 2020
+      - 2021
+      - 2022
+      - 2023
+      - 2024
+      - 2025
+      required_reporting_frequency: monthly
+      required_source_family: Harmonised pertussis incidence source workbook
+      required_case_metric: reported_notifications_by_source_interval
+      required_provenance_values: {}
+      required_provenance_columns:
+      - source_family
+      - source_file
+      - source_sha256
+      - source_url
+      - source_snapshot_sha256
+      - case_metric
+      - source_reporting_year
+      - noncanonical_staging_only
+      reporting_year_column: source_reporting_year
+      integer_provenance_columns:
+      - source_reporting_year
+      terminal_year: 2025
+      required_hindcast_test_years:
+      - 2023
+      - 2024
+      - 2025
+      allow_out_of_contract_rows_in_likelihood: false
+      release_status: approved
+      source_evidence_status: harmonised_snapshot_upstream_finalisation_not_independently_verified
+      approval_scope: source_selection_only; predictive_and_age_adequacy_are_separate_checks
+      selection_policy_id: analysis_observation_selection_20260908
+      selection_interval_grid: calendar_month
+      selection_boundary_limitations: none
+    Sweden:
+      id: sweden_native_source_freeze_20260905
+      source_regime: harmonised_notification_snapshot
+      minimum_observation_years: 10
+      minimum_process_state_years: 10
+      minimum_native_intervals: 120
+      input_path: data/processed/analysis_observations/Sweden.csv
+      input_file_sha256: 78376197a182b123f7ee628069e81c1c42c327ccb8c4faae4392b6f83082d175
+      source_content_sha256: 7e4d64ab975df25befcbd5b8914490fd28af0737a425a19acc59320564e93153
+      allowed_period_start: '2016-01-01'
+      allowed_period_end_exclusive: '2026-01-01'
+      required_reporting_years:
+      - 2016
+      - 2017
+      - 2018
+      - 2019
+      - 2020
+      - 2021
+      - 2022
+      - 2023
+      - 2024
+      - 2025
+      required_reporting_frequency: monthly
+      required_source_family: Harmonised pertussis incidence source workbook
+      required_case_metric: reported_notifications_by_source_interval
+      required_provenance_values: {}
+      required_provenance_columns:
+      - source_family
+      - source_file
+      - source_sha256
+      - source_url
+      - source_snapshot_sha256
+      - case_metric
+      - source_reporting_year
+      - noncanonical_staging_only
+      reporting_year_column: source_reporting_year
+      integer_provenance_columns:
+      - source_reporting_year
+      terminal_year: 2025
+      required_hindcast_test_years:
+      - 2023
+      - 2024
+      - 2025
+      allow_out_of_contract_rows_in_likelihood: false
+      release_status: approved
+      source_evidence_status: harmonised_snapshot_upstream_finalisation_not_independently_verified
+      approval_scope: source_selection_only; predictive_and_age_adequacy_are_separate_checks
+      selection_policy_id: analysis_observation_selection_20260908
+      selection_interval_grid: calendar_month
+      selection_boundary_limitations: none
+    Thailand:
+      id: thailand_native_source_freeze_20260905
+      source_regime: harmonised_notification_snapshot
+      minimum_observation_years: 10
+      minimum_process_state_years: 10
+      minimum_native_intervals: 120
+      input_path: data/processed/analysis_observations/Thailand.csv
+      input_file_sha256: a3076dbe3646c8b90fa2d7993786f539e50e1d2ab81c4ec60639d38dcd1e83d7
+      source_content_sha256: 69ef91ea9d09dc4e88bedb0f089166ab39a4be1d370b63214ae08e406e8bc47e
+      allowed_period_start: '2016-01-01'
+      allowed_period_end_exclusive: '2026-01-01'
+      required_reporting_years:
+      - 2016
+      - 2017
+      - 2018
+      - 2019
+      - 2020
+      - 2021
+      - 2022
+      - 2023
+      - 2024
+      - 2025
+      required_reporting_frequency: monthly
+      required_source_family: Harmonised pertussis incidence source workbook
+      required_case_metric: reported_notifications_by_source_interval
+      required_provenance_values: {}
+      required_provenance_columns:
+      - source_family
+      - source_file
+      - source_sha256
+      - source_url
+      - source_snapshot_sha256
+      - case_metric
+      - source_reporting_year
+      - noncanonical_staging_only
+      reporting_year_column: source_reporting_year
+      integer_provenance_columns:
+      - source_reporting_year
+      terminal_year: 2025
+      required_hindcast_test_years:
+      - 2023
+      - 2024
+      - 2025
+      allow_out_of_contract_rows_in_likelihood: false
+      release_status: approved
+      source_evidence_status: harmonised_snapshot_upstream_finalisation_not_independently_verified
+      approval_scope: source_selection_only; predictive_and_age_adequacy_are_separate_checks
+      selection_policy_id: analysis_observation_selection_20260908
+      selection_interval_grid: calendar_month
+      selection_boundary_limitations: none
+    United_Kingdom:
+      id: united_kingdom_native_source_freeze_20260905
+      source_regime: harmonised_notification_snapshot
+      minimum_observation_years: 10
+      minimum_process_state_years: 10
+      minimum_native_intervals: 521
+      input_path: data/processed/analysis_observations/United_Kingdom.csv
+      input_file_sha256: bec6cfedb4a8058d4802f0204aeef8795c3bdf75aead8adaadd2ebc25c02a698
+      source_content_sha256: bc488fc878798dd6cca276b7ea25928c4009fea3d60164605f798e14f50c1fbe
+      allowed_period_start: '2015-01-05'
+      allowed_period_end_exclusive: '2024-12-30'
+      required_reporting_years:
+      - 2015
+      - 2016
+      - 2017
+      - 2018
+      - 2019
+      - 2020
+      - 2021
+      - 2022
+      - 2023
+      - 2024
+      required_reporting_frequency: weekly
+      required_source_family: Harmonised pertussis incidence source workbook
+      required_case_metric: reported_notifications_by_source_interval
+      required_provenance_values: {}
+      required_provenance_columns:
+      - source_family
+      - source_file
+      - source_sha256
+      - source_url
+      - source_snapshot_sha256
+      - case_metric
+      - source_reporting_year
+      - noncanonical_staging_only
+      reporting_year_column: source_reporting_year
+      integer_provenance_columns:
+      - source_reporting_year
+      terminal_year: 2024
+      required_hindcast_test_years:
+      - 2022
+      - 2023
+      - 2024
+      allow_out_of_contract_rows_in_likelihood: false
+      release_status: approved
+      source_evidence_status: harmonised_snapshot_upstream_finalisation_not_independently_verified
+      approval_scope: source_selection_only; predictive_and_age_adequacy_are_separate_checks
+      selection_policy_id: analysis_observation_selection_20260908
+      selection_interval_grid: monday_week
+      selection_boundary_limitations: Preserve the existing selected snapshot. The
+        2015 reporting-week-1 interval 2014-12-29 through 2015-01-05 (54 notifications
+        in the current source) is outside this selection. The selected grid is complete
+        between its declared endpoints, but 2015 has only 361 covered calendar days
+        and is not a complete reporting year. This selection does not resolve the
+        England-and-Wales notification versus United-Kingdom profile geography.
+  exclude_incomplete_terminal_calendar_year: true
+  minimum_terminal_calendar_coverage_fraction: 0.98
+  mean_fit_penalty_weight: 50000.0
+  process_model:
+    type: latent_log_beta_ar1_map
+    ar1_rho: 0.5
+    log_beta_innovation_sd: 0.6
+    log_beta_prior_sd: 1.0
+    log_reporting_prior_sd: 0.5
+    beta_S_bounds:
+    - 0.0005
+    - 0.5
+    reporting_multiplier_bounds:
+    - 0.1
+    - 10.0
+    max_abs_log_beta_deviation: 2.5
+    max_posterior_condition_number: 1.0e8
+    min_posterior_bound_fraction: 0.01
+    max_process_optimality: 1.0
+    max_nfev: 512
+    xtol: 0.0001
+    ftol: 0.0001
+    gtol: 0.0001
+    note: 'Regularized MAP bridge to a full POMP analysis. Annual latent transmission
+      deviations separate process variation from native- interval NB2 measurement
+      error and condition the forecast initial state. Final publication inference
+      must retain sensitivity to innovation SD and should be upgraded to iterated
+      filtering/particle methods when a tractable stochastic transition implementation
+      is available.
+
+      '
+  acceptance:
+    min_overlap_intervals: 5
+    max_interval_smape: 0.5
+    min_log1p_correlation: 0.5
+    peak_ratio_min: 0.5
+    peak_ratio_max: 2.0
+  simulation_overrides:
+    burn_in_years: 15
+    output_time_step: 30
+    solver_method: RK45
+    rtol: 0.0001
+    atol: 1.0e-06
+  relative_incidence_tolerance: 0.25
+  fit_parameters:
+  - transmission.beta_S
+  - reporting_multiplier
+  require_country_observation_contract: true
+demography:
+  enabled: true
+  fixed_population_profile: true
+  fixed_population_reference_age_group: infant_0_2m
+  maternal_protection_proxy:
+    enabled: true
+    exit_age_groups:
+    - infant_0_2m
+    exit_to_compartment: S
+    note: 'Birth-entry M_protected is a proxy for short-lived maternally derived infant
+      protection. It is converted back to susceptible when infants age out of 0-2
+      months so maternal antibodies are not treated as multi-year vaccine-derived
+      immunity.
+
+      '
+  age_bin_durations_years:
+    infant_0_2m: 0.25
+    infant_3_11m: 0.75
+    child_1_4y: 4.0
+    child_5_9y: 5.0
+    adolescent_10_17y: 8.0
+    young_adult_18_39y: 22.0
+    middle_adult_40_64y: 25.0
+    elderly_65plus: 15.0
+  birth_entry:
+    S: 0.65792
+    V: 0.34208000000000005
+  wpp_trajectory:
+    source: UN WPP 2024 one-year age-sex population, 1990-2050, aggregated to model
+      age groups
+    horizon_start_year: 2003
+    horizon_end_year: 2050
+    analysis_start_year: 2027
+    analysis_end_year: 2050
+    years:
+    - 2003
+    - 2004
+    - 2005
+    - 2006
+    - 2007
+    - 2008
+    - 2009
+    - 2010
+    - 2011
+    - 2012
+    - 2013
+    - 2014
+    - 2015
+    - 2016
+    - 2017
+    - 2018
+    - 2019
+    - 2020
+    - 2021
+    - 2022
+    - 2023
+    - 2024
+    - 2025
+    - 2026
+    - 2027
+    - 2028
+    - 2029
+    - 2030
+    - 2031
+    - 2032
+    - 2033
+    - 2034
+    - 2035
+    - 2036
+    - 2037
+    - 2038
+    - 2039
+    - 2040
+    - 2041
+    - 2042
+    - 2043
+    - 2044
+    - 2045
+    - 2046
+    - 2047
+    - 2048
+    - 2049
+    - 2050
+    population_by_year:
+      infant_0_2m:
+        2003: 173116.75
+        2004: 178304.5
+        2005: 182522.5
+        2006: 186929.5
+        2007: 192842.75000000003
+        2008: 197732.5
+        2009: 199412.5
+        2010: 200672.25
+        2011: 203213.5
+        2012: 204008.5
+        2013: 200889.5
+        2014: 197310.0
+        2015: 196365.0
+        2016: 195616.25000000003
+        2017: 192316.25000000003
+        2018: 187275.0
+        2019: 181821.0
+        2020: 177401.25
+        2021: 175164.75
+        2022: 173687.5
+        2023: 172759.5
+        2024: 172845.25
+        2025: 172461.25
+        2026: 171575.75000000003
+        2027: 171074.00000000003
+        2028: 170881.75
+        2029: 170888.5
+        2030: 171084.50000000003
+        2031: 171385.5
+        2032: 171824.75000000003
+        2033: 172522.25000000003
+        2034: 173474.75000000003
+        2035: 174747.50000000003
+        2036: 176142.25
+        2037: 177576.50000000003
+        2038: 179167.25000000003
+        2039: 180843.0
+        2040: 182412.25
+        2041: 183971.5
+        2042: 185391.75
+        2043: 186455.5
+        2044: 186986.00000000003
+        2045: 187036.0
+        2046: 186939.0
+        2047: 186521.25
+        2048: 185655.75
+        2049: 184537.5
+        2050: 183309.75
+      infant_3_11m:
+        2003: 519350.25
+        2004: 534913.5
+        2005: 547567.5
+        2006: 560788.5
+        2007: 578528.2500000001
+        2008: 593197.5
+        2009: 598237.5
+        2010: 602016.75
+        2011: 609640.5
+        2012: 612025.5
+        2013: 602668.5
+        2014: 591930.0
+        2015: 589095.0
+        2016: 586848.7500000001
+        2017: 576948.7500000001
+        2018: 561825.0
+        2019: 545463.0
+        2020: 532203.75
+        2021: 525494.25
+        2022: 521062.5
+        2023: 518278.5
+        2024: 518535.75
+        2025: 517383.75
+        2026: 514727.2500000001
+        2027: 513222.0000000001
+        2028: 512645.25
+        2029: 512665.5
+        2030: 513253.5000000001
+        2031: 514156.5
+        2032: 515474.2500000001
+        2033: 517566.7500000001
+        2034: 520424.2500000001
+        2035: 524242.5000000001
+        2036: 528426.75
+        2037: 532729.5000000001
+        2038: 537501.7500000001
+        2039: 542529.0
+        2040: 547236.75
+        2041: 551914.5
+        2042: 556175.25
+        2043: 559366.5
+        2044: 560958.0000000001
+        2045: 561108.0
+        2046: 560817.0
+        2047: 559563.75
+        2048: 556967.25
+        2049: 553612.5
+        2050: 549929.25
+      child_1_4y:
+        2003: 2760794.0
+        2004: 2751172.0
+        2005: 2772379.0
+        2006: 2821735.0
+        2007: 2892517.0
+        2008: 2973977.0
+        2009: 3054099.0
+        2010: 3120703.0
+        2011: 3173513.0
+        2012: 3220889.0
+        2013: 3259350.0
+        2014: 3280941.0
+        2015: 3281117.0
+        2016: 3261890.0
+        2017: 3231724.0
+        2018: 3197327.0
+        2019: 3155395.0
+        2020: 3112573.0
+        2021: 3049022.0
+        2022: 2967956.0
+        2023: 2900524.0
+        2024: 2856855.0
+        2025: 2842564.0
+        2026: 2837659.0
+        2027: 2832555.0
+        2028: 2825464.0
+        2029: 2814769.0
+        2030: 2806186.0
+        2031: 2801934.0
+        2032: 2800534.0
+        2033: 2802397.0
+        2034: 2807143.0
+        2035: 2814881.0
+        2036: 2826530.0
+        2037: 2841573.0
+        2038: 2859947.0
+        2039: 2881175.0
+        2040: 2904039.0
+        2041: 2927831.0
+        2042: 2952225.0
+        2043: 2976277.0
+        2044: 2997942.0
+        2045: 3015260.0
+        2046: 3026562.0
+        2047: 3031969.0
+        2048: 3031656.0
+        2049: 3025686.0
+        2050: 3014922.0
+      child_5_9y:
+        2003: 3693429.0
+        2004: 3668835.0
+        2005: 3635407.0
+        2006: 3589292.0
+        2007: 3541437.0
+        2008: 3512655.0
+        2009: 3511887.0
+        2010: 3540512.0
+        2011: 3605131.0
+        2012: 3704435.0
+        2013: 3815794.0
+        2014: 3917583.0
+        2015: 4008501.0
+        2016: 4091789.0
+        2017: 4156322.0
+        2018: 4188756.0
+        2019: 4197063.0
+        2020: 4193756.0
+        2021: 4175992.0
+        2022: 4139827.0
+        2023: 4093407.0
+        2024: 4039489.0
+        2025: 3969185.0
+        2026: 3883641.0
+        2027: 3801110.0
+        2028: 3736972.0
+        2029: 3695059.0
+        2030: 3673271.0
+        2031: 3660303.0
+        2032: 3648493.0
+        2033: 3636013.0
+        2034: 3621449.0
+        2035: 3609645.0
+        2036: 3602765.0
+        2037: 3599658.0
+        2038: 3600570.0
+        2039: 3605524.0
+        2040: 3614941.0
+        2041: 3629049.0
+        2042: 3647456.0
+        2043: 3670023.0
+        2044: 3695884.0
+        2045: 3723171.0
+        2046: 3751460.0
+        2047: 3780000.0
+        2048: 3806700.0
+        2049: 3828880.0
+        2050: 3845018.0
+      adolescent_10_17y:
+        2003: 6151537.0
+        2004: 6125677.0
+        2005: 6118847.0
+        2006: 6164610.0
+        2007: 6206308.0
+        2008: 6187424.0
+        2009: 6143383.0
+        2010: 6080906.0
+        2011: 6012016.0
+        2012: 5943169.0
+        2013: 5892032.0
+        2014: 5869574.0
+        2015: 5874654.0
+        2016: 5915624.0
+        2017: 5992218.0
+        2018: 6096955.0
+        2019: 6221466.0
+        2020: 6327590.0
+        2021: 6442509.0
+        2022: 6590487.0
+        2023: 6718576.0
+        2024: 6804037.0
+        2025: 6850975.0
+        2026: 6870158.0
+        2027: 6868548.0
+        2028: 6842689.0
+        2029: 6779072.0
+        2030: 6675826.0
+        2031: 6560781.0
+        2032: 6457178.0
+        2033: 6360751.0
+        2034: 6264944.0
+        2035: 6173837.0
+        2036: 6097167.0
+        2037: 6038599.0
+        2038: 6001537.0
+        2039: 5977355.0
+        2040: 5957681.0
+        2041: 5939452.0
+        2042: 5921338.0
+        2043: 5908703.0
+        2044: 5904010.0
+        2045: 5906862.0
+        2046: 5916803.0
+        2047: 5933316.0
+        2048: 5956258.0
+        2049: 5985264.0
+        2050: 6019248.0
+      young_adult_18_39y:
+        2003: 18208255.0
+        2004: 18301766.0
+        2005: 18401816.0
+        2006: 18453892.0
+        2007: 18501786.0
+        2008: 18567422.0
+        2009: 18611492.0
+        2010: 18691984.0
+        2011: 18763310.0
+        2012: 18751766.0
+        2013: 18741692.0
+        2014: 18802330.0
+        2015: 18917540.0
+        2016: 19043356.0
+        2017: 19136540.0
+        2018: 19181899.0
+        2019: 19175139.0
+        2020: 19134510.0
+        2021: 19180261.0
+        2022: 19239597.0
+        2023: 19226893.0
+        2024: 19296288.0
+        2025: 19419911.0
+        2026: 19538560.0
+        2027: 19688997.0
+        2028: 19882709.0
+        2029: 20065877.0
+        2030: 20208837.0
+        2031: 20321950.0
+        2032: 20398212.0
+        2033: 20485155.0
+        2034: 20584452.0
+        2035: 20677469.0
+        2036: 20750070.0
+        2037: 20787767.0
+        2038: 20808227.0
+        2039: 20825124.0
+        2040: 20843810.0
+        2041: 20872493.0
+        2042: 20911121.0
+        2043: 20938207.0
+        2044: 20927384.0
+        2045: 20879679.0
+        2046: 20797034.0
+        2047: 20684400.0
+        2048: 20548613.0
+        2049: 20402482.0
+        2050: 20253997.0
+      middle_adult_40_64y:
+        2003: 18776111.0
+        2004: 19005721.0
+        2005: 19267739.0
+        2006: 19547681.0
+        2007: 19808352.0
+        2008: 20047759.0
+        2009: 20274083.0
+        2010: 20475449.0
+        2011: 20607879.0
+        2012: 20667962.0
+        2013: 20719628.0
+        2014: 20800171.0
+        2015: 20896448.0
+        2016: 20992646.0
+        2017: 21075888.0
+        2018: 21152272.0
+        2019: 21247301.0
+        2020: 21342478.0
+        2021: 21453666.0
+        2022: 21640139.0
+        2023: 21839207.0
+        2024: 21968350.0
+        2025: 22075368.0
+        2026: 22172406.0
+        2027: 22222060.0
+        2028: 22222545.0
+        2029: 22228176.0
+        2030: 22263447.0
+        2031: 22312440.0
+        2032: 22364152.0
+        2033: 22384037.0
+        2034: 22377864.0
+        2035: 22379238.0
+        2036: 22381749.0
+        2037: 22369061.0
+        2038: 22372838.0
+        2039: 22400610.0
+        2040: 22437519.0
+        2041: 22476579.0
+        2042: 22514013.0
+        2043: 22557274.0
+        2044: 22602816.0
+        2045: 22629787.0
+        2046: 22668884.0
+        2047: 22735524.0
+        2048: 22825295.0
+        2049: 22927933.0
+        2050: 23005788.0
+      elderly_65plus:
+        2003: 9537792.0
+        2004: 9603576.0
+        2005: 9669830.0
+        2006: 9726166.0
+        2007: 9814089.0
+        2008: 9947137.0
+        2009: 10113628.0
+        2010: 10294241.0
+        2011: 10534582.0
+        2012: 10856233.0
+        2013: 11157333.0
+        2014: 11406075.0
+        2015: 11618387.0
+        2016: 11805589.0
+        2017: 11992517.0
+        2018: 12186165.0
+        2019: 12387310.0
+        2020: 12531348.0
+        2021: 12666680.0
+        2022: 12906559.0
+        2023: 13213320.0
+        2024: 13481785.0
+        2025: 13703486.0
+        2026: 13942801.0
+        2027: 14196005.0
+        2028: 14449067.0
+        2029: 14704832.0
+        2030: 14975086.0
+        2031: 15244476.0
+        2032: 15512783.0
+        2033: 15784436.0
+        2034: 16055934.0
+        2035: 16302752.0
+        2036: 16535407.0
+        2037: 16779006.0
+        2038: 16988399.0
+        2039: 17151795.0
+        2040: 17286992.0
+        2041: 17399061.0
+        2042: 17493839.0
+        2043: 17584256.0
+        2044: 17696587.0
+        2045: 17850755.0
+        2046: 18017284.0
+        2047: 18177811.0
+        2048: 18330831.0
+        2049: 18472003.0
+        2050: 18632475.0
+    births_by_year:
+      2003: 692467.0
+      2004: 713218.0
+      2005: 730090.0
+      2006: 747718.0
+      2007: 771371.0
+      2008: 790930.0
+      2009: 797650.0
+      2010: 802689.0
+      2011: 812854.0
+      2012: 816034.0
+      2013: 803558.0
+      2014: 789240.0
+      2015: 785460.0
+      2016: 782465.0
+      2017: 769265.0
+      2018: 749100.0
+      2019: 727284.0
+      2020: 709605.0
+      2021: 700659.0
+      2022: 694750.0
+      2023: 691038.0
+      2024: 691381.0
+      2025: 689845.0
+      2026: 686303.0
+      2027: 684296.0
+      2028: 683527.0
+      2029: 683554.0
+      2030: 684338.0
+      2031: 685542.0
+      2032: 687299.0
+      2033: 690089.0
+      2034: 693899.0
+      2035: 698990.0
+      2036: 704569.0
+      2037: 710306.0
+      2038: 716669.0
+      2039: 723372.0
+      2040: 729649.0
+      2041: 735886.0
+      2042: 741567.0
+      2043: 745822.0
+      2044: 747944.0
+      2045: 748144.0
+      2046: 747756.0
+      2047: 746085.0
+      2048: 742623.0
+      2049: 738150.0
+      2050: 733239.0
+    total_population_by_year:
+      2003: 59820385.0
+      2004: 60169965.0
+      2005: 60596108.0
+      2006: 61051094.0
+      2007: 61535860.0
+      2008: 62027304.0
+      2009: 62506222.0
+      2010: 63006484.0
+      2011: 63509285.0
+      2012: 63960488.0
+      2013: 64389387.0
+      2014: 64865914.0
+      2015: 65382107.0
+      2016: 65893359.0
+      2017: 66354474.0
+      2018: 66752474.0
+      2019: 67110958.0
+      2020: 67351860.0
+      2021: 67668789.0
+      2022: 68179315.0
+      2023: 68682965.0
+      2024: 69138185.0
+      2025: 69551334.0
+      2026: 69931528.0
+      2027: 70293571.0
+      2028: 70642973.0
+      2029: 70971339.0
+      2030: 71286991.0
+      2031: 71587426.0
+      2032: 71868651.0
+      2033: 72142878.0
+      2034: 72405685.0
+      2035: 72656812.0
+      2036: 72898257.0
+      2037: 73125970.0
+      2038: 73348187.0
+      2039: 73564955.0
+      2040: 73774631.0
+      2041: 73980351.0
+      2042: 74181559.0
+      2043: 74380562.0
+      2044: 74572567.0
+      2045: 74753658.0
+      2046: 74925783.0
+      2047: 75089105.0
+      2048: 75241976.0
+      2049: 75380398.0
+      2050: 75504687.0
+  mode: wpp_trajectory
+routine_vaccination:
+  enabled: true
+  delivery_process: sequential_stock_relaxation
+  target_relaxation_rate_per_year: 2.0
+  max_daily_flow_fraction: 0.01
+  historical_coverage_time_variation: true
+  note: 'Routine vaccination uses adjacent dose-series stock transitions toward age-specific
+    category targets. Dose-3-plus completion and waned-stock boosting are separate
+    source-limited flows; new delivery enters the recent state and a waned-only target
+    fails closed because the broad age bins have no receipt-age state. Each transition
+    is capped by the available eligible source stock and the configured maximum daily
+    flow; the broad age bins still do not represent individual dose dates.
+
+    '
+  target_origin_distribution_by_age:
+    infant_0_2m: {}
+    infant_3_11m:
+      dose1_recent: 0.12827225130890052
+      dose2_recent: 0.12827225130890052
+      recent: 0.743455497382199
+    child_1_4y:
+      recent: 1.0
+    child_5_9y: {}
+    adolescent_10_17y: {}
+    young_adult_18_39y: {}
+    middle_adult_40_64y: {}
+    elderly_65plus: {}
+  baseline_delay_months: 3.0
+  recent_window_months: 48.0
+  coverage_target_time_variation:
+    enabled: true
+    periods:
+    - start_date: '1990-01-01'
+      end_date: '1990-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8837999999999999
+        child_1_4y: 0.7728
+        child_5_9y: 0.7224
+        adolescent_10_17y: 0.5628
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '1991-01-01'
+      end_date: '1991-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.9036
+        child_1_4y: 0.8096
+        child_5_9y: 0.7568000000000001
+        adolescent_10_17y: 0.5896
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '1992-01-01'
+      end_date: '1992-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.9159
+        child_1_4y: 0.8464
+        child_5_9y: 0.7912000000000001
+        adolescent_10_17y: 0.6164000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '1993-01-01'
+      end_date: '1993-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.9171
+        child_1_4y: 0.8556
+        child_5_9y: 0.7998000000000002
+        adolescent_10_17y: 0.6231000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '1994-01-01'
+      end_date: '1994-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.9171
+        child_1_4y: 0.8556
+        child_5_9y: 0.7998000000000002
+        adolescent_10_17y: 0.6231000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '1995-01-01'
+      end_date: '1995-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.9183
+        child_1_4y: 0.8648
+        child_5_9y: 0.8084
+        adolescent_10_17y: 0.6298
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '1996-01-01'
+      end_date: '1996-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.9183
+        child_1_4y: 0.8648
+        child_5_9y: 0.8084
+        adolescent_10_17y: 0.6298
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '1997-01-01'
+      end_date: '1997-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8784
+        child_1_4y: 0.8464
+        child_5_9y: 0.7912000000000001
+        adolescent_10_17y: 0.6164000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '1998-01-01'
+      end_date: '1998-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8696999999999999
+        child_1_4y: 0.8372
+        child_5_9y: 0.7826000000000001
+        adolescent_10_17y: 0.6097
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '1999-01-01'
+      end_date: '1999-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8784
+        child_1_4y: 0.8464
+        child_5_9y: 0.7912000000000001
+        adolescent_10_17y: 0.6164000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2000-01-01'
+      end_date: '2000-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8696999999999999
+        child_1_4y: 0.8372
+        child_5_9y: 0.7826000000000001
+        adolescent_10_17y: 0.6097
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2001-01-01'
+      end_date: '2001-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8696999999999999
+        child_1_4y: 0.8372
+        child_5_9y: 0.7826000000000001
+        adolescent_10_17y: 0.6097
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2002-01-01'
+      end_date: '2002-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8696999999999999
+        child_1_4y: 0.8372
+        child_5_9y: 0.7826000000000001
+        adolescent_10_17y: 0.6097
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2003-01-01'
+      end_date: '2003-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8696999999999999
+        child_1_4y: 0.8372
+        child_5_9y: 0.7826000000000001
+        adolescent_10_17y: 0.6097
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2004-01-01'
+      end_date: '2004-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8784
+        child_1_4y: 0.8464
+        child_5_9y: 0.7912000000000001
+        adolescent_10_17y: 0.6164000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2005-01-01'
+      end_date: '2005-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8696999999999999
+        child_1_4y: 0.8372
+        child_5_9y: 0.7826000000000001
+        adolescent_10_17y: 0.6097
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2006-01-01'
+      end_date: '2006-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8784
+        child_1_4y: 0.8464
+        child_5_9y: 0.7912000000000001
+        adolescent_10_17y: 0.6164000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2007-01-01'
+      end_date: '2007-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8784
+        child_1_4y: 0.8464
+        child_5_9y: 0.7912000000000001
+        adolescent_10_17y: 0.6164000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2008-01-01'
+      end_date: '2008-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8784
+        child_1_4y: 0.8464
+        child_5_9y: 0.7912000000000001
+        adolescent_10_17y: 0.6164000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2009-01-01'
+      end_date: '2009-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8871
+        child_1_4y: 0.8556
+        child_5_9y: 0.7998000000000002
+        adolescent_10_17y: 0.6231000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2010-01-01'
+      end_date: '2010-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8957999999999999
+        child_1_4y: 0.8648
+        child_5_9y: 0.8084
+        adolescent_10_17y: 0.6298
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2011-01-01'
+      end_date: '2011-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.9044999999999999
+        child_1_4y: 0.874
+        child_5_9y: 0.8170000000000001
+        adolescent_10_17y: 0.6365
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2012-01-01'
+      end_date: '2012-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.9044999999999999
+        child_1_4y: 0.874
+        child_5_9y: 0.8170000000000001
+        adolescent_10_17y: 0.6365
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2013-01-01'
+      end_date: '2013-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.9044999999999999
+        child_1_4y: 0.874
+        child_5_9y: 0.8170000000000001
+        adolescent_10_17y: 0.6365
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2014-01-01'
+      end_date: '2014-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.9044999999999999
+        child_1_4y: 0.874
+        child_5_9y: 0.8170000000000001
+        adolescent_10_17y: 0.6365
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2015-01-01'
+      end_date: '2015-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.9044999999999999
+        child_1_4y: 0.874
+        child_5_9y: 0.8170000000000001
+        adolescent_10_17y: 0.6365
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2016-01-01'
+      end_date: '2016-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8957999999999999
+        child_1_4y: 0.8648
+        child_5_9y: 0.8084
+        adolescent_10_17y: 0.6298
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2017-01-01'
+      end_date: '2017-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8957999999999999
+        child_1_4y: 0.8648
+        child_5_9y: 0.8084
+        adolescent_10_17y: 0.6298
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2018-01-01'
+      end_date: '2018-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8957999999999999
+        child_1_4y: 0.8648
+        child_5_9y: 0.8084
+        adolescent_10_17y: 0.6298
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2019-01-01'
+      end_date: '2019-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8871
+        child_1_4y: 0.8556
+        child_5_9y: 0.7998000000000002
+        adolescent_10_17y: 0.6231000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2020-01-01'
+      end_date: '2020-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8871
+        child_1_4y: 0.8556
+        child_5_9y: 0.7998000000000002
+        adolescent_10_17y: 0.6231000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2021-01-01'
+      end_date: '2021-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8871
+        child_1_4y: 0.8556
+        child_5_9y: 0.7998000000000002
+        adolescent_10_17y: 0.6231000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2022-01-01'
+      end_date: '2022-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8784
+        child_1_4y: 0.8464
+        child_5_9y: 0.7912000000000001
+        adolescent_10_17y: 0.6164000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2023-01-01'
+      end_date: '2023-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8784
+        child_1_4y: 0.8464
+        child_5_9y: 0.7912000000000001
+        adolescent_10_17y: 0.6164000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    - start_date: '2024-01-01'
+      end_date: '2024-12-31'
+      coverage_by_age:
+        infant_0_2m: 0.37750000000000006
+        infant_3_11m: 0.8784
+        child_1_4y: 0.8464
+        child_5_9y: 0.7912000000000001
+        adolescent_10_17y: 0.6164000000000001
+        young_adult_18_39y: 0.2325
+        middle_adult_40_64y: 0.133
+        elderly_65plus: 0.08
+    source_id: who_unicef_wuenic_annual_dtp1_dtp3
+    mapping: coverage_by_age_from_schedule_and_country_metadata
+    gap_policy: retain_static_country_profile_coverage
+    maternal_coverage_policy: retain_country_profile_value
+initial_conditions:
+  initial_exposed_per_100k: 1.5
+  initial_infectious_per_100k: 0.6
+  initial_resistance_prevalence: 0.003
+  seed_age_distribution:
+    infant_0_2m: 0.03
+    infant_3_11m: 0.07
+    child_1_4y: 0.12
+    child_5_9y: 0.13
+    adolescent_10_17y: 0.2
+    young_adult_18_39y: 0.22
+    middle_adult_40_64y: 0.15
+    elderly_65plus: 0.08
+treatment:
+  treatment_rate_symptomatic: 0.025
+  treatment_rate_asymptomatic: 0.002
+  sensitive:
+    infectious_duration_reduction: 0.2
+    infectiousness_reduction: 0.15
+  resistant:
+    infectious_duration_reduction: 0.1
+    infectiousness_reduction: 0.05
+PEP:
+  coverage_household_contacts: 0.3
+  effectiveness_sensitive: 0.823
+  effectiveness_resistant: 0.1
+  activation_prevalence: 2.0e-05
+reporting_rate_sensitivity:
+  medium:
+    multiplier: 1.0
+    description: Baseline reporting rates as configured in country profiles.
+  high:
+    multiplier: 1.5
+    description: Uniformly higher reporting (50% increase across all ages).
+  low:
+    multiplier: 0.5
+    description: Uniformly lower reporting (50% decrease across all ages).
+  age_biased:
+    age_multipliers:
+      infant_0_2m: 1.2
+      infant_3_11m: 1.1
+      child_1_4y: 0.9
+      child_5_9y: 0.8
+      adolescent_10_17y: 0.7
+      young_adult_18_39y: 0.6
+      middle_adult_40_64y: 0.5
+      elderly_65plus: 0.6
+    description: 'Age-biased reporting where infant ascertainment is slightly higher
+      and adult/adolescent ascertainment is lower than baseline.
+
+      '
+  time_varying:
+    multiplier: 1.0
+    time_variation:
+      start_multiplier: 0.5
+      end_multiplier: 1.5
+    description: 'Linearly improving reporting over the analysis period (e.g. due
+      to increased awareness, better diagnostics, or expanded testing).
+
+      '
+  infant_high_adult_very_low:
+    age_multipliers:
+      infant_0_2m: 1.0
+      infant_3_11m: 0.9
+      child_1_4y: 0.6
+      child_5_9y: 0.5
+      adolescent_10_17y: 0.3
+      young_adult_18_39y: 0.2
+      middle_adult_40_64y: 0.15
+      elderly_65plus: 0.2
+    description: 'Strong age gradient: infant reporting near baseline but adolescent
+      and adult reporting reduced to 3-5% absolute (consistent with Ontario capture-recapture:
+      11% of age 1+ cases reported, and England/Wales notification efficiency of 5-25%
+      overall). This scenario tests whether the true infection burden in adults is
+      substantially higher than reported cases suggest.
+
+      '
+  infant_moderate_adult_minimal:
+    age_multipliers:
+      infant_0_2m: 0.7
+      infant_3_11m: 0.6
+      child_1_4y: 0.5
+      child_5_9y: 0.4
+      adolescent_10_17y: 0.2
+      young_adult_18_39y: 0.1
+      middle_adult_40_64y: 0.08
+      elderly_65plus: 0.1
+    description: 'Extreme under-reporting scenario anchored to the lower end of literature
+      estimates. Infant reporting at 35-42% (Ontario hospital study: 37%), school-age
+      at 2-5%, adults at 0.5-2.5%. Represents passive surveillance systems without
+      active case-finding.
+
+      '
+  enhanced_surveillance:
+    age_multipliers:
+      infant_0_2m: 1.3
+      infant_3_11m: 1.2
+      child_1_4y: 1.4
+      child_5_9y: 1.5
+      adolescent_10_17y: 1.8
+      young_adult_18_39y: 2.5
+      middle_adult_40_64y: 2.5
+      elderly_65plus: 2.0
+    description: 'Enhanced surveillance scenario where improved diagnostics (PCR availability,
+      point-of-care testing) increase ascertainment, particularly in older age groups.
+      Represents the effect of active surveillance programs or outbreak investigations.
+
+      '
+  adult_focused_improvement:
+    age_multipliers:
+      infant_0_2m: 1.0
+      infant_3_11m: 1.0
+      child_1_4y: 1.0
+      child_5_9y: 1.0
+      adolescent_10_17y: 2.0
+      young_adult_18_39y: 3.0
+      middle_adult_40_64y: 3.0
+      elderly_65plus: 2.5
+    description: 'Scenario where adult/adolescent reporting improves substantially
+      (e.g. through Tdap booster awareness campaigns, expanded testing guidelines
+      for prolonged cough). Tests sensitivity of total burden estimates to adult ascertainment
+      improvements.
+
+      '
+  china_passive_system:
+    age_multipliers:
+      infant_0_2m: 0.8
+      infant_3_11m: 0.7
+      child_1_4y: 0.5
+      child_5_9y: 0.4
+      adolescent_10_17y: 0.25
+      young_adult_18_39y: 0.15
+      middle_adult_40_64y: 0.12
+      elderly_65plus: 0.15
+    description: 'Calibrated to Yiwu active-surveillance study (China) which found
+      community incidence of 108.3/100k vs passive surveillance estimates far below
+      this. Represents the gap between active and passive surveillance in a middle-income
+      setting.
+
+      '
+baseline_vaccine_scenario: symptom_protective
+baseline_resistance_scenario: country_timeline
+baseline_country_profile: China
+fitness_grid:
+  random_seed: 20260510
+  fitness_R_values:
+  - 0.7
+  - 0.8
+  - 0.85
+  - 0.9
+  - 0.95
+  - 0.98
+  - 1.0
+  - 1.02
+  - 1.05
+  - 1.1
+  - 1.15
+  - 1.2
+  - 1.25
+  VE_inf_values:
+  - 0.05
+  - 0.1
+  - 0.15
+  - 0.2
+  - 0.25
+  - 0.3
+  - 0.35
+  - 0.4
+  - 0.45
+  - 0.5
+  - 0.55
+  description: 'Continuous macrolide-resistant strain fitness stress test crossed
+    with plausible-to-upper-bound vaccine infectiousness effects. VE_inf is the reduction
+    in onward infectiousness among infected vaccine-history origins, not protection
+    against infection. The fitness grid now includes finer resolution around fitness_R
+    = 1.0 (neutral) because epidemiological evidence from China (36% to >99% MRBP
+    in 8 years), Japan (83-88% in 2024-2025), and international MT28 spread suggests
+    the true fitness is near or above 1.0. Values below 0.85 are retained for completeness
+    but are increasingly inconsistent with observed resistance dynamics. VE_inf axis
+    expanded from 5 to 11 uniform steps (0.05 increments) to improve heatmap resolution
+    in Figure 3E/F panels.
+
+    '
+bayesian_uncertainty:
+  random_seed: 20260510
+  publication_country_exclusions:
+    United_States: "The former m1 current-week series is not a final notification\
+      \ series. Only three final annual observations (2021\u20132023) have an unambiguous\
+      \ validated reporting-year scope. Retain these as source context only; exclude\
+      \ the profile from formal calibration and programme comparison.\n"
+    South_Africa: 'Only three recent non-overlapping observation intervals are available,
+      below the prespecified five-interval calibration/validation floor. Retain as
+      an exploratory deterministic scenario, but exclude it from calibrated policy
+      uncertainty until additional surveillance data or a separately justified external
+      calibration model is supplied.
+
+      '
+  inference_structure: cross_country_joint_state_space_tempered_smc
+  shared_structural_seed: 20260712
+  n_chains: 4
+  warmup: 0
+  draws: 1024
+  thin: 1
+  proposal_scale: 1.0
+  smc_particles: 1024
+  smc_islands: 4
+  smc_ess_fraction: 0.7
+  smc_move_steps: 4
+  smc_global_covariance_fraction: 0.25
+  smc_guided_state_covariance_scale: 4.0
+  smc_guided_bridge_temperature_scale: 0.0001
+  smc_shared_population_guide_switch_temperature: 0.001
+  smc_max_stages: 100
+  smc_final_move_rounds: 4
+  posterior_predictive_draws_per_country: 100
+  dispersion: 50.0
+  enable_time_varying_reporting: false
+  likelihood_observation_frequency: annual
+  require_calibrated_start: true
+  state_space_importance:
+    adaptation_candidate_count: 512
+    adaptation_round_candidate_count: 512
+    candidate_count: 1024
+    max_adaptive_rounds: 2
+    require_recommended_quality: true
+    localized_mixture_enabled: true
+    localized_candidate_count: 2048
+    localized_component_count: 8
+    localized_covariance_scale: 0.25
+    adaptation_target_ess: 96
+    adaptation_covariance_regularization: 0.1
+    initial_proposal_covariance_scales:
+    - 0.0625
+    - 0.25
+    - 1.0
+    - 4.0
+    proposal_covariance_scales:
+    - 0.25
+    - 0.5
+    - 1.0
+    - 2.0
+    - 4.0
+    note: 'Legacy rejected route. Multi-scale exact-target importance tests showed
+      severe local and global weight collapse and cannot generate the publication
+      95% credible interval. These controls are not consumed by run_hierarchical_joint_smc.
+
+      '
+  figure2c_parametric_bootstrap_confidence_interval:
+    replicates_per_country: 1024
+    minimum_successful_replicates: 1000
+    minimum_success_fraction: 0.95
+    maximum_tail_probability_mcse: 0.005
+    stability_blocks: 8
+    parallel_workers: 100
+    checkpoint_chunk_size: 100
+    retry_maxiter_schedule:
+    - 64
+    - 128
+    seed: 20260716
+    note: 'Canonical Figure 2c uncertainty route. Each replicate regenerates a complete
+      annual latent transmission path from the prespecified bounded AR(1) process
+      and native reporting-interval surveillance counts from the fitted NB2 model,
+      fully refits the country state-space MAP model, and propagates that same refit
+      through current practice and every intervention strategy. The 2.5% and 97.5%
+      percentile endpoints are paired parametric-bootstrap 95% confidence intervals
+      for the fitted scenario-reduction estimand. They are neither posterior credible
+      intervals nor future-observation prediction intervals. Biological quantities,
+      intervention definitions, AR(1) hyperparameters remain fixed at prespecified
+      reference values; the reference-exposure NB2 dispersion is refitted in each
+      replicate.
+
+      '
+  figure1b_current_practice_conditional_parametric_bootstrap_confidence_interval:
+    replicates_per_country: 1024
+    minimum_successful_replicates: 1000
+    minimum_success_fraction: 0.95
+    maximum_tail_probability_mcse: 0.005
+    stability_blocks: 8
+    parallel_workers: 48
+    checkpoint_chunk_size: 50
+    retry_maxiter_schedule:
+    - 64
+    - 128
+    seed: 20260718
+    note: 'Figure 1b current-practice-only conditional uncertainty route. Each replicate
+      holds the accepted fitted annual latent transmission path as the generating
+      trajectory, regenerates grouped NB2 surveillance counts, fully refits the country
+      state-space MAP model, and runs current practice once. The reported-case, symptomatic-case,
+      and infection indices are retained from the same fitted replicate. Percentile
+      endpoints are conditional parametric-bootstrap confidence intervals, not posterior
+      credible intervals or future-observation prediction intervals. Biological quantities
+      and AR(1) hyperparameters remain fixed at prespecified reference values; the
+      reference-exposure NB2 dispersion is refitted in each replicate.
+
+      '
+  figure2c_joint_credible_interval:
+    posterior_draws_per_country: 4096
+    note: 'Retired checkpoint-compatible route, retained only for provenance. Figure
+      2c previously used paired draws from the multi-country full-feedback joint posterior.
+      Shared biological parameters, country beta/reporting, and annual latent transmission
+      states are jointly weighted by the exact NB2 plus AR(1) plus mechanistic ODE
+      target. Intervention implementation and effect quantities have prespecified
+      priors and no direct likelihood, so their posterior equals their prior; the
+      same complete draw is propagated through current practice and each intervention.
+      The plotted 2.5% and 97.5% quantiles are joint-posterior 95% credible intervals.
+
+      '
+    intervention_priors:
+      adolescent_coverage_floor:
+        low: 0.75
+        mode: 0.9
+        high: 0.98
+        distribution: triangular
+        note: Plausible achieved adolescent Tdap coverage floor under scale-up.
+      maternal_coverage_floor:
+        low: 0.55
+        mode: 0.75
+        high: 0.9
+        distribution: triangular
+        note: Plausible achieved pregnancy Tdap coverage floor under scale-up.
+      young_adult_coverage_floor:
+        low: 0.35
+        mode: 0.55
+        high: 0.75
+        distribution: triangular
+        note: Plausible achieved close-contact/reproductive-age adult Tdap coverage
+          floor.
+      contact_reduction_fraction:
+        low: 0.05
+        mode: 0.15
+        high: 0.3
+        distribution: triangular
+        note: Directional reduction in young-adult to infant effective contacts for
+          adjunct exposure reduction.
+      targeted_pep_coverage:
+        low: 0.05
+        mode: 0.45
+        high: 0.6
+        distribution: triangular
+        note: Plausible household-contact PEP reach among guideline-prioritized contacts.
+      maternal_protection_duration_days:
+        low: 90.0
+        mode: 180.0
+        high: 270.0
+        distribution: triangular
+        note: Duration of passive maternal protection in early infancy.
+  note: 'The canonical route is multi-country adaptive tempered SMC over the full
+    joint state: seven shared biological parameters plus country-specific beta, reporting,
+    and annual AR(1) transmission paths. Tempering proceeds from the normalized joint
+    prior to the exact NB2/ODE target, with island-wise resampling and exact-target
+    shared/state rejuvenation moves. The former conditional cut and nested importance
+    routes are retained only as rejected sensitivity implementations and are not publication
+    inputs.
+
+    '
+  convergence_criteria:
+    rhat_threshold: 1.05
+    min_bulk_ess: 100
+    min_tail_ess: 50
+    recommended_rhat_threshold: 1.01
+    recommended_min_bulk_ess: 400
+    recommended_min_tail_ess: 400
+    note: 'SMC islands are independent diagnostic chains. Publication acceptance requires
+      final temperature 1, stage-wise island ESS control, active rejuvenation, adequate
+      particle and island diversity, rank-normalized cross-island R-hat/bulk/tail
+      ESS, complete annual process paths, cross-country shared-draw pairing, and rolling-origin
+      predictive checks.
+
+      '
+  adaptive_metropolis:
+    adaptation_start: 50
+    mixing_fraction: 0.95
+    epsilon: 1.0e-06
+    note: 'Adaptive Metropolis (Haario et al. 2001) learns the empirical covariance
+      from chain history during warmup. After adaptation_start steps, the proposal
+      is 95% adapted covariance + 5% initial diagonal for ergodicity. The adapted
+      covariance captures correlations such as the strong negative correlation between
+      beta_S and reporting_multiplier.
+
+      '
+  priors:
+    log_beta_S_sd: 1.25
+    log_reporting_multiplier_sd: 0.35
+    VE_sus:
+      mean: 0.15
+      sd: 0.1
+      note: 'Weak vaccine-mechanism prior for reduced susceptibility, centred on the
+        selected symptom-protective baseline. Aggregate studies do not identify this
+        acquisition component separately; see parameter_distributions.yaml for support
+        and provenance.
+
+        '
+    VE_inf:
+      mean: 0.25
+      sd: 0.15
+      note: 'Broad vaccine-mechanism prior for reduced onward infectiousness among
+        vaccinated infections. Human data support residual transmission but do not
+        identify this component separately.
+
+        '
+    VE_dur:
+      mean: 0.1
+      sd: 0.1
+      note: 'Mechanistic duration-shortening proxy for reduced infectious duration
+        among vaccinated infections. It is sampled jointly in the shared external-prior
+        structural design for Figure 2c and remains a vaccine-mechanism sensitivity
+        parameter in deterministic diagnostics.
+
+        '
+    relative_infectiousness_asymptomatic:
+      mean: 0.5
+      sd: 0.25
+      note: 'Relative infectiousness of asymptomatic/subclinical infections compared
+        to symptomatic cases. The exact ratio is not identified; the central registry
+        assigns a broad weak-model prior.
+
+        '
+    infectious_duration_symptomatic:
+      log_sd: 0.103
+      note: 'Compatibility width only. The normalized Bayesian prior is centred at
+        the literature model-fit median of 24 days and truncated to [14, 35] days
+        in parameter_distributions.yaml.
+
+        '
+    infectious_duration_asymptomatic:
+      log_sd: 0.3
+      note: 'Weak modelling assumption; the central registry uses median 17.3 days
+        and support [7, 28] because human data do not identify it.
+
+        '
+    fitness_R:
+      min: 0.7
+      max: 1.25
+      mean: 1.0
+      sd: 0.15
+      note: 'Compatibility width alias. Production uses the central truncated lognormal
+        weak-model prior (median 1.0, log-SD 0.15, support [0.70, 1.25]).
+
+        '
+    resistance_prevalence:
+      floor_sd: 0.03
+      note: 'Resistance prevalence is FIXED at the country-calibrated value during
+        MCMC (not sampled). The country_resistance_timeline.csv provides well-constrained
+        estimates for most countries. This eliminates a major source of multimodality
+        without losing scientific information.
+
+        '
+    maternal_VE_sus:
+      mean: 0.55
+      sd: 0.12
+      note: 'Prior for maternal antibody protection against infant infection. Centered
+        on 0.55 using maternal Tdap effectiveness evidence for confirmed pertussis
+        in infants younger than 2 months [36], which combines infection prevention
+        and disease prevention. The infection-blocking component is a decomposed model
+        assumption guided by maternal immunization effectiveness studies [10,12].
+        SD of 0.12 allows exploration of [0.30, 0.80].
+
+        '
+    maternal_VE_sym:
+      mean: 0.92
+      sd: 0.05
+      note: 'Prior for maternal antibody protection against symptomatic disease given
+        infection. High confidence based on consistent estimates of VE against hospitalization
+        (>90%) across US, UK, and Argentina studies [10,36,37]. Narrow SD reflects
+        strong evidence consensus.
+
+        '
+  stochastic_overlay:
+    enabled: true
+    random_seed: 20260511
+    replicates_per_draw: 200
+    superspreading_k: 10.0
+    superspreading_k_min: 1.0
+    household_mean_size: 3.5
+    household_secondary_attack_rate: 0.8
+    min_expected_count: 1.0
+    credible_interval:
+      low: 2.5
+      high: 97.5
+    k_sensitivity_values:
+    - 5.0
+    - 10.0
+    - 20.0
+    - 30.0
+    - 50.0
+    note: 'Negative-binomial observation overlay injecting two stochastic sources
+      onto each deterministic posterior-predictive draw. Superspreading enters as
+      an aggregate-scale NB2 dispersion k = 10 (empirical surveillance range 5-50;
+      the calibration likelihood already uses dispersion = 50); this captures the
+      tail of transmission heterogeneity (Lloyd-Smith et al. Nature 2005; Endo et
+      al. 2020) that remains after aggregating individual-level offspring variability
+      to country-year counts. Household clustering enters as the Ball, Mollison &
+      Scalia-Tomba (1997) design effect DEFF = 1 + (m_bar - 1) * SAR with m_bar =
+      3.5 and pertussis household SAR = 0.8. Effective dispersion combines both via
+      1/k_eff = 1/k_ss + (DEFF - 1)/mu so household clustering dominates at small
+      mu while superspreading dominates at large mu. Combined 95% PI is pooled over
+      parameter draws and stochastic replicates; parameter- only and stochastic components
+      are reported separately. The k_sensitivity_values sweep demonstrates how the
+      combined PI width varies across the plausible range of aggregate dispersion
+      (k=5 to k=50), making the assumption explicit and auditable. Addresses Lavine
+      et al. (2011) sensitivity concern by making both parameter uncertainty and structural
+      heterogeneity explicit and decomposable.
+
+      '
+reporting_rate_prior:
+  method: structural_sensitivity_range
+  evidence_class: notification_efficiency_low
+  source_type: historical_notification_context_only
+  calibration_support_eligible: false
+  calibration_support_exclusion_reason: Historical England and Wales notification-efficiency
+    estimates are not current eight-age-group notification-probability estimates.
+  note: Historical England and Wales notification-efficiency evidence provides context
+    for structural sensitivity, not current age-specific calibration bounds.
+  age_groups:
+    infant_0_2m:
+      lower: 0.3
+      upper: 0.75
+    infant_3_11m:
+      lower: 0.25
+      upper: 0.7
+    child_1_4y:
+      lower: 0.1
+      upper: 0.45
+    child_5_9y:
+      lower: 0.08
+      upper: 0.35
+    adolescent_10_17y:
+      lower: 0.04
+      upper: 0.2
+    young_adult_18_39y:
+      lower: 0.005
+      upper: 0.1
+    middle_adult_40_64y:
+      lower: 0.005
+      upper: 0.08
+    elderly_65plus:
+      lower: 0.005
+      upper: 0.1
+metadata:
+  contact_reciprocity:
+    reciprocity_correction_applied: true
+    reciprocity_error_before: 0.5500178504512391
+    reciprocity_error_after: 1.6947706207041372e-16
+  routine_age_pattern: W8;W12;W16;M40
+  routine_first_shot_months: 1.8410958904109591
+  routine_last_shot_months: 40.0
+  routine_dose_count: 4
+  routine_scheduler_code: aP
+  routine_origin_distribution_source: country_nominal_schedule_plus_explicit_shared_delay_prior
+  routine_baseline_delay_months: 3.0
+  routine_recency_window_months: 48.0
+  routine_schedule_months:
+  - 1.839835728952772
+  - 2.759753593429158
+  - 3.679671457905544
+  - 40.0
+  calibration_loaded: false
+  historical_dtp_coverage_time_variation: enabled
+  historical_dtp_coverage_source_id: who_unicef_wuenic_annual_dtp1_dtp3
+  historical_dtp_coverage_years:
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  historical_dtp_coverage_categories:
+  - year: 1990
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 1991
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 1992
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 1993
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 1994
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 1995
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 1996
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 1997
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 1998
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 1999
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2000
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2001
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2002
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2003
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2004
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2005
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2006
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2007
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2008
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2009
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2010
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2011
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2012
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2013
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2014
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2015
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2016
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2017
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2018
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2019
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2020
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2021
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2022
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2023
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  - year: 2024
+    dtp1_category: WUENIC
+    dtp3_category: WUENIC
+    maternal_coverage_reference: 0.65
+    maternal_coverage_reference_source: country_source_static_fallback
+  historical_dtp_coverage_maximum_year: null
+  historical_dtp_coverage_gap_policy: retain_static_country_profile_coverage
+  historical_dtp_coverage_maternal_policy: retain_country_profile_value
+  historical_dtp_coverage_maternal_reference_records:
+  - year: 1990
+    reference_date: '1990-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 1991
+    reference_date: '1991-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 1992
+    reference_date: '1992-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 1993
+    reference_date: '1993-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 1994
+    reference_date: '1994-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 1995
+    reference_date: '1995-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 1996
+    reference_date: '1996-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 1997
+    reference_date: '1997-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 1998
+    reference_date: '1998-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 1999
+    reference_date: '1999-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2000
+    reference_date: '2000-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2001
+    reference_date: '2001-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2002
+    reference_date: '2002-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2003
+    reference_date: '2003-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2004
+    reference_date: '2004-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2005
+    reference_date: '2005-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2006
+    reference_date: '2006-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2007
+    reference_date: '2007-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2008
+    reference_date: '2008-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2009
+    reference_date: '2009-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2010
+    reference_date: '2010-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2011
+    reference_date: '2011-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2012
+    reference_date: '2012-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2013
+    reference_date: '2013-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2014
+    reference_date: '2014-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2015
+    reference_date: '2015-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2016
+    reference_date: '2016-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2017
+    reference_date: '2017-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2018
+    reference_date: '2018-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2019
+    reference_date: '2019-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2020
+    reference_date: '2020-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2021
+    reference_date: '2021-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2022
+    reference_date: '2022-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2023
+    reference_date: '2023-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  - year: 2024
+    reference_date: '2024-01-01'
+    maternal_coverage_reference: 0.65
+    source: country_source_static_fallback
+  npi_contact_reduction_country: United_Kingdom
+  npi_contact_reduction_iso3: GBR
+  npi_contact_reduction_periods_loaded: 1
+  npi_contact_reduction_reduction_column: contact_reduction_mean
+  npi_contact_reduction_future_start_periods_excluded: 0
+  npi_contact_reduction_active_periods_clipped_at_evidence_cutoff: 0
+  npi_contact_reduction_future_duration_policy: not_applicable_no_evidence_cutoff
+  npi_contact_reduction_evidence_cutoff_date: null
+  resistance_timeline_country: United_Kingdom
+  resistance_timeline_iso3: GBR
+  resistance_timeline_anchor_year: 2025
+  resistance_timeline_configured_anchor_year: 2025
+  resistance_timeline_evidence_cutoff_year: null
+  resistance_timeline_applied: true
+  resistance_timeline_allows_future_evidence: false
+  resistance_timeline_method: nearest_past_year
+  resistance_timeline_evidence_years: '2024'
+  resistance_timeline_evidence_type: measured_national_surveillance_fraction
+  resistance_timeline_source: https://www.postersessiononline.eu/173580348_eu/congresos/UKHSA2025/aula/-P_58_UKHSA2025.pdf
+  resistance_timeline_notes: 'UKHSA national reference laboratory poster: 661 B. pertussis
+    isolates received from June 2023 to November 2024, with 2 predicted and phenotypically
+    confirmed macrolide-resistant isolates.'
+  diagnostic_standard_country: United_Kingdom
+  diagnostic_standard_iso3: GBR
+  diagnostic_standard_periods_loaded: 3
+  diagnostic_standard_multiplier_column: relative_detection_prior_mean
+  diagnostic_standard_evidence_cutoff_date: null
+  routine_delivery_evidence_schema_version: 2
+  routine_delivery_process: sequential_stock_relaxation
+  vaccine_coverage_source_type: derived_from_measured_coverage_and_structural_mapping
+  vaccine_coverage_evidence_class: structural_proxy_not_age_specific_coverage_observation
+  vaccine_coverage_dose_specific_observation_eligible: false
+  vaccine_coverage_timeliness_observation_eligible: false
+  routine_delivery_representation: coarse_sequential_stock_relaxation
+  routine_delivery_dose_sequence_represented: true
+  routine_delivery_receipt_date_represented: false
+  routine_delivery_external_dtp_milestone_comparison_eligibility: ineligible_current_broad_age_sequential_stock_without_cohort_or_receipt_dates
+  routine_delivery_empirical_timeliness_strategy_eligibility: coarse_sequential_stock_without_receipt_dates_not_empirical_strategy_ranking
+  external_air_dtp_milestone_comparison_eligibility: not_applicable_non_Australia_profile
+  routine_delivery_representation_note: Broad-age-bin sequential stock relaxation
+    with adjacent dose-category transitions; dose-3-plus completion and waned-stock
+    boosting are separate flows. New delivery enters the recent state, while a waned-only
+    target is not representable and fails closed. There is no birth-cohort ledger,
+    month-of-age observable, or dose-receipt date. Broad-bin vaccine_coverage remains
+    a structural proxy and cannot validate AIR milestones or timeliness.
+  calibration_terminal_calendar_year_coverage:
+    assessed: true
+    contract: union_of_dated_observation_intervals_within_terminal_calendar_year
+    terminal_year: 2024
+    coverage_days: 364.0
+    expected_days: 366.0
+    coverage_fraction: 0.994535519125683
+    minimum_coverage_fraction: 0.98
+    terminal_year_excluded: false
+    policy: terminal_year_retained_near_complete
+  calibration_observation_contract:
+    id: united_kingdom_native_source_freeze_20260905
+    source_regime: harmonised_notification_snapshot
+    minimum_observation_years: 10
+    minimum_process_state_years: 10
+    minimum_native_intervals: 521
+    input_path: data/processed/analysis_observations/United_Kingdom.csv
+    input_file_sha256: bec6cfedb4a8058d4802f0204aeef8795c3bdf75aead8adaadd2ebc25c02a698
+    source_content_sha256: bc488fc878798dd6cca276b7ea25928c4009fea3d60164605f798e14f50c1fbe
+    allowed_period_start: '2015-01-05'
+    allowed_period_end_exclusive: '2024-12-30'
+    required_reporting_years:
+    - 2015
+    - 2016
+    - 2017
+    - 2018
+    - 2019
+    - 2020
+    - 2021
+    - 2022
+    - 2023
+    - 2024
+    required_reporting_frequency: weekly
+    required_source_family: Harmonised pertussis incidence source workbook
+    required_case_metric: reported_notifications_by_source_interval
+    required_provenance_values: {}
+    required_provenance_columns:
+    - source_family
+    - source_file
+    - source_sha256
+    - source_url
+    - source_snapshot_sha256
+    - case_metric
+    - source_reporting_year
+    - noncanonical_staging_only
+    reporting_year_column: source_reporting_year
+    integer_provenance_columns:
+    - source_reporting_year
+    terminal_year: 2024
+    required_hindcast_test_years:
+    - 2022
+    - 2023
+    - 2024
+    allow_out_of_contract_rows_in_likelihood: false
+    release_status: approved
+    source_evidence_status: harmonised_snapshot_upstream_finalisation_not_independently_verified
+    approval_scope: source_selection_only; predictive_and_age_adequacy_are_separate_checks
+    selection_policy_id: analysis_observation_selection_20260908
+    selection_interval_grid: monday_week
+    selection_boundary_limitations: Preserve the existing selected snapshot. The 2015
+      reporting-week-1 interval 2014-12-29 through 2015-01-05 (54 notifications in
+      the current source) is outside this selection. The selected grid is complete
+      between its declared endpoints, but 2015 has only 361 covered calendar days
+      and is not a complete reporting year. This selection does not resolve the England-and-Wales
+      notification versus United-Kingdom profile geography.
+    declared_contract: true
+    declared_exception: false
+  calibration_observation_source_provenance:
+    contract_id: united_kingdom_native_source_freeze_20260905
+    release_status: approved
+    input_path: <parent-repo-root>/data/processed/analysis_observations/United_Kingdom.csv
+    input_file_sha256: bec6cfedb4a8058d4802f0204aeef8795c3bdf75aead8adaadd2ebc25c02a698
+    selected_source_content_sha256: bc488fc878798dd6cca276b7ea25928c4009fea3d60164605f798e14f50c1fbe
+    effective_period_start: '2015-01-05'
+    effective_period_end_exclusive: '2024-12-30'
+    effective_reporting_years:
+    - 2015
+    - 2016
+    - 2017
+    - 2018
+    - 2019
+    - 2020
+    - 2021
+    - 2022
+    - 2023
+    - 2024
+    effective_native_intervals: 521
+    reporting_year_column: source_reporting_year
+    source_family: Harmonised pertussis incidence source workbook
+    case_metric: reported_notifications_by_source_interval
+    required_provenance_values: {}
+    reporting_frequency: weekly
+    noncanonical_staging_only: false
+    allow_noncanonical_staging_source: false
+    retained_reporting_years:
+    - 2015
+    - 2016
+    - 2017
+    - 2018
+    - 2019
+    - 2020
+    - 2021
+    - 2022
+    - 2023
+    - 2024
+    retained_native_intervals: 521
+    retained_source_content_sha256: bc488fc878798dd6cca276b7ea25928c4009fea3d60164605f798e14f50c1fbe
+    terminal_calendar_year_coverage:
+      assessed: true
+      contract: union_of_dated_observation_intervals_within_terminal_calendar_year
+      terminal_year: 2024
+      coverage_days: 364.0
+      expected_days: 366.0
+      coverage_fraction: 0.994535519125683
+      minimum_coverage_fraction: 0.98
+      terminal_year_excluded: false
+      policy: terminal_year_retained_near_complete
+  calibration_warm_start:
+    scope: same_training_MAP_coordinates_optimizer_initialization_only
+    source_config_sha256: ef0e4200a9399b6089481b47a8a01b6b79100832c2b5378fe2eb99940647f12b
+    source_config_name: candidate_config.yaml
+    reporting_parameterization_transformation: none
+  country: United_Kingdom
+  accepted: false
+  calibration_method: state_space_map
+  optimizer_success: true
+  calibration_status: state_reconstruction_rejected
+  fit_score: 2188.2361789350284
+  data_fit_score: 2149.9852874313237
+  n_starts: 1
+  maxiter: 12
+  baseline_vaccine_scenario: symptom_protective
+  baseline_resistance_scenario: country_timeline
+  generated_at_utc: '2026-09-17T02:19:28.250135+00:00'
+  calibration_reporting_traceability:
+    schema_version: 1
+    reporting_parameterization: global_multiplier
+    raw_global_reporting_multiplier: 9.999984760501272
+    raw_global_reporting_multiplier_is_fitted_parameter: true
+    final_base_reporting_probability_scope: age_group_reporting_rate_times_raw_global_reporting_multiplier_clipped_to_[0,1]_before_reporting_time_variation_or_diagnostic_reporting_multipliers
+    final_base_reporting_probability_by_age:
+    - age_group: infant_0_2m
+      base_reporting_probability: 0.6
+      unclipped_base_probability_times_global_multiplier: 5.999990856300763
+      final_base_reporting_probability: 1.0
+    - age_group: infant_3_11m
+      base_reporting_probability: 0.5
+      unclipped_base_probability_times_global_multiplier: 4.999992380250636
+      final_base_reporting_probability: 1.0
+    - age_group: child_1_4y
+      base_reporting_probability: 0.25
+      unclipped_base_probability_times_global_multiplier: 2.499996190125318
+      final_base_reporting_probability: 1.0
+    - age_group: child_5_9y
+      base_reporting_probability: 0.18
+      unclipped_base_probability_times_global_multiplier: 1.799997256890229
+      final_base_reporting_probability: 1.0
+    - age_group: adolescent_10_17y
+      base_reporting_probability: 0.08
+      unclipped_base_probability_times_global_multiplier: 0.7999987808401018
+      final_base_reporting_probability: 0.7999987808401018
+    - age_group: young_adult_18_39y
+      base_reporting_probability: 0.05
+      unclipped_base_probability_times_global_multiplier: 0.49999923802506363
+      final_base_reporting_probability: 0.49999923802506363
+    - age_group: middle_adult_40_64y
+      base_reporting_probability: 0.03
+      unclipped_base_probability_times_global_multiplier: 0.29999954281503816
+      final_base_reporting_probability: 0.29999954281503816
+    - age_group: elderly_65plus
+      base_reporting_probability: 0.04
+      unclipped_base_probability_times_global_multiplier: 0.3999993904200509
+      final_base_reporting_probability: 0.3999993904200509
+  routine_delivery_evidence:
+    routine_delivery_evidence_schema_version: 2
+    routine_delivery_process: sequential_stock_relaxation
+    vaccine_coverage_source_type: derived_from_measured_coverage_and_structural_mapping
+    vaccine_coverage_evidence_class: structural_proxy_not_age_specific_coverage_observation
+    vaccine_coverage_dose_specific_observation_eligible: false
+    vaccine_coverage_timeliness_observation_eligible: false
+    routine_delivery_representation: coarse_sequential_stock_relaxation
+    routine_delivery_dose_sequence_represented: true
+    routine_delivery_receipt_date_represented: false
+    routine_delivery_external_dtp_milestone_comparison_eligibility: ineligible_current_broad_age_sequential_stock_without_cohort_or_receipt_dates
+    routine_delivery_empirical_timeliness_strategy_eligibility: coarse_sequential_stock_without_receipt_dates_not_empirical_strategy_ranking
+    external_air_dtp_milestone_comparison_eligibility: not_applicable_non_Australia_profile
+    routine_delivery_representation_note: Broad-age-bin sequential stock relaxation
+      with adjacent dose-category transitions; dose-3-plus completion and waned-stock
+      boosting are separate flows. New delivery enters the recent state, while a waned-only
+      target is not representable and fails closed. There is no birth-cohort ledger,
+      month-of-age observable, or dose-receipt date. Broad-bin vaccine_coverage remains
+      a structural proxy and cannot validate AIR milestones or timeliness.
+  calibration_posterior_bounds:
+    evaluated: true
+    passed: false
+    minimum_fraction: 3.30921762433768e-07
+    threshold_fraction: 0.01
+    nearest_coordinate: log_reporting_multiplier
+    reason: MAP_coordinate_near_or_outside_declared_numerical_support
+  calibration_process_optimality: 0.4132218466976726
+  calibration_max_process_optimality: 1.0
+  calibration_process_stationarity_passed: true
+  state_posterior_approximation:
+    method: gauss_newton_laplace_conditional
+    scope: conditional_on_fixed_rho_innovation_sd_and_reference_structure; reference_exposure_NB2_dispersion_estimated;
+      penalized_exact_total_reported_case_moment
+    coordinate_names:
+    - log_beta_S
+    - log_reporting_multiplier
+    - log_measurement_dispersion_reference
+    - log_beta_process_2015-01-01
+    - log_beta_process_2015-04-01
+    - log_beta_process_2015-07-01
+    - log_beta_process_2015-10-01
+    - log_beta_process_2016-01-01
+    - log_beta_process_2016-04-01
+    - log_beta_process_2016-07-01
+    - log_beta_process_2016-10-01
+    - log_beta_process_2017-01-01
+    - log_beta_process_2017-04-01
+    - log_beta_process_2017-07-01
+    - log_beta_process_2017-10-01
+    - log_beta_process_2018-01-01
+    - log_beta_process_2018-04-01
+    - log_beta_process_2018-07-01
+    - log_beta_process_2018-10-01
+    - log_beta_process_2019-01-01
+    - log_beta_process_2019-04-01
+    - log_beta_process_2019-07-01
+    - log_beta_process_2019-10-01
+    - log_beta_process_2020-01-01
+    - log_beta_process_2020-04-01
+    - log_beta_process_2020-07-01
+    - log_beta_process_2020-10-01
+    - log_beta_process_2021-01-01
+    - log_beta_process_2021-04-01
+    - log_beta_process_2021-07-01
+    - log_beta_process_2021-10-01
+    - log_beta_process_2022-01-01
+    - log_beta_process_2022-04-01
+    - log_beta_process_2022-07-01
+    - log_beta_process_2022-10-01
+    - log_beta_process_2023-01-01
+    - log_beta_process_2023-04-01
+    - log_beta_process_2023-07-01
+    - log_beta_process_2023-10-01
+    - log_beta_process_2024-01-01
+    - log_beta_process_2024-04-01
+    - log_beta_process_2024-07-01
+    - log_beta_process_2024-10-01
+    map_vector:
+    - -4.439225409799728
+    - 2.3025835690430116
+    - 6.416316544312175
+    - 0.9318899731169588
+    - -0.37735725465172676
+    - 0.19826996919178946
+    - 0.3341882219801344
+    - 0.13800849975322033
+    - -0.12287866951847773
+    - 0.12512658566427692
+    - 0.21491587099913068
+    - -0.06055848190871956
+    - -0.20307244394334412
+    - 0.1194577074164583
+    - 0.1578626878678125
+    - -0.1164390435304193
+    - -0.21657044798682312
+    - 0.0033510042719342233
+    - 0.15662372644656736
+    - 0.019091555794154943
+    - -0.23042625572137276
+    - 0.03820605492466109
+    - 0.18690093458126497
+    - -0.22689670587102592
+    - -0.749128086392763
+    - -0.1346428634118121
+    - 0.4874617960364546
+    - 0.41009285375605553
+    - 0.41730045311289915
+    - -0.00431894433545446
+    - 0.33353258967355554
+    - -0.4208352394328724
+    - -0.9935562766260013
+    - -0.037282814266390116
+    - 0.31823332835808854
+    - -0.40218801951542804
+    - -0.21134113562228385
+    - -0.14333950876309323
+    - 0.45374601652598096
+    - 0.4014832412302697
+    - -0.15927454237524538
+    - -0.6178635121841335
+    - -0.14723085190495253
+    training_data_sha256: 1fee2ad31e261e5debfacc7d922fc2599dbcd198145c3963273b93ea2dfcade9
+    covariance:
+    - - 0.25658171123026413
+      - -0.0019239600500550059
+      - -0.0001045441065258724
+      - -0.022113777950694725
+      - -0.020973264061788843
+      - -0.030149852765655814
+      - -0.036797026840928934
+      - -0.04371948284668234
+      - -0.05009546568009969
+      - -0.05641249087541982
+      - -0.063136392876153
+      - -0.0703118332463417
+      - -0.07666870264126324
+      - -0.08229249691608556
+      - -0.08839323136474925
+      - -0.09511135919168814
+      - -0.10079951772576431
+      - -0.10624953807688822
+      - -0.112109326441199
+      - -0.11814667354928142
+      - -0.1244078422361026
+      - -0.13178131287529177
+      - -0.1405066209707672
+      - -0.14708964388570522
+      - -0.14709573792608294
+      - -0.1474899816811721
+      - -0.14965111714182888
+      - -0.15124020709973002
+      - -0.15223859934122147
+      - -0.15503473977331444
+      - -0.1578194994341251
+      - -0.16057093488136714
+      - -0.16440420102958633
+      - -0.16726978467633452
+      - -0.16721009214892038
+      - -0.16910880290500332
+      - -0.1712098106191115
+      - -0.172818494543732
+      - -0.17409178546242582
+      - -0.18580627772415595
+      - -0.20677701259830564
+      - -0.2111716707642985
+      - -0.2043235187434748
+    - - -0.0019239600500550059
+      - 0.0879574228183831
+      - 0.016249764455212774
+      - -0.015477373489313077
+      - 0.003369933128243518
+      - -0.0028736768787917307
+      - -0.0029548586227915318
+      - -0.0029003779244190105
+      - -0.003022878830865367
+      - -0.002879891388332191
+      - -0.0027661513714485183
+      - -0.0025530249674036963
+      - -0.002387663557837019
+      - -0.002240127200693405
+      - -0.002102256189818058
+      - -0.0018159488051137985
+      - -0.0015862495165532317
+      - -0.001349572354281451
+      - -0.00103491990905356
+      - -0.0005818349564281923
+      - -0.0001202028460252138
+      - 0.0008765807406730062
+      - 0.0021029190859933105
+      - 0.002919310674131218
+      - -9.874387185923355e-06
+      - -0.00477169696850081
+      - -0.006128802384330953
+      - -0.003719510808223493
+      - -0.0011017516040931325
+      - -0.0017687585589109467
+      - -0.0010289873362511316
+      - -0.001436368817567651
+      - -0.004907673408420304
+      - -0.004006120117381348
+      - -0.0013788390949741474
+      - -0.0012918406448165136
+      - -0.0007328924911564909
+      - -0.0007156274465045553
+      - -0.00020698663174208317
+      - 0.005114185474599792
+      - 0.014092205503749441
+      - 0.014032207765810314
+      - 0.010607969258329093
+    - - -0.0001045441065258724
+      - 0.016249764455212774
+      - 0.016490342380352265
+      - -0.0029632378783526134
+      - 0.0006021168983412154
+      - -0.0004527923025555731
+      - -0.0005938386651814999
+      - -0.0005607707260697168
+      - -0.0006591685987393448
+      - -0.0005701407232951788
+      - -0.0005411965765107385
+      - -0.0005457651040497765
+      - -0.0005616008141582712
+      - -0.0004706434086765462
+      - -0.00045009924174283053
+      - -0.00044459581327643057
+      - -0.00040842796365038003
+      - -0.00034670270077119005
+      - -0.000284993063408868
+      - -0.0002022442141219616
+      - -0.00020261140753618424
+      - 5.006702469758716e-05
+      - 0.00026462277238702505
+      - 0.0005052688472087865
+      - -0.000329031754127159
+      - -0.0009629674640336984
+      - -0.0011761868445565931
+      - -0.0008902349334908171
+      - -0.00029365714445635135
+      - -0.0006042419577051497
+      - -0.00027784737556926103
+      - -0.00041369023436551493
+      - -0.0009498112585536688
+      - -0.000739321102678818
+      - -0.0005546559236426852
+      - -0.0004970363813912686
+      - -0.00022612132520758642
+      - -0.0004162739763246765
+      - -0.00012218469181366024
+      - 0.0007034108631592282
+      - 0.0024196718060589795
+      - 0.002214648513768413
+      - 0.0018655376167066606
+    - - -0.022113777950694725
+      - -0.015477373489313077
+      - -0.0029632378783526134
+      - 0.005362195567601154
+      - 2.9543718986036572e-05
+      - 0.003190933300184758
+      - 0.0037440439400767862
+      - 0.004341525008908431
+      - 0.0049219021699241725
+      - 0.005448482306949067
+      - 0.0060174243357304915
+      - 0.006607690203028504
+      - 0.00713435538763758
+      - 0.007598920048974184
+      - 0.008108934720366506
+      - 0.008646217051541477
+      - 0.00910255219619217
+      - 0.009536753260262699
+      - 0.009993449632743706
+      - 0.010440016234581361
+      - 0.01090551796815896
+      - 0.01137145059332016
+      - 0.011915599066216824
+      - 0.012347863432513949
+      - 0.01287526462447348
+      - 0.013755848559893495
+      - 0.01418656361760992
+      - 0.013898257068226238
+      - 0.01351901820736845
+      - 0.013883685079275067
+      - 0.013994492770151218
+      - 0.014308369715704067
+      - 0.01526055544206248
+      - 0.015351066950781141
+      - 0.014879884608732371
+      - 0.015030656516888693
+      - 0.015113661985555246
+      - 0.015251938062029277
+      - 0.015271907346232065
+      - 0.015327779031410554
+      - 0.015574929811512414
+      - 0.01600810046617787
+      - 0.015997318119835464
+    - - -0.020973264061788843
+      - 0.003369933128243518
+      - 0.0006021168983412154
+      - 2.9543718986036572e-05
+      - 0.005830276362813259
+      - 0.0009640491359728443
+      - 0.00305827817603812
+      - 0.003432504702099373
+      - 0.003974423430797849
+      - 0.004490522010417483
+      - 0.005042222417212338
+      - 0.005634515343734974
+      - 0.0061587434894464325
+      - 0.006622761286830354
+      - 0.0071241940215398215
+      - 0.007681932334345654
+      - 0.00815407314328706
+      - 0.008606833800407441
+      - 0.00909558830845368
+      - 0.00960446595390999
+      - 0.010131437452386764
+      - 0.010768963378795786
+      - 0.01152465499336898
+      - 0.012089322405146975
+      - 0.011981726602325101
+      - 0.01184103260062477
+      - 0.011967727003653186
+      - 0.012185148005217097
+      - 0.01236219333411764
+      - 0.012565436750387196
+      - 0.012819493252571305
+      - 0.013028557229158926
+      - 0.01321423025712518
+      - 0.013480509135471648
+      - 0.0135718550964977
+      - 0.013729414863480335
+      - 0.013921277023811775
+      - 0.014053259939434376
+      - 0.014175165765345062
+      - 0.015338274758846668
+      - 0.0173662471767883
+      - 0.017697243321922726
+      - 0.01702802943672664
+    - - -0.030149852765655814
+      - -0.0028736768787917307
+      - -0.0004527923025555731
+      - 0.003190933300184758
+      - 0.0009640491359728443
+      - 0.005679856519668581
+      - 0.0032188867448467327
+      - 0.0054455240693476615
+      - 0.0059750519817505735
+      - 0.006748150853982103
+      - 0.007533031799211306
+      - 0.008370585204185729
+      - 0.009112925727017216
+      - 0.009770374577785637
+      - 0.010484151262874237
+      - 0.011264927906226152
+      - 0.01192657420617337
+      - 0.01256014422443217
+      - 0.01323920900895215
+      - 0.01393402256973559
+      - 0.014654304140213435
+      - 0.015487777350103118
+      - 0.01647179418244471
+      - 0.017219518671537825
+      - 0.0173220702021418
+      - 0.01753842244936889
+      - 0.01784118225252057
+      - 0.0179422006704529
+      - 0.017968356482366554
+      - 0.018319737854116936
+      - 0.018623123616809414
+      - 0.018961117363035563
+      - 0.019535759225575502
+      - 0.01984191888658733
+      - 0.01973977975769934
+      - 0.01996074972109733
+      - 0.02018974127879384
+      - 0.0203769163419645
+      - 0.02051060632624884
+      - 0.021695997308576267
+      - 0.023852067441791743
+      - 0.02437876318623579
+      - 0.023690770456573782
+    - - -0.036797026840928934
+      - -0.0029548586227915318
+      - -0.0005938386651814999
+      - 0.0037440439400767862
+      - 0.00305827817603812
+      - 0.0032188867448467327
+      - 0.00771133255780099
+      - 0.005018509441606915
+      - 0.007545678694746262
+      - 0.008187579732716404
+      - 0.00917568563699038
+      - 0.010196398433222176
+      - 0.011103967873044296
+      - 0.011906291629999087
+      - 0.012777956357275147
+      - 0.013732784673670392
+      - 0.01454151458912126
+      - 0.015315758379277435
+      - 0.016146128159010495
+      - 0.016996673083552166
+      - 0.017879204280617768
+      - 0.01890157250413422
+      - 0.020109865478788694
+      - 0.021026121222401453
+      - 0.021135921411804176
+      - 0.021367528263167707
+      - 0.021728010485037093
+      - 0.021868029967889967
+      - 0.021915143717579424
+      - 0.02234161953185492
+      - 0.022714377761331124
+      - 0.023124799424613554
+      - 0.023803007774780754
+      - 0.024181690998582195
+      - 0.024076751229265114
+      - 0.024346410493350644
+      - 0.024627519462566694
+      - 0.024858053799477114
+      - 0.025022180846694216
+      - 0.02650446382287351
+      - 0.029189783091791682
+      - 0.029832070973950124
+      - 0.02896936259535599
+    - - -0.04371948284668234
+      - -0.0029003779244190105
+      - -0.0005607707260697168
+      - 0.004341525008908431
+      - 0.003432504702099373
+      - 0.0054455240693476615
+      - 0.005018509441606915
+      - 0.00998948747843194
+      - 0.007218264688765404
+      - 0.009896796978597647
+      - 0.010860882720382499
+      - 0.012095813983156649
+      - 0.013172048905352257
+      - 0.014126437774923742
+      - 0.015162820030634858
+      - 0.016298827589144204
+      - 0.017260958767237856
+      - 0.018182290792204354
+      - 0.019170821055651092
+      - 0.020184196252693354
+      - 0.02123551561364261
+      - 0.02245696853118312
+      - 0.023900732487539093
+      - 0.024995137178557645
+      - 0.02510448974173743
+      - 0.025346811339842783
+      - 0.02576557480391374
+      - 0.025948194007670292
+      - 0.02602256213288658
+      - 0.026524090266526267
+      - 0.026972388358930108
+      - 0.0274569462606445
+      - 0.028238664748988646
+      - 0.028694801962813106
+      - 0.028587621634558122
+      - 0.02890867108453109
+      - 0.029246797671298674
+      - 0.029520256789553192
+      - 0.029719293854696082
+      - 0.03151463017541789
+      - 0.03476801410756762
+      - 0.035533512851416635
+      - 0.03448368270082444
+    - - -0.05009546568009969
+      - -0.003022878830865367
+      - -0.0006591685987393448
+      - 0.0049219021699241725
+      - 0.003974423430797849
+      - 0.0059750519817505735
+      - 0.007545678694746262
+      - 0.007218264688765404
+      - 0.012485552727154075
+      - 0.009868070167725241
+      - 0.012606740757822584
+      - 0.013824790367547666
+      - 0.015085633391591604
+      - 0.016176643988295276
+      - 0.01736449723110063
+      - 0.018667170828666764
+      - 0.01977036497476435
+      - 0.020826630409065995
+      - 0.021960156171226524
+      - 0.023122816741448435
+      - 0.024329285132648114
+      - 0.02573177931166995
+      - 0.027390066161200523
+      - 0.0286457393225522
+      - 0.028762345821939952
+      - 0.029022819895185466
+      - 0.029497835272379983
+      - 0.029716110560407273
+      - 0.029809653299152236
+      - 0.030382902295127412
+      - 0.030898058998008814
+      - 0.03145206810184023
+      - 0.032335313434014204
+      - 0.03286070416555814
+      - 0.03274854728019171
+      - 0.03311634105458673
+      - 0.03350481194332053
+      - 0.03381927929537394
+      - 0.0340478392052887
+      - 0.03612790319619556
+      - 0.03988285280082965
+      - 0.04075323975958365
+      - 0.039541476473684015
+    - - -0.05641249087541982
+      - -0.002879891388332191
+      - -0.0005701407232951788
+      - 0.005448482306949067
+      - 0.004490522010417483
+      - 0.006748150853982103
+      - 0.008187579732716404
+      - 0.009896796978597647
+      - 0.009868070167725241
+      - 0.014661295273941348
+      - 0.012721393753661984
+      - 0.015781658903819905
+      - 0.016945427688009697
+      - 0.01820156426712216
+      - 0.01953775364696497
+      - 0.02100610265495962
+      - 0.022249466588510805
+      - 0.023440249934863117
+      - 0.024718420591658418
+      - 0.026030146182729193
+      - 0.027390851897714126
+      - 0.028976287194443052
+      - 0.0308506990551442
+      - 0.03226999976732596
+      - 0.032382096971710045
+      - 0.03264805428511952
+      - 0.03317491309047635
+      - 0.03343411383978768
+      - 0.033555653369766014
+      - 0.03419608610102813
+      - 0.03478153688158878
+      - 0.03540255872259678
+      - 0.03637689031311353
+      - 0.03697403103462403
+      - 0.03686169792517159
+      - 0.03727658913580957
+      - 0.03771820144751526
+      - 0.03807126801151906
+      - 0.03833282711901327
+      - 0.040704263022532584
+      - 0.044986931758734826
+      - 0.04596812136215949
+      - 0.044583374759626315
+    - - -0.063136392876153
+      - -0.0027661513714485183
+      - -0.0005411965765107385
+      - 0.0060174243357304915
+      - 0.005042222417212338
+      - 0.007533031799211306
+      - 0.00917568563699038
+      - 0.010860882720382499
+      - 0.012606740757822584
+      - 0.012721393753661984
+      - 0.01812351386092405
+      - 0.015921947537149612
+      - 0.019160213160449864
+      - 0.02033903578675876
+      - 0.021853862684118756
+      - 0.023496319417903547
+      - 0.024889304561337002
+      - 0.02622308823116096
+      - 0.02765494751959943
+      - 0.02912539484502076
+      - 0.03065035920424209
+      - 0.03242992917614666
+      - 0.03453378512212514
+      - 0.036125517358083316
+      - 0.0362349495615132
+      - 0.03650876795316239
+      - 0.03709145958221104
+      - 0.03739384262094653
+      - 0.037543578077148095
+      - 0.038256495132420985
+      - 0.038915734367910154
+      - 0.039608384254302444
+      - 0.04068087442566675
+      - 0.0413537519249408
+      - 0.041241533301539346
+      - 0.041706124988870635
+      - 0.04220350829210652
+      - 0.042598666944607164
+      - 0.04289394675398284
+      - 0.045582973608681555
+      - 0.05041725940421824
+      - 0.05150101391418372
+      - 0.04994160429964854
+    - - -0.0703118332463417
+      - -0.0025530249674036963
+      - -0.0005457651040497765
+      - 0.006607690203028504
+      - 0.005634515343734974
+      - 0.008370585204185729
+      - 0.010196398433222176
+      - 0.012095813983156649
+      - 0.013824790367547666
+      - 0.015781658903819905
+      - 0.015921947537149612
+      - 0.022189672152932376
+      - 0.019569458749344834
+      - 0.02281432372274906
+      - 0.024299916771758218
+      - 0.02615435268761731
+      - 0.02770376567083723
+      - 0.029190534893699632
+      - 0.030786707782231318
+      - 0.032426734273119664
+      - 0.034127766719291415
+      - 0.03611505198307174
+      - 0.03846503288122643
+      - 0.04024194714984085
+      - 0.040347008885515005
+      - 0.04062257382108299
+      - 0.04126311097313094
+      - 0.041614706846280096
+      - 0.04179678257090021
+      - 0.04258714906622468
+      - 0.04332504562705566
+      - 0.044094018003823524
+      - 0.04526707389469589
+      - 0.04602155274443188
+      - 0.045913254765532895
+      - 0.04643094954510333
+      - 0.04698761620216389
+      - 0.0474283059566641
+      - 0.04775953600552317
+      - 0.05078646543127681
+      - 0.05622273885021266
+      - 0.057429027001021704
+      - 0.05567163067519014
+    - - -0.07666870264126324
+      - -0.002387663557837019
+      - -0.0005616008141582712
+      - 0.00713435538763758
+      - 0.0061587434894464325
+      - 0.009112925727017216
+      - 0.011103967873044296
+      - 0.013172048905352257
+      - 0.015085633391591604
+      - 0.016945427688009697
+      - 0.019160213160449864
+      - 0.019569458749344834
+      - 0.025708934354758364
+      - 0.023344496198255453
+      - 0.02669693810389187
+      - 0.028478404403158845
+      - 0.030200756205367857
+      - 0.031819757004693416
+      - 0.033561696057904204
+      - 0.03535171511402764
+      - 0.03720866905906502
+      - 0.03937959179883324
+      - 0.04194731245429539
+      - 0.0438883848848126
+      - 0.0439907534184385
+      - 0.0442686940391854
+      - 0.044960761661618116
+      - 0.045355414866832394
+      - 0.04556536498164343
+      - 0.04642467728712314
+      - 0.04723191838908479
+      - 0.04806870356547509
+      - 0.04933167447473052
+      - 0.05015820726683824
+      - 0.05005279460055815
+      - 0.050617565751775555
+      - 0.051226445576173237
+      - 0.051707506368343564
+      - 0.0520704447632892
+      - 0.055391933654229064
+      - 0.061361225690893625
+      - 0.0626822657659449
+      - 0.060746830238803944
+    - - -0.08229249691608556
+      - -0.002240127200693405
+      - -0.0004706434086765462
+      - 0.007598920048974184
+      - 0.006622761286830354
+      - 0.009770374577785637
+      - 0.011906291629999087
+      - 0.014126437774923742
+      - 0.016176643988295276
+      - 0.01820156426712216
+      - 0.02033903578675876
+      - 0.02281432372274906
+      - 0.023344496198255453
+      - 0.028648333347190195
+      - 0.027108524984496868
+      - 0.03079488583073905
+      - 0.03238404821569739
+      - 0.03414781346848056
+      - 0.03601672636583026
+      - 0.037939626982693056
+      - 0.039933935510418045
+      - 0.042267933758242254
+      - 0.04502834277938618
+      - 0.047115587550417004
+      - 0.047213238672971586
+      - 0.04749485656554383
+      - 0.04823273291073614
+      - 0.04866428528114855
+      - 0.04889981705903386
+      - 0.04981870831995215
+      - 0.050688776650396325
+      - 0.051585126209787294
+      - 0.05292840652409194
+      - 0.053819059873452584
+      - 0.053713878674003616
+      - 0.054320677656442135
+      - 0.05497704191178701
+      - 0.055492303946678624
+      - 0.05588493488012288
+      - 0.05946440284592494
+      - 0.06590716657071843
+      - 0.06733118965000981
+      - 0.06523862627667643
+    - - -0.08839323136474925
+      - -0.002102256189818058
+      - -0.00045009924174283053
+      - 0.008108934720366506
+      - 0.0071241940215398215
+      - 0.010484151262874237
+      - 0.012777956357275147
+      - 0.015162820030634858
+      - 0.01736449723110063
+      - 0.01953775364696497
+      - 0.021853862684118756
+      - 0.024299916771758218
+      - 0.02669693810389187
+      - 0.027108524984496868
+      - 0.033121666806626454
+      - 0.03130083170132347
+      - 0.03497977611154033
+      - 0.03665528032004946
+      - 0.03868170649272958
+      - 0.04074729361637661
+      - 0.04289105784974878
+      - 0.04540151029744121
+      - 0.04837056740964149
+      - 0.050614376077998874
+      - 0.050708637483995
+      - 0.05099536370466366
+      - 0.051783334610633225
+      - 0.05225515035521629
+      - 0.052517197420114625
+      - 0.05350173693193272
+      - 0.054438877003813835
+      - 0.05540008480308917
+      - 0.05683096217723664
+      - 0.057790631191262896
+      - 0.05768687591110114
+      - 0.058338737944740246
+      - 0.0590457857103444
+      - 0.05959943442111661
+      - 0.06002264891105107
+      - 0.06389347913260046
+      - 0.07083955663443522
+      - 0.0723550319706956
+      - 0.07010337835531422
+    - - -0.09511135919168814
+      - -0.0018159488051137985
+      - -0.00044459581327643057
+      - 0.008646217051541477
+      - 0.007681932334345654
+      - 0.011264927906226152
+      - 0.013732784673670392
+      - 0.016298827589144204
+      - 0.018667170828666764
+      - 0.02100610265495962
+      - 0.023496319417903547
+      - 0.02615435268761731
+      - 0.028478404403158845
+      - 0.03079488583073905
+      - 0.03130083170132347
+      - 0.03824739062253999
+      - 0.035875385012565666
+      - 0.03961630467386398
+      - 0.04159461513466122
+      - 0.04383891302853782
+      - 0.04614554434846917
+      - 0.04885165602418123
+      - 0.05205226165785694
+      - 0.05447015533747096
+      - 0.05455757937889439
+      - 0.05484114741954119
+      - 0.055681909470633985
+      - 0.05620224037549105
+      - 0.056497088568660966
+      - 0.057553546593651375
+      - 0.05856495245414755
+      - 0.059597221619159646
+      - 0.061118753575807074
+      - 0.06215566950449315
+      - 0.06205831883800621
+      - 0.06275994867723653
+      - 0.0635229603122112
+      - 0.06411933298847686
+      - 0.06457660079715101
+      - 0.06876909700286392
+      - 0.07628739173249402
+      - 0.07791744228003399
+      - 0.07547705506908206
+    - - -0.10079951772576431
+      - -0.0015862495165532317
+      - -0.00040842796365038003
+      - 0.00910255219619217
+      - 0.00815407314328706
+      - 0.01192657420617337
+      - 0.01454151458912126
+      - 0.017260958767237856
+      - 0.01977036497476435
+      - 0.022249466588510805
+      - 0.024889304561337002
+      - 0.02770376567083723
+      - 0.030200756205367857
+      - 0.03238404821569739
+      - 0.03497977611154033
+      - 0.035875385012565666
+      - 0.04231727211484077
+      - 0.04040557333299815
+      - 0.044263388861792194
+      - 0.04643000126461351
+      - 0.0489043537990924
+      - 0.05177244927361213
+      - 0.05516932851579612
+      - 0.05773511424021424
+      - 0.05781664856225953
+      - 0.05809845656832682
+      - 0.05898413147232824
+      - 0.059544806155791836
+      - 0.0598673194672627
+      - 0.06098435956086389
+      - 0.062058976483828514
+      - 0.06315138670507352
+      - 0.06475039424733142
+      - 0.06585272560898679
+      - 0.06575960347488313
+      - 0.06650355509125049
+      - 0.0673142222795691
+      - 0.0679462122205589
+      - 0.06843286948584772
+      - 0.07289278873757506
+      - 0.08089689989224591
+      - 0.08263022967244882
+      - 0.08002743398286719
+    - - -0.10624953807688822
+      - -0.001349572354281451
+      - -0.00034670270077119005
+      - 0.009536753260262699
+      - 0.008606833800407441
+      - 0.01256014422443217
+      - 0.015315758379277435
+      - 0.018182290792204354
+      - 0.020826630409065995
+      - 0.023440249934863117
+      - 0.02622308823116096
+      - 0.029190534893699632
+      - 0.031819757004693416
+      - 0.03414781346848056
+      - 0.03665528032004946
+      - 0.03961630467386398
+      - 0.04040557333299815
+      - 0.046453691939764806
+      - 0.045071204392233055
+      - 0.04917364790678248
+      - 0.05151402573204464
+      - 0.05457465379921974
+      - 0.05815607975152805
+      - 0.06086397291488124
+      - 0.06093846898433414
+      - 0.061218353865837905
+      - 0.0621469091279017
+      - 0.06274639757383751
+      - 0.06309613187658912
+      - 0.06427072133420252
+      - 0.06540641510088316
+      - 0.06655622183393582
+      - 0.0682290346389074
+      - 0.06939426741128588
+      - 0.06930520700881108
+      - 0.07008973740283285
+      - 0.070946528666471
+      - 0.07161236906580021
+      - 0.07212755653096264
+      - 0.07684748736344388
+      - 0.08531713595728181
+      - 0.08714383161940358
+      - 0.08438817100971693
+    - - -0.112109326441199
+      - -0.00103491990905356
+      - -0.000284993063408868
+      - 0.009993449632743706
+      - 0.00909558830845368
+      - 0.01323920900895215
+      - 0.016146128159010495
+      - 0.019170821055651092
+      - 0.021960156171226524
+      - 0.024718420591658418
+      - 0.02765494751959943
+      - 0.030786707782231318
+      - 0.033561696057904204
+      - 0.03601672636583026
+      - 0.03868170649272958
+      - 0.04159461513466122
+      - 0.044263388861792194
+      - 0.045071204392233055
+      - 0.051584032268667035
+      - 0.05022594255814667
+      - 0.0545890101434135
+      - 0.0575591808100746
+      - 0.06137089781693331
+      - 0.06422843453606594
+      - 0.06429414997631992
+      - 0.06456863991386719
+      - 0.06554236756671605
+      - 0.06618541142808557
+      - 0.06656607346570846
+      - 0.0678022493503779
+      - 0.06900391047515807
+      - 0.0702151667791468
+      - 0.0719648524692032
+      - 0.0731982537209576
+      - 0.07311574615625781
+      - 0.07394384946261262
+      - 0.07485045378180886
+      - 0.07555296159891764
+      - 0.07609884624427095
+      - 0.08110444624663378
+      - 0.09007900804702686
+      - 0.0920020030890853
+      - 0.08908176896148645
+    - - -0.11814667354928142
+      - -0.0005818349564281923
+      - -0.0002022442141219616
+      - 0.010440016234581361
+      - 0.00960446595390999
+      - 0.01393402256973559
+      - 0.016996673083552166
+      - 0.020184196252693354
+      - 0.023122816741448435
+      - 0.026030146182729193
+      - 0.02912539484502076
+      - 0.032426734273119664
+      - 0.03535171511402764
+      - 0.037939626982693056
+      - 0.04074729361637661
+      - 0.04383891302853782
+      - 0.04643000126461351
+      - 0.04917364790678248
+      - 0.05022594255814667
+      - 0.05687498185339203
+      - 0.05585148398867695
+      - 0.060858845118188135
+      - 0.06466109077047424
+      - 0.06770193869137534
+      - 0.06775022248675783
+      - 0.06801194532099497
+      - 0.0690301372393326
+      - 0.06972162321771691
+      - 0.07013791439732063
+      - 0.07143668488500529
+      - 0.07270722195307983
+      - 0.073981275149573
+      - 0.07580489643077838
+      - 0.07710983474834826
+      - 0.07703794212487863
+      - 0.07791116847524772
+      - 0.07886971261852285
+      - 0.07960995803665216
+      - 0.08018833554887829
+      - 0.0854899973846133
+      - 0.09500155555310355
+      - 0.09703437725953667
+      - 0.09393349703869935
+    - - -0.1244078422361026
+      - -0.0001202028460252138
+      - -0.00020261140753618424
+      - 0.01090551796815896
+      - 0.010131437452386764
+      - 0.014654304140213435
+      - 0.017879204280617768
+      - 0.02123551561364261
+      - 0.024329285132648114
+      - 0.027390851897714126
+      - 0.03065035920424209
+      - 0.034127766719291415
+      - 0.03720866905906502
+      - 0.039933935510418045
+      - 0.04289105784974878
+      - 0.04614554434846917
+      - 0.0489043537990924
+      - 0.05151402573204464
+      - 0.0545890101434135
+      - 0.05585148398867695
+      - 0.06295954209499759
+      - 0.06258983796490543
+      - 0.06827765518218426
+      - 0.07126804657327569
+      - 0.07134022579932937
+      - 0.0715835615418977
+      - 0.0726470406974928
+      - 0.07338963612948196
+      - 0.07384194290435728
+      - 0.07520676505208113
+      - 0.07654753283931594
+      - 0.07788702521661861
+      - 0.07978706552883201
+      - 0.08116579480012295
+      - 0.08110663694896515
+      - 0.08202624613728934
+      - 0.08303765361945491
+      - 0.08381834312621655
+      - 0.08442890514557451
+      - 0.0900436407903872
+      - 0.10010702422167929
+      - 0.10224481709153628
+      - 0.0989609444295067
+    - - -0.13178131287529177
+      - 0.0008765807406730062
+      - 5.006702469758716e-05
+      - 0.01137145059332016
+      - 0.010768963378795786
+      - 0.015487777350103118
+      - 0.01890157250413422
+      - 0.02245696853118312
+      - 0.02573177931166995
+      - 0.028976287194443052
+      - 0.03242992917614666
+      - 0.03611505198307174
+      - 0.03937959179883324
+      - 0.042267933758242254
+      - 0.04540151029744121
+      - 0.04885165602418123
+      - 0.05177244927361213
+      - 0.05457465379921974
+      - 0.0575591808100746
+      - 0.060858845118188135
+      - 0.06258983796490543
+      - 0.0697949092426355
+      - 0.07094613363163524
+      - 0.07577586174889213
+      - 0.07551289667202543
+      - 0.07575403130696223
+      - 0.07687157937077838
+      - 0.07768373111015273
+      - 0.07819325822302922
+      - 0.07963009007526263
+      - 0.08105962214269037
+      - 0.08247331328536697
+      - 0.08444659875038607
+      - 0.08591734657332548
+      - 0.08588289726732047
+      - 0.08685815222691
+      - 0.08793666537064773
+      - 0.08876254546022756
+      - 0.08941628418591807
+      - 0.09542117227813098
+      - 0.10618374884767796
+      - 0.10844933510267762
+      - 0.10493190968592264
+    - - -0.1405066209707672
+      - 0.0021029190859933105
+      - 0.00026462277238702505
+      - 0.011915599066216824
+      - 0.01152465499336898
+      - 0.01647179418244471
+      - 0.020109865478788694
+      - 0.023900732487539093
+      - 0.027390066161200523
+      - 0.0308506990551442
+      - 0.03453378512212514
+      - 0.03846503288122643
+      - 0.04194731245429539
+      - 0.04502834277938618
+      - 0.04837056740964149
+      - 0.05205226165785694
+      - 0.05516932851579612
+      - 0.05815607975152805
+      - 0.06137089781693331
+      - 0.06466109077047424
+      - 0.06827765518218426
+      - 0.07094613363163524
+      - 0.079228209706539
+      - 0.07902381225167646
+      - 0.08082398622741442
+      - 0.08073263980791964
+      - 0.08185774507236007
+      - 0.08276240768045168
+      - 0.08334080748525358
+      - 0.08486353580076018
+      - 0.08639724063583905
+      - 0.08789883246923492
+      - 0.08995625615282808
+      - 0.09153601913981671
+      - 0.09153435575164658
+      - 0.09257508677146062
+      - 0.09373222076732601
+      - 0.0946129893618298
+      - 0.09531652897710553
+      - 0.1017915358891088
+      - 0.11338253437599158
+      - 0.11579221979393622
+      - 0.11199949587669744
+    - - -0.14708964388570522
+      - 0.002919310674131218
+      - 0.0005052688472087865
+      - 0.012347863432513949
+      - 0.012089322405146975
+      - 0.017219518671537825
+      - 0.021026121222401453
+      - 0.024995137178557645
+      - 0.0286457393225522
+      - 0.03226999976732596
+      - 0.036125517358083316
+      - 0.04024194714984085
+      - 0.0438883848848126
+      - 0.047115587550417004
+      - 0.050614376077998874
+      - 0.05447015533747096
+      - 0.05773511424021424
+      - 0.06086397291488124
+      - 0.06422843453606594
+      - 0.06770193869137534
+      - 0.07126804657327569
+      - 0.07577586174889213
+      - 0.07902381225167646
+      - 0.08748389449089691
+      - 0.0818013344549138
+      - 0.08423405811530757
+      - 0.08569689064093296
+      - 0.08660043777337119
+      - 0.08722648761919502
+      - 0.08881445196768473
+      - 0.09042732919971465
+      - 0.09199511279616962
+      - 0.09412140128441962
+      - 0.09578261592386915
+      - 0.09580043799803215
+      - 0.09689045806459531
+      - 0.09810776726363202
+      - 0.0990287933226407
+      - 0.09977024683779381
+      - 0.10660643740253842
+      - 0.11880256698363836
+      - 0.12129423749245422
+      - 0.1173145647432985
+    - - -0.14709573792608294
+      - -9.874387185923355e-06
+      - -0.000329031754127159
+      - 0.01287526462447348
+      - 0.011981726602325101
+      - 0.0173220702021418
+      - 0.021135921411804176
+      - 0.02510448974173743
+      - 0.028762345821939952
+      - 0.032382096971710045
+      - 0.0362349495615132
+      - 0.040347008885515005
+      - 0.0439907534184385
+      - 0.047213238672971586
+      - 0.050708637483995
+      - 0.05455757937889439
+      - 0.05781664856225953
+      - 0.06093846898433414
+      - 0.06429414997631992
+      - 0.06775022248675783
+      - 0.07134022579932937
+      - 0.07551289667202543
+      - 0.08082398622741442
+      - 0.0818013344549138
+      - 0.09385539780488908
+      - 0.08135991482936442
+      - 0.08560367270122349
+      - 0.08684051755676085
+      - 0.08730016638627128
+      - 0.0889123868732315
+      - 0.09049886065400986
+      - 0.09208168153944407
+      - 0.09432392338953524
+      - 0.09595659301289175
+      - 0.09589264743309982
+      - 0.09697826486379674
+      - 0.09817394891399861
+      - 0.0990977214540733
+      - 0.099814854602373
+      - 0.10646652173928034
+      - 0.11833615829395623
+      - 0.12082236837584384
+      - 0.11696888253468189
+    - - -0.1474899816811721
+      - -0.00477169696850081
+      - -0.0009629674640336984
+      - 0.013755848559893495
+      - 0.01184103260062477
+      - 0.01753842244936889
+      - 0.021367528263167707
+      - 0.025346811339842783
+      - 0.029022819895185466
+      - 0.03264805428511952
+      - 0.03650876795316239
+      - 0.04062257382108299
+      - 0.0442686940391854
+      - 0.04749485656554383
+      - 0.05099536370466366
+      - 0.05484114741954119
+      - 0.05809845656832682
+      - 0.061218353865837905
+      - 0.06456863991386719
+      - 0.06801194532099497
+      - 0.0715835615418977
+      - 0.07575403130696223
+      - 0.08073263980791964
+      - 0.08423405811530757
+      - 0.08135991482936442
+      - 0.09608183951059902
+      - 0.08181769032135386
+      - 0.08730967267191188
+      - 0.08770512879055196
+      - 0.08928134700466794
+      - 0.09084789108169938
+      - 0.0924563200448297
+      - 0.09490080279470284
+      - 0.09649688749965193
+      - 0.0962818609982973
+      - 0.09736452116590547
+      - 0.09853671774852385
+      - 0.09945423921010303
+      - 0.10014014622865114
+      - 0.1064420658773596
+      - 0.11778720249811722
+      - 0.12030464771939314
+      - 0.11665764482658345
+    - - -0.14965111714182888
+      - -0.006128802384330953
+      - -0.0011761868445565931
+      - 0.01418656361760992
+      - 0.011967727003653186
+      - 0.01784118225252057
+      - 0.021728010485037093
+      - 0.02576557480391374
+      - 0.029497835272379983
+      - 0.03317491309047635
+      - 0.03709145958221104
+      - 0.04126311097313094
+      - 0.044960761661618116
+      - 0.04823273291073614
+      - 0.051783334610633225
+      - 0.055681909470633985
+      - 0.05898413147232824
+      - 0.0621469091279017
+      - 0.06554236756671605
+      - 0.0690301372393326
+      - 0.0726470406974928
+      - 0.07687157937077838
+      - 0.08185774507236007
+      - 0.08569689064093296
+      - 0.08560367270122349
+      - 0.08181769032135386
+      - 0.09602200763022044
+      - 0.0847162487331106
+      - 0.0890388083283421
+      - 0.09067984869651377
+      - 0.09222337777049058
+      - 0.09386438247258005
+      - 0.09639145389441903
+      - 0.09799294220492918
+      - 0.0977379828158865
+      - 0.0988384987405822
+      - 0.10002036370539724
+      - 0.10095482120935065
+      - 0.10165365042169341
+      - 0.10802547321179175
+      - 0.11949368175021932
+      - 0.12206297350806933
+      - 0.1183663148615436
+    - - -0.15124020709973002
+      - -0.003719510808223493
+      - -0.0008902349334908171
+      - 0.013898257068226238
+      - 0.012185148005217097
+      - 0.0179422006704529
+      - 0.021868029967889967
+      - 0.025948194007670292
+      - 0.029716110560407273
+      - 0.03343411383978768
+      - 0.03739384262094653
+      - 0.041614706846280096
+      - 0.045355414866832394
+      - 0.04866428528114855
+      - 0.05225515035521629
+      - 0.05620224037549105
+      - 0.059544806155791836
+      - 0.06274639757383751
+      - 0.06618541142808557
+      - 0.06972162321771691
+      - 0.07338963612948196
+      - 0.07768373111015273
+      - 0.08276240768045168
+      - 0.08660043777337119
+      - 0.08684051755676085
+      - 0.08730967267191188
+      - 0.0847162487331106
+      - 0.09544384296686288
+      - 0.08707553829270179
+      - 0.09191634088779728
+      - 0.0931661358671352
+      - 0.09479295239450207
+      - 0.09724915273764573
+      - 0.09888748453530957
+      - 0.09870934887454515
+      - 0.09982545634347734
+      - 0.10103319137371058
+      - 0.10198348170268827
+      - 0.1027093003427429
+      - 0.10934686157948151
+      - 0.12125340051287227
+      - 0.12385509470041015
+      - 0.11998586252090257
+    - - -0.15223859934122147
+      - -0.0011017516040931325
+      - -0.00029365714445635135
+      - 0.01351901820736845
+      - 0.01236219333411764
+      - 0.017968356482366554
+      - 0.021915143717579424
+      - 0.02602256213288658
+      - 0.029809653299152236
+      - 0.033555653369766014
+      - 0.037543578077148095
+      - 0.04179678257090021
+      - 0.04556536498164343
+      - 0.04889981705903386
+      - 0.052517197420114625
+      - 0.056497088568660966
+      - 0.0598673194672627
+      - 0.06309613187658912
+      - 0.06656607346570846
+      - 0.07013791439732063
+      - 0.07384194290435728
+      - 0.07819325822302922
+      - 0.08334080748525358
+      - 0.08722648761919502
+      - 0.08730016638627128
+      - 0.08770512879055196
+      - 0.0890388083283421
+      - 0.08707553829270179
+      - 0.09412490477103728
+      - 0.08990112741378925
+      - 0.09375653191179813
+      - 0.09534790564428211
+      - 0.09770464287923655
+      - 0.09938266578027538
+      - 0.09927956604339086
+      - 0.10040511659640841
+      - 0.10163857311258893
+      - 0.10259297976973332
+      - 0.10333876310627277
+      - 0.11016626810199015
+      - 0.1224037947309291
+      - 0.12501774178724634
+      - 0.12103051067838988
+    - - -0.15503473977331444
+      - -0.0017687585589109467
+      - -0.0006042419577051497
+      - 0.013883685079275067
+      - 0.012565436750387196
+      - 0.018319737854116936
+      - 0.02234161953185492
+      - 0.026524090266526267
+      - 0.030382902295127412
+      - 0.03419608610102813
+      - 0.038256495132420985
+      - 0.04258714906622468
+      - 0.04642467728712314
+      - 0.04981870831995215
+      - 0.05350173693193272
+      - 0.057553546593651375
+      - 0.06098435956086389
+      - 0.06427072133420252
+      - 0.0678022493503779
+      - 0.07143668488500529
+      - 0.07520676505208113
+      - 0.07963009007526263
+      - 0.08486353580076018
+      - 0.08881445196768473
+      - 0.0889123868732315
+      - 0.08928134700466794
+      - 0.09067984869651377
+      - 0.09191634088779728
+      - 0.08990112741378925
+      - 0.09938744980160286
+      - 0.09285370352704543
+      - 0.09758660502989178
+      - 0.09955081826316318
+      - 0.10123209301425908
+      - 0.1011215623390695
+      - 0.10226564583147496
+      - 0.10351537469785092
+      - 0.10448840447662233
+      - 0.10523785041950567
+      - 0.11213482993567414
+      - 0.1244988154787468
+      - 0.12715735330418712
+      - 0.12313593300209069
+    - - -0.1578194994341251
+      - -0.0010289873362511316
+      - -0.00027784737556926103
+      - 0.013994492770151218
+      - 0.012819493252571305
+      - 0.018623123616809414
+      - 0.022714377761331124
+      - 0.026972388358930108
+      - 0.030898058998008814
+      - 0.03478153688158878
+      - 0.038915734367910154
+      - 0.04332504562705566
+      - 0.04723191838908479
+      - 0.050688776650396325
+      - 0.054438877003813835
+      - 0.05856495245414755
+      - 0.062058976483828514
+      - 0.06540641510088316
+      - 0.06900391047515807
+      - 0.07270722195307983
+      - 0.07654753283931594
+      - 0.08105962214269037
+      - 0.08639724063583905
+      - 0.09042732919971465
+      - 0.09049886065400986
+      - 0.09084789108169938
+      - 0.09222337777049058
+      - 0.0931661358671352
+      - 0.09375653191179813
+      - 0.09285370352704543
+      - 0.10068793915808306
+      - 0.0964112564653721
+      - 0.10137252675900282
+      - 0.10306984600706884
+      - 0.10291247038545433
+      - 0.10408102308002841
+      - 0.10536038118962344
+      - 0.10634903276880257
+      - 0.10712136856219623
+      - 0.11419695474301315
+      - 0.12688101652855294
+      - 0.12958873277983346
+      - 0.12545825097532037
+    - - -0.16057093488136714
+      - -0.001436368817567651
+      - -0.00041369023436551493
+      - 0.014308369715704067
+      - 0.013028557229158926
+      - 0.018961117363035563
+      - 0.023124799424613554
+      - 0.0274569462606445
+      - 0.03145206810184023
+      - 0.03540255872259678
+      - 0.039608384254302444
+      - 0.044094018003823524
+      - 0.04806870356547509
+      - 0.051585126209787294
+      - 0.05540008480308917
+      - 0.059597221619159646
+      - 0.06315138670507352
+      - 0.06655622183393582
+      - 0.0702151667791468
+      - 0.073981275149573
+      - 0.07788702521661861
+      - 0.08247331328536697
+      - 0.08789883246923492
+      - 0.09199511279616962
+      - 0.09208168153944407
+      - 0.0924563200448297
+      - 0.09386438247258005
+      - 0.09479295239450207
+      - 0.09534790564428211
+      - 0.09758660502989178
+      - 0.0964112564653721
+      - 0.10639665526018392
+      - 0.0993908880695826
+      - 0.10477002794062565
+      - 0.10476964582394235
+      - 0.10589304810641155
+      - 0.10720332596749779
+      - 0.1082085310675347
+      - 0.10898844413814021
+      - 0.11615060837261744
+      - 0.12899116490111096
+      - 0.13174100173847242
+      - 0.12756673874166058
+    - - -0.16440420102958633
+      - -0.004907673408420304
+      - -0.0009498112585536688
+      - 0.01526055544206248
+      - 0.01321423025712518
+      - 0.019535759225575502
+      - 0.023803007774780754
+      - 0.028238664748988646
+      - 0.032335313434014204
+      - 0.03637689031311353
+      - 0.04068087442566675
+      - 0.04526707389469589
+      - 0.04933167447473052
+      - 0.05292840652409194
+      - 0.05683096217723664
+      - 0.061118753575807074
+      - 0.06475039424733142
+      - 0.0682290346389074
+      - 0.0719648524692032
+      - 0.07580489643077838
+      - 0.07978706552883201
+      - 0.08444659875038607
+      - 0.08995625615282808
+      - 0.09412140128441962
+      - 0.09432392338953524
+      - 0.09490080279470284
+      - 0.09639145389441903
+      - 0.09724915273764573
+      - 0.09770464287923655
+      - 0.09955081826316318
+      - 0.10137252675900282
+      - 0.0993908880695826
+      - 0.12120570871682111
+      - 0.102828295246335
+      - 0.10715997633155015
+      - 0.10858555537602663
+      - 0.10982449619900486
+      - 0.11085024841085357
+      - 0.11161815949377277
+      - 0.11866423383560656
+      - 0.13135653760324456
+      - 0.13416876563163463
+      - 0.13008372416608133
+    - - -0.16726978467633452
+      - -0.004006120117381348
+      - -0.000739321102678818
+      - 0.015351066950781141
+      - 0.013480509135471648
+      - 0.01984191888658733
+      - 0.024181690998582195
+      - 0.028694801962813106
+      - 0.03286070416555814
+      - 0.03697403103462403
+      - 0.0413537519249408
+      - 0.04602155274443188
+      - 0.05015820726683824
+      - 0.053819059873452584
+      - 0.057790631191262896
+      - 0.06215566950449315
+      - 0.06585272560898679
+      - 0.06939426741128588
+      - 0.0731982537209576
+      - 0.07710983474834826
+      - 0.08116579480012295
+      - 0.08591734657332548
+      - 0.09153601913981671
+      - 0.09578261592386915
+      - 0.09595659301289175
+      - 0.09649688749965193
+      - 0.09799294220492918
+      - 0.09888748453530957
+      - 0.09938266578027538
+      - 0.10123209301425908
+      - 0.10306984600706884
+      - 0.10477002794062565
+      - 0.102828295246335
+      - 0.11415215420619701
+      - 0.10677474369325145
+      - 0.11091562437243671
+      - 0.11172196156613279
+      - 0.11278548156061749
+      - 0.11359185800621423
+      - 0.12092987430077212
+      - 0.13409928079007433
+      - 0.1369712562975396
+      - 0.1326986222005373
+    - - -0.16721009214892038
+      - -0.0013788390949741474
+      - -0.0005546559236426852
+      - 0.014879884608732371
+      - 0.0135718550964977
+      - 0.01973977975769934
+      - 0.024076751229265114
+      - 0.028587621634558122
+      - 0.03274854728019171
+      - 0.03686169792517159
+      - 0.041241533301539346
+      - 0.045913254765532895
+      - 0.05005279460055815
+      - 0.053713878674003616
+      - 0.05768687591110114
+      - 0.06205831883800621
+      - 0.06575960347488313
+      - 0.06930520700881108
+      - 0.07311574615625781
+      - 0.07703794212487863
+      - 0.08110663694896515
+      - 0.08588289726732047
+      - 0.09153435575164658
+      - 0.09580043799803215
+      - 0.09589264743309982
+      - 0.0962818609982973
+      - 0.0977379828158865
+      - 0.09870934887454515
+      - 0.09927956604339086
+      - 0.1011215623390695
+      - 0.10291247038545433
+      - 0.10476964582394235
+      - 0.10715997633155015
+      - 0.10677474369325145
+      - 0.11241814252133255
+      - 0.10811672007282391
+      - 0.11176240653194244
+      - 0.11268469802992498
+      - 0.11350427718134891
+      - 0.12099796863206949
+      - 0.13442649671675502
+      - 0.13730278807302826
+      - 0.13292220412037575
+    - - -0.16910880290500332
+      - -0.0012918406448165136
+      - -0.0004970363813912686
+      - 0.015030656516888693
+      - 0.013729414863480335
+      - 0.01996074972109733
+      - 0.024346410493350644
+      - 0.02890867108453109
+      - 0.03311634105458673
+      - 0.03727658913580957
+      - 0.041706124988870635
+      - 0.04643094954510333
+      - 0.050617565751775555
+      - 0.054320677656442135
+      - 0.058338737944740246
+      - 0.06275994867723653
+      - 0.06650355509125049
+      - 0.07008973740283285
+      - 0.07394384946261262
+      - 0.07791116847524772
+      - 0.08202624613728934
+      - 0.08685815222691
+      - 0.09257508677146062
+      - 0.09689045806459531
+      - 0.09697826486379674
+      - 0.09736452116590547
+      - 0.0988384987405822
+      - 0.09982545634347734
+      - 0.10040511659640841
+      - 0.10226564583147496
+      - 0.10408102308002841
+      - 0.10589304810641155
+      - 0.10858555537602663
+      - 0.11091562437243671
+      - 0.10811672007282391
+      - 0.1164012767301141
+      - 0.11081605948606196
+      - 0.11420220635454253
+      - 0.11476717152875894
+      - 0.12234826613318478
+      - 0.1359022506385808
+      - 0.1388017749769191
+      - 0.13438890402522963
+    - - -0.1712098106191115
+      - -0.0007328924911564909
+      - -0.00022612132520758642
+      - 0.015113661985555246
+      - 0.013921277023811775
+      - 0.02018974127879384
+      - 0.024627519462566694
+      - 0.029246797671298674
+      - 0.03350481194332053
+      - 0.03771820144751526
+      - 0.04220350829210652
+      - 0.04698761620216389
+      - 0.051226445576173237
+      - 0.05497704191178701
+      - 0.0590457857103444
+      - 0.0635229603122112
+      - 0.0673142222795691
+      - 0.070946528666471
+      - 0.07485045378180886
+      - 0.07886971261852285
+      - 0.08303765361945491
+      - 0.08793666537064773
+      - 0.09373222076732601
+      - 0.09810776726363202
+      - 0.09817394891399861
+      - 0.09853671774852385
+      - 0.10002036370539724
+      - 0.10103319137371058
+      - 0.10163857311258893
+      - 0.10351537469785092
+      - 0.10536038118962344
+      - 0.10720332596749779
+      - 0.10982449619900486
+      - 0.11172196156613279
+      - 0.11176240653194244
+      - 0.11081605948606196
+      - 0.1171521669695498
+      - 0.11378114417272067
+      - 0.1163392760030257
+      - 0.1238814611644509
+      - 0.13769804571555166
+      - 0.14063065364283267
+      - 0.13613708189161589
+    - - -0.172818494543732
+      - -0.0007156274465045553
+      - -0.0004162739763246765
+      - 0.015251938062029277
+      - 0.014053259939434376
+      - 0.0203769163419645
+      - 0.024858053799477114
+      - 0.029520256789553192
+      - 0.03381927929537394
+      - 0.03807126801151906
+      - 0.042598666944607164
+      - 0.0474283059566641
+      - 0.051707506368343564
+      - 0.055492303946678624
+      - 0.05959943442111661
+      - 0.06411933298847686
+      - 0.0679462122205589
+      - 0.07161236906580021
+      - 0.07555296159891764
+      - 0.07960995803665216
+      - 0.08381834312621655
+      - 0.08876254546022756
+      - 0.0946129893618298
+      - 0.0990287933226407
+      - 0.0990977214540733
+      - 0.09945423921010303
+      - 0.10095482120935065
+      - 0.10198348170268827
+      - 0.10259297976973332
+      - 0.10448840447662233
+      - 0.10634903276880257
+      - 0.1082085310675347
+      - 0.11085024841085357
+      - 0.11278548156061749
+      - 0.11268469802992498
+      - 0.11420220635454253
+      - 0.11378114417272067
+      - 0.11920419758245202
+      - 0.1161731052714067
+      - 0.1252201999970301
+      - 0.13893982596684393
+      - 0.14196759585549873
+      - 0.13741516782105045
+    - - -0.17409178546242582
+      - -0.00020698663174208317
+      - -0.00012218469181366024
+      - 0.015271907346232065
+      - 0.014175165765345062
+      - 0.02051060632624884
+      - 0.025022180846694216
+      - 0.029719293854696082
+      - 0.0340478392052887
+      - 0.03833282711901327
+      - 0.04289394675398284
+      - 0.04775953600552317
+      - 0.0520704447632892
+      - 0.05588493488012288
+      - 0.06002264891105107
+      - 0.06457660079715101
+      - 0.06843286948584772
+      - 0.07212755653096264
+      - 0.07609884624427095
+      - 0.08018833554887829
+      - 0.08442890514557451
+      - 0.08941628418591807
+      - 0.09531652897710553
+      - 0.09977024683779381
+      - 0.099814854602373
+      - 0.10014014622865114
+      - 0.10165365042169341
+      - 0.1027093003427429
+      - 0.10333876310627277
+      - 0.10523785041950567
+      - 0.10712136856219623
+      - 0.10898844413814021
+      - 0.11161815949377277
+      - 0.11359185800621423
+      - 0.11350427718134891
+      - 0.11476717152875894
+      - 0.1163392760030257
+      - 0.1161731052714067
+      - 0.11969466851697609
+      - 0.12512783863439716
+      - 0.14034719365607992
+      - 0.1430148728572675
+      - 0.13848058777408934
+    - - -0.18580627772415595
+      - 0.005114185474599792
+      - 0.0007034108631592282
+      - 0.015327779031410554
+      - 0.015338274758846668
+      - 0.021695997308576267
+      - 0.02650446382287351
+      - 0.03151463017541789
+      - 0.03612790319619556
+      - 0.040704263022532584
+      - 0.045582973608681555
+      - 0.05078646543127681
+      - 0.055391933654229064
+      - 0.05946440284592494
+      - 0.06389347913260046
+      - 0.06876909700286392
+      - 0.07289278873757506
+      - 0.07684748736344388
+      - 0.08110444624663378
+      - 0.0854899973846133
+      - 0.0900436407903872
+      - 0.09542117227813098
+      - 0.1017915358891088
+      - 0.10660643740253842
+      - 0.10646652173928034
+      - 0.1064420658773596
+      - 0.10802547321179175
+      - 0.10934686157948151
+      - 0.11016626810199015
+      - 0.11213482993567414
+      - 0.11419695474301315
+      - 0.11615060837261744
+      - 0.11866423383560656
+      - 0.12092987430077212
+      - 0.12099796863206949
+      - 0.12234826613318478
+      - 0.1238814611644509
+      - 0.1252201999970301
+      - 0.12512783863439716
+      - 0.136076849011714
+      - 0.14906633206874093
+      - 0.15394328639518706
+      - 0.14843455511959125
+    - - -0.20677701259830564
+      - 0.014092205503749441
+      - 0.0024196718060589795
+      - 0.015574929811512414
+      - 0.0173662471767883
+      - 0.023852067441791743
+      - 0.029189783091791682
+      - 0.03476801410756762
+      - 0.03988285280082965
+      - 0.044986931758734826
+      - 0.05041725940421824
+      - 0.05622273885021266
+      - 0.061361225690893625
+      - 0.06590716657071843
+      - 0.07083955663443522
+      - 0.07628739173249402
+      - 0.08089689989224591
+      - 0.08531713595728181
+      - 0.09007900804702686
+      - 0.09500155555310355
+      - 0.10010702422167929
+      - 0.10618374884767796
+      - 0.11338253437599158
+      - 0.11880256698363836
+      - 0.11833615829395623
+      - 0.11778720249811722
+      - 0.11949368175021932
+      - 0.12125340051287227
+      - 0.1224037947309291
+      - 0.1244988154787468
+      - 0.12688101652855294
+      - 0.12899116490111096
+      - 0.13135653760324456
+      - 0.13409928079007433
+      - 0.13442649671675502
+      - 0.1359022506385808
+      - 0.13769804571555166
+      - 0.13893982596684393
+      - 0.14034719365607992
+      - 0.14906633206874093
+      - 0.17071854208723442
+      - 0.1705334344323426
+      - 0.166043646722137
+    - - -0.2111716707642985
+      - 0.014032207765810314
+      - 0.002214648513768413
+      - 0.01600810046617787
+      - 0.017697243321922726
+      - 0.02437876318623579
+      - 0.029832070973950124
+      - 0.035533512851416635
+      - 0.04075323975958365
+      - 0.04596812136215949
+      - 0.05150101391418372
+      - 0.057429027001021704
+      - 0.0626822657659449
+      - 0.06733118965000981
+      - 0.0723550319706956
+      - 0.07791744228003399
+      - 0.08263022967244882
+      - 0.08714383161940358
+      - 0.0920020030890853
+      - 0.09703437725953667
+      - 0.10224481709153628
+      - 0.10844933510267762
+      - 0.11579221979393622
+      - 0.12129423749245422
+      - 0.12082236837584384
+      - 0.12030464771939314
+      - 0.12206297350806933
+      - 0.12385509470041015
+      - 0.12501774178724634
+      - 0.12715735330418712
+      - 0.12958873277983346
+      - 0.13174100173847242
+      - 0.13416876563163463
+      - 0.1369712562975396
+      - 0.13730278807302826
+      - 0.1388017749769191
+      - 0.14063065364283267
+      - 0.14196759585549873
+      - 0.1430148728572675
+      - 0.15394328639518706
+      - 0.1705334344323426
+      - 0.17875428341479047
+      - 0.16780441662669063
+    - - -0.2043235187434748
+      - 0.010607969258329093
+      - 0.0018655376167066606
+      - 0.015997318119835464
+      - 0.01702802943672664
+      - 0.023690770456573782
+      - 0.02896936259535599
+      - 0.03448368270082444
+      - 0.039541476473684015
+      - 0.044583374759626315
+      - 0.04994160429964854
+      - 0.05567163067519014
+      - 0.060746830238803944
+      - 0.06523862627667643
+      - 0.07010337835531422
+      - 0.07547705506908206
+      - 0.08002743398286719
+      - 0.08438817100971693
+      - 0.08908176896148645
+      - 0.09393349703869935
+      - 0.0989609444295067
+      - 0.10493190968592264
+      - 0.11199949587669744
+      - 0.1173145647432985
+      - 0.11696888253468189
+      - 0.11665764482658345
+      - 0.1183663148615436
+      - 0.11998586252090257
+      - 0.12103051067838988
+      - 0.12313593300209069
+      - 0.12545825097532037
+      - 0.12756673874166058
+      - 0.13008372416608133
+      - 0.1326986222005373
+      - 0.13292220412037575
+      - 0.13438890402522963
+      - 0.13613708189161589
+      - 0.13741516782105045
+      - 0.13848058777408934
+      - 0.14843455511959125
+      - 0.166043646722137
+      - 0.16780441662669063
+      - 0.16691348477829676
+    lower_bounds:
+    - -7.600902459542082
+    - -2.3025850929940455
+    - 0.0
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    - -2.5
+    upper_bounds:
+    - -0.6931471805599453
+    - 2.302585092994046
+    - 9.210340371976184
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    - 2.5
+    rank: 43
+    condition_number: 8996.046788189931
+    prior_center_source: pre_surveillance_country_config
+    measurement_dispersion: 611.7456211026839
+    measurement_dispersion_estimated: true
+    measurement_dispersion_reference_days: 365.2425
+    measurement_dispersion_scale_by_interval_exposure: true
+    measurement_dispersion_prior_center: 50.0
+    measurement_dispersion_prior_log_sd: 1.0
+    likelihood_observation_frequency: native
+    observation_aggregation_contract: whole_integer_source_intervals_projected_exactly_without_aggregation
+    process_ar1_rho: 0.5
+    process_innovation_sd: 0.6
+    beta_prior_log_sd: 1.0
+    reporting_prior_log_sd: 0.5
+    total_count_calibration_moment:
+      target: exact_sum_of_native_observed_reported_cases
+      metric: log_model_to_observed_total_ratio
+      weight: 50000.0
+      log_ratio: 5.2050628238253186e-05
+      penalty: 0.000135463394999842
+      objective_component: non_likelihood_penalized_calibration_moment
+    reporting_prior_support:
+      eligible: false
+      method: structural_sensitivity_range
+      evidence_class: notification_efficiency_low
+      eligibility_reason: reporting_rate_range_is_not_declared_country_quantitative_literature_support
+      exclusion_reason: Historical England and Wales notification-efficiency estimates
+        are not current eight-age-group notification-probability estimates.
+      enforced: false
+    initial_bounds_projection:
+      initialization_source: stored_same_training_MAP_coordinates
+      policy: clip_to_strictly_interior_optimizer_bounds
+      interior_epsilon: 1.0e-10
+      applied: false
+      coordinates: []
+      records: []
+country: United_Kingdom
+vaccine:
+  VE_sus: 0.15
+  VE_sym: 0.8670588235
+  VE_inf: 0.25
+  VE_dur: 0.0
+diagnostic_reporting_time_variation:
+  enabled: true
+  country: United_Kingdom
+  iso3: GBR
+  multiplier_column: relative_detection_prior_mean
+  periods:
+  - start_date: '1998-01-01'
+    end_date: '2001-06-30'
+    multiplier: 0.7
+    prior_mean: 0.7
+    prior_lower: 0.45
+    prior_upper: 1.0
+    geographic_scope: national
+    surveillance_regime: notification_plus_limited_lab
+    primary_diagnostic_methods: clinical_notification;culture
+    effect_direction: lower_detection
+    evidence_strength: moderate
+    source_ids: UK_EID_2012
+    notes: Historical notification series is not directly comparable with enhanced
+      lab era.
+  - start_date: '2001-07-01'
+    end_date: '2009-12-31'
+    multiplier: 1.2
+    prior_mean: 1.2
+    prior_lower: 0.85
+    prior_upper: 1.6
+    geographic_scope: national
+    surveillance_regime: enhanced_lab_introduction
+    primary_diagnostic_methods: serology_from_2001_07;PCR_from_2001_11;culture;oral_fluid
+    effect_direction: increased_detection
+    evidence_strength: high
+    source_ids: UK_EID_2012;UK_LAB_2002
+    notes: This is a classic diagnostic-era discontinuity.
+  - start_date: '2010-01-01'
+    end_date: '2026-12-31'
+    multiplier: 1.0
+    prior_mean: 1.0
+    prior_lower: 0.75
+    prior_upper: 1.35
+    geographic_scope: national
+    surveillance_regime: enhanced_lab_surveillance
+    primary_diagnostic_methods: culture;PCR;serology;oral_fluid
+    effect_direction: reference_modern
+    evidence_strength: moderate
+    source_ids: UK_GOV_2014;UK_EID_2012
+    notes: Modern reference regime for UK data.
+diagnosis_probability:
+  infant_0_2m: 0.6
+  infant_3_11m: 0.5
+  child_1_4y: 0.25
+  child_5_9y: 0.18
+  adolescent_10_17y: 0.08
+  young_adult_18_39y: 0.05
+  middle_adult_40_64y: 0.03
+  elderly_65plus: 0.04
+reporting_multiplier: 9.999984760501272

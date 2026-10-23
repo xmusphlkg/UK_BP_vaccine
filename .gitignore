@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local working artefacts that are not part of the release
+logs/*.log
+*.log
+*.tmp
+outputs/raw_runs/

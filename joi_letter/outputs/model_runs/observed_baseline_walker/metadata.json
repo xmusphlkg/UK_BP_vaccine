@@ -1,0 +1,44 @@
+{
+  "observed_annual_uptake_2025_26": 0.73,
+  "birth_exposure_mapping": "clip(0.02 + 0.55 * uptake, 0, 0.75)",
+  "forecast_log_beta_from_2025": -0.5,
+  "fitted_log_beta_end": "2024-12-31",
+  "seasonality_before": {
+    "seasonal_amplitude": 0.1959377729440335,
+    "seasonal_phase": 133.5627586469978,
+    "multi_year_amplitude": 0.0,
+    "multi_year_period_years": 4.0,
+    "multi_year_phase_date": null
+  },
+  "structural_seasonality": {
+    "seasonal_amplitude": 0.14,
+    "seasonal_phase": 300.0,
+    "multi_year_amplitude": 0.0,
+    "multi_year_period_years": 8.0,
+    "multi_year_phase_date": null
+  },
+  "maternal_protection_duration_days_prospective": 180.0,
+  "historical_maternal_protection_duration_days": 90.0,
+  "path_check": {
+    "annual_2029_2035": {
+      "2029": 2.5006755279669295,
+      "2030": 2.5574608999711614,
+      "2031": 2.6187984583569675,
+      "2032": 2.741843114548163,
+      "2033": 2.7550781301061886,
+      "2034": 2.828275904357299,
+      "2035": 2.9058573704242385
+    },
+    "max_min_ratio": 1.162028954946716,
+    "under3_cases": {
+      "current": 24.023185795336655,
+      "maternal_coverage_75": 23.844533021877332,
+      "maternal_coverage_80": 23.39837043586459,
+      "maternal_coverage_90": 22.50804744825513
+    }
+  },
+  "candidate_path": "<parent-repo-root>/data/processed/recovered_candidate_baselines_20261008/United_Kingdom/candidate_config.yaml",
+  "candidate_sha256": "e391da85f5f615e87047a6170b2bc51fded284946f6932a19554c0ceb2eeb351",
+  "candidate_calibration_status": "state_reconstruction_rejected",
+  "interpretation": "Paired coverage contrast from the observed 73% baseline under the declared transmission bound. Not a validated national forecast."
+}

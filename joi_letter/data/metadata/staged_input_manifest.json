@@ -1,0 +1,82 @@
+{
+  "created": "2026-10-20",
+  "inputs": [
+    {
+      "source": "https://assets.publishing.service.gov.uk/media/6a677f3823e57bd0a0ea6866/hpr0726-mtrnl-prtsss-Q4-fy25-26.xlsx",
+      "destination": "data/raw/ukhsa_prenatal_coverage_q4_2026.xlsx",
+      "status": "downloaded",
+      "bytes": 162232,
+      "sha256": "5278b6b42bbf37460b7530623a0c1be43f445f8f7bb60c7f4689ec87866d0380"
+    },
+    {
+      "source": "data/processed/analysis_observations/United_Kingdom.csv",
+      "destination": "data/raw/uk_notifications.csv",
+      "status": "copied",
+      "bytes": 334319,
+      "sha256": "bec6cfedb4a8058d4802f0204aeef8795c3bdf75aead8adaadd2ebc25c02a698"
+    },
+    {
+      "source": "data/processed/united_kingdom_scope_provenance.json",
+      "destination": "data/metadata/uk_scope_provenance.json",
+      "status": "copied",
+      "bytes": 10370,
+      "sha256": "bc39cb1399cf9e3817ea9070bb9a6ce720948d05ce133e5f9b44c16b97c37371"
+    },
+    {
+      "source": "data/processed/maternal_immunization_coverage_processed.csv",
+      "destination": "data/raw/maternal_coverage_processed.csv",
+      "status": "copied",
+      "bytes": 7571,
+      "sha256": "98be10681b2e9a22e819691e3199169f90c0abe848a950610263151b9fa44dcf"
+    },
+    {
+      "source": "data/processed/official_baseline_completion_20260907/england_notifications_age.csv",
+      "destination": "data/raw/england_notifications_age.csv",
+      "status": "copied",
+      "bytes": 103299,
+      "sha256": "a5738ff6acbae46784f5b040fe97e8dd265fc3daaa501e1e210752514b742dbb"
+    },
+    {
+      "source": "data/processed/official_baseline_completion_20260907/england_notifications_annual.csv",
+      "destination": "data/raw/england_notifications_annual.csv",
+      "status": "copied",
+      "bytes": 10528,
+      "sha256": "ef06ce166f6a5b03563d5f9207ce69dfff3f11cf9e25735ead79472c62eb4212"
+    },
+    {
+      "source": "data/processed/official_baseline_completion_20260907/england_infant_deaths.csv",
+      "destination": "data/raw/england_infant_deaths.csv",
+      "status": "copied",
+      "bytes": 8320,
+      "sha256": "89cc06459eee2f7ae9b9cc246e5b8fc7188bdaaf9afca804c0162ef3ea52a85e"
+    },
+    {
+      "source": "data/processed/official_baseline_completion_20260907/ons_population_model_age.csv",
+      "destination": "data/raw/england_population_model_age.csv",
+      "status": "copied",
+      "bytes": 70503,
+      "sha256": "72d0356777e223c283efcf26557e5482e28b45ba3b3e210a2aab804b6b643c5d"
+    },
+    {
+      "source": "data/processed/country_profile_inputs.csv",
+      "destination": "data/raw/country_profile_inputs.csv",
+      "status": "copied",
+      "bytes": 9219,
+      "sha256": "e323c2c4f026e1229c168093893aa7f71fd8a66ac0686684c3e562ba2601ed0b"
+    },
+    {
+      "source": "data/processed/recovered_candidate_baselines_20261008/United_Kingdom/candidate_config.yaml",
+      "destination": "data/raw/uk_candidate_config.yaml",
+      "status": "copied",
+      "bytes": 171258,
+      "sha256": "8dca16c6422a25a348257b113e89979a000ed465046b301586268f6dcd9d82e7"
+    },
+    {
+      "source": "data/validated_surveillance_source_manifest.csv",
+      "destination": "data/metadata/validated_surveillance_source_manifest.csv",
+      "status": "copied",
+      "bytes": 23331,
+      "sha256": "2b3e1c5399d4160b17a178035ef9099eea9dca6f43ba319ff9e55c1aabdd55e4"
+    }
+  ]
+}

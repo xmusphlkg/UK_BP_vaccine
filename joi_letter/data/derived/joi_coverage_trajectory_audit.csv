@@ -1,0 +1,9 @@
+run_tag,mechanism,scenario,observed_uptake,applied_raw_maternal_coverage,applied_birth_exposure,coverage_source,prospective_policy,maternal_protection_duration_days,forecast_log_beta,policy_start,policy_end
+observed_baseline_legacy,Legacy mapping,current,0.73,0.73,0.4215,intervention.maternal_coverage,True,180.0,-0.5,2027-01-01,2035-12-31
+observed_baseline_legacy,Legacy mapping,maternal_coverage_75,0.73,0.75,0.4325,intervention.maternal_coverage_min,True,180.0,-0.5,2027-01-01,2035-12-31
+observed_baseline_legacy,Legacy mapping,maternal_coverage_80,0.73,0.8,0.4600000000000001,intervention.maternal_coverage_min,True,180.0,-0.5,2027-01-01,2035-12-31
+observed_baseline_legacy,Legacy mapping,maternal_coverage_90,0.73,0.9,0.515,intervention.maternal_coverage_min,True,180.0,-0.5,2027-01-01,2035-12-31
+observed_baseline_walker,Walker-anchored,current,0.73,0.73,0.4215,intervention.maternal_coverage,True,180.0,-0.5,2027-01-01,2035-12-31
+observed_baseline_walker,Walker-anchored,maternal_coverage_75,0.73,0.75,0.4325,intervention.maternal_coverage_min,True,180.0,-0.5,2027-01-01,2035-12-31
+observed_baseline_walker,Walker-anchored,maternal_coverage_80,0.73,0.8,0.4600000000000001,intervention.maternal_coverage_min,True,180.0,-0.5,2027-01-01,2035-12-31
+observed_baseline_walker,Walker-anchored,maternal_coverage_90,0.73,0.9,0.515,intervention.maternal_coverage_min,True,180.0,-0.5,2027-01-01,2035-12-31

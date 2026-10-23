@@ -1,0 +1,20 @@
+project: joi_antenatal_impact
+created: 2026-10-19
+source_article:
+  doi: 10.1016/j.jinf.2026.106836
+  maternal_ve_disease: 0.846
+  maternal_ve_hospitalisation: 0.882
+  maternal_ve_death: 0.915
+scenario:
+  profile: United_Kingdom
+  horizon: [2027, 2035]
+  maternal_coverage_targets: [0.75, 0.80, 0.90]
+  maternal_protection_duration_days: 180
+  primary_endpoint: infant_under_3_months
+  secondary_endpoints: [infant_hospitalisations, infant_deaths]
+  require_exact_age_boundary: true
+interpretation:
+  national_forecast: false
+  cprd_available: false
+  cost_constraint: false
+  equity_modelled: false

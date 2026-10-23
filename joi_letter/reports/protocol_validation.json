@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "checks": [
+    "doi",
+    "coverage_targets",
+    "endpoint_boundary"
+  ]
+}

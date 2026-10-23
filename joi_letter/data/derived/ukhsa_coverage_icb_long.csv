@@ -1,0 +1,1513 @@
+icb_code,icb_name,month,coverage_percent,coverage_proportion
+QE1,Lancashire and South Cumbria,Apr_2023,56.5,0.565
+QF7,South Yorkshire,Apr_2023,66.4,0.664
+QGH,Herefordshire and Worcestershire,Apr_2023,69.1,0.691
+QH8,Mid and South Essex,Apr_2023,63.0,0.63
+QHG,"Bedfordshire, Luton and Milton Keynes",Apr_2023,59.7,0.597
+QHL,Birmingham and Solihull,Apr_2023,42.3,0.423
+QHM,North East and North Cumbria,Apr_2023,59.9,0.599
+QJ2,Derby and Derbyshire,Apr_2023,76.5,0.765
+QJG,Suffolk and North East Essex,Apr_2023,63.8,0.638
+QJK,Devon,Apr_2023,65.9,0.659
+QJM,Lincolnshire,Apr_2023,60.2,0.602
+QK1,"Leicester, Leicestershire and Rutland",Apr_2023,61.0,0.61
+QKK,South East London,Apr_2023,48.4,0.484
+QKS,Kent and Medway,Apr_2023,65.3,0.653
+QM7,Hertfordshire and West Essex,Apr_2023,66.3,0.6629999999999999
+QMF,North East London,Apr_2023,31.1,0.311
+QMJ,North Central London,Apr_2023,30.0,0.3
+QMM,Norfolk and Waveney,Apr_2023,75.6,0.7559999999999999
+QNC,Staffordshire and Stoke-on-Trent,Apr_2023,56.3,0.563
+QNQ,Frimley,Apr_2023,57.0,0.57
+QNX,Sussex,Apr_2023,70.0,0.7
+QOC,"Shropshire, Telford and Wrekin",Apr_2023,75.0,0.75
+QOP,Greater Manchester,Apr_2023,48.7,0.48700000000000004
+QOQ,Humber and North Yorkshire,Apr_2023,71.2,0.7120000000000001
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Apr_2023,69.3,0.693
+QPM,Northamptonshire,Apr_2023,50.3,0.503
+QR1,Gloucestershire,Apr_2023,61.9,0.619
+QRL,Hampshire and Isle of Wight,Apr_2023,70.6,0.706
+QRV,North West London,Apr_2023,41.5,0.415
+QSL,Somerset,Apr_2023,72.3,0.723
+QT1,Nottingham and Nottinghamshire,Apr_2023,63.1,0.631
+QT6,Cornwall and the Isles of Scilly,Apr_2023,67.2,0.672
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Apr_2023,69.1,0.691
+QUA,Black Country,Apr_2023,47.9,0.479
+QUE,Cambridgeshire and Peterborough,Apr_2023,62.7,0.627
+QUY,"Bristol, North Somerset and South Gloucestershire",Apr_2023,74.8,0.748
+QVV,Dorset,Apr_2023,68.3,0.6829999999999999
+QWE,South West London,Apr_2023,50.2,0.502
+QWO,West Yorkshire,Apr_2023,64.0,0.64
+QWU,Coventry and Warwickshire,Apr_2023,62.6,0.626
+QXU,Surrey Heartlands,Apr_2023,70.8,0.708
+QYG,Cheshire and Merseyside,Apr_2023,56.6,0.5660000000000001
+QE1,Lancashire and South Cumbria,May_2023,56.8,0.568
+QF7,South Yorkshire,May_2023,65.2,0.652
+QGH,Herefordshire and Worcestershire,May_2023,65.8,0.6579999999999999
+QH8,Mid and South Essex,May_2023,59.4,0.594
+QHG,"Bedfordshire, Luton and Milton Keynes",May_2023,58.8,0.588
+QHL,Birmingham and Solihull,May_2023,40.6,0.406
+QHM,North East and North Cumbria,May_2023,56.3,0.563
+QJ2,Derby and Derbyshire,May_2023,77.3,0.773
+QJG,Suffolk and North East Essex,May_2023,62.2,0.622
+QJK,Devon,May_2023,67.3,0.6729999999999999
+QJM,Lincolnshire,May_2023,54.8,0.5479999999999999
+QK1,"Leicester, Leicestershire and Rutland",May_2023,55.3,0.5529999999999999
+QKK,South East London,May_2023,50.0,0.5
+QKS,Kent and Medway,May_2023,63.9,0.639
+QM7,Hertfordshire and West Essex,May_2023,62.8,0.628
+QMF,North East London,May_2023,30.0,0.3
+QMJ,North Central London,May_2023,28.5,0.285
+QMM,Norfolk and Waveney,May_2023,75.8,0.758
+QNC,Staffordshire and Stoke-on-Trent,May_2023,54.7,0.547
+QNQ,Frimley,May_2023,59.3,0.593
+QNX,Sussex,May_2023,68.4,0.684
+QOC,"Shropshire, Telford and Wrekin",May_2023,74.6,0.746
+QOP,Greater Manchester,May_2023,48.8,0.488
+QOQ,Humber and North Yorkshire,May_2023,70.7,0.7070000000000001
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",May_2023,68.5,0.685
+QPM,Northamptonshire,May_2023,52.6,0.526
+QR1,Gloucestershire,May_2023,59.2,0.5920000000000001
+QRL,Hampshire and Isle of Wight,May_2023,71.4,0.7140000000000001
+QRV,North West London,May_2023,35.1,0.35100000000000003
+QSL,Somerset,May_2023,64.3,0.643
+QT1,Nottingham and Nottinghamshire,May_2023,62.0,0.62
+QT6,Cornwall and the Isles of Scilly,May_2023,67.6,0.6759999999999999
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",May_2023,70.8,0.708
+QUA,Black Country,May_2023,48.8,0.488
+QUE,Cambridgeshire and Peterborough,May_2023,59.1,0.591
+QUY,"Bristol, North Somerset and South Gloucestershire",May_2023,72.1,0.721
+QVV,Dorset,May_2023,64.9,0.649
+QWE,South West London,May_2023,52.1,0.521
+QWO,West Yorkshire,May_2023,64.2,0.642
+QWU,Coventry and Warwickshire,May_2023,57.8,0.578
+QXU,Surrey Heartlands,May_2023,73.0,0.73
+QYG,Cheshire and Merseyside,May_2023,57.7,0.5770000000000001
+QE1,Lancashire and South Cumbria,Jun_2023,56.7,0.5670000000000001
+QF7,South Yorkshire,Jun_2023,63.3,0.633
+QGH,Herefordshire and Worcestershire,Jun_2023,70.2,0.7020000000000001
+QH8,Mid and South Essex,Jun_2023,60.6,0.606
+QHG,"Bedfordshire, Luton and Milton Keynes",Jun_2023,57.7,0.5770000000000001
+QHL,Birmingham and Solihull,Jun_2023,42.4,0.424
+QHM,North East and North Cumbria,Jun_2023,56.3,0.563
+QJ2,Derby and Derbyshire,Jun_2023,76.4,0.764
+QJG,Suffolk and North East Essex,Jun_2023,59.5,0.595
+QJK,Devon,Jun_2023,70.5,0.705
+QJM,Lincolnshire,Jun_2023,58.4,0.584
+QK1,"Leicester, Leicestershire and Rutland",Jun_2023,54.6,0.546
+QKK,South East London,Jun_2023,46.8,0.46799999999999997
+QKS,Kent and Medway,Jun_2023,62.1,0.621
+QM7,Hertfordshire and West Essex,Jun_2023,64.3,0.643
+QMF,North East London,Jun_2023,29.5,0.295
+QMJ,North Central London,Jun_2023,27.9,0.27899999999999997
+QMM,Norfolk and Waveney,Jun_2023,74.2,0.742
+QNC,Staffordshire and Stoke-on-Trent,Jun_2023,56.8,0.568
+QNQ,Frimley,Jun_2023,50.6,0.506
+QNX,Sussex,Jun_2023,70.3,0.703
+QOC,"Shropshire, Telford and Wrekin",Jun_2023,73.8,0.738
+QOP,Greater Manchester,Jun_2023,46.2,0.462
+QOQ,Humber and North Yorkshire,Jun_2023,69.7,0.6970000000000001
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Jun_2023,58.8,0.588
+QPM,Northamptonshire,Jun_2023,50.2,0.502
+QR1,Gloucestershire,Jun_2023,58.5,0.585
+QRL,Hampshire and Isle of Wight,Jun_2023,69.3,0.693
+QRV,North West London,Jun_2023,33.9,0.33899999999999997
+QSL,Somerset,Jun_2023,67.2,0.672
+QT1,Nottingham and Nottinghamshire,Jun_2023,62.2,0.622
+QT6,Cornwall and the Isles of Scilly,Jun_2023,64.0,0.64
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Jun_2023,73.5,0.735
+QUA,Black Country,Jun_2023,50.4,0.504
+QUE,Cambridgeshire and Peterborough,Jun_2023,59.9,0.599
+QUY,"Bristol, North Somerset and South Gloucestershire",Jun_2023,71.8,0.718
+QVV,Dorset,Jun_2023,68.8,0.688
+QWE,South West London,Jun_2023,50.7,0.507
+QWO,West Yorkshire,Jun_2023,65.1,0.6509999999999999
+QWU,Coventry and Warwickshire,Jun_2023,59.4,0.594
+QXU,Surrey Heartlands,Jun_2023,75.3,0.753
+QYG,Cheshire and Merseyside,Jun_2023,59.3,0.593
+QE1,Lancashire and South Cumbria,Jul_2023,55.6,0.556
+QF7,South Yorkshire,Jul_2023,63.5,0.635
+QGH,Herefordshire and Worcestershire,Jul_2023,63.5,0.635
+QH8,Mid and South Essex,Jul_2023,61.1,0.611
+QHG,"Bedfordshire, Luton and Milton Keynes",Jul_2023,60.5,0.605
+QHL,Birmingham and Solihull,Jul_2023,43.5,0.435
+QHM,North East and North Cumbria,Jul_2023,58.4,0.584
+QJ2,Derby and Derbyshire,Jul_2023,77.2,0.772
+QJG,Suffolk and North East Essex,Jul_2023,60.9,0.609
+QJK,Devon,Jul_2023,69.5,0.695
+QJM,Lincolnshire,Jul_2023,64.5,0.645
+QK1,"Leicester, Leicestershire and Rutland",Jul_2023,57.7,0.5770000000000001
+QKK,South East London,Jul_2023,50.2,0.502
+QKS,Kent and Medway,Jul_2023,64.3,0.643
+QM7,Hertfordshire and West Essex,Jul_2023,63.8,0.638
+QMF,North East London,Jul_2023,30.8,0.308
+QMJ,North Central London,Jul_2023,22.3,0.223
+QMM,Norfolk and Waveney,Jul_2023,75.8,0.758
+QNC,Staffordshire and Stoke-on-Trent,Jul_2023,60.5,0.605
+QNQ,Frimley,Jul_2023,51.5,0.515
+QNX,Sussex,Jul_2023,67.1,0.6709999999999999
+QOC,"Shropshire, Telford and Wrekin",Jul_2023,73.7,0.737
+QOP,Greater Manchester,Jul_2023,47.7,0.47700000000000004
+QOQ,Humber and North Yorkshire,Jul_2023,71.0,0.71
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Jul_2023,52.6,0.526
+QPM,Northamptonshire,Jul_2023,52.4,0.524
+QR1,Gloucestershire,Jul_2023,60.5,0.605
+QRL,Hampshire and Isle of Wight,Jul_2023,70.2,0.7020000000000001
+QRV,North West London,Jul_2023,34.4,0.344
+QSL,Somerset,Jul_2023,62.2,0.622
+QT1,Nottingham and Nottinghamshire,Jul_2023,64.1,0.6409999999999999
+QT6,Cornwall and the Isles of Scilly,Jul_2023,63.9,0.639
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Jul_2023,69.4,0.6940000000000001
+QUA,Black Country,Jul_2023,52.4,0.524
+QUE,Cambridgeshire and Peterborough,Jul_2023,63.2,0.632
+QUY,"Bristol, North Somerset and South Gloucestershire",Jul_2023,69.9,0.6990000000000001
+QVV,Dorset,Jul_2023,72.7,0.727
+QWE,South West London,Jul_2023,49.3,0.493
+QWO,West Yorkshire,Jul_2023,62.0,0.62
+QWU,Coventry and Warwickshire,Jul_2023,59.2,0.5920000000000001
+QXU,Surrey Heartlands,Jul_2023,69.1,0.691
+QYG,Cheshire and Merseyside,Jul_2023,55.4,0.5539999999999999
+QE1,Lancashire and South Cumbria,Aug_2023,55.9,0.5589999999999999
+QF7,South Yorkshire,Aug_2023,64.7,0.647
+QGH,Herefordshire and Worcestershire,Aug_2023,68.0,0.68
+QH8,Mid and South Essex,Aug_2023,60.4,0.604
+QHG,"Bedfordshire, Luton and Milton Keynes",Aug_2023,58.5,0.585
+QHL,Birmingham and Solihull,Aug_2023,42.4,0.424
+QHM,North East and North Cumbria,Aug_2023,57.8,0.578
+QJ2,Derby and Derbyshire,Aug_2023,76.3,0.763
+QJG,Suffolk and North East Essex,Aug_2023,63.7,0.637
+QJK,Devon,Aug_2023,70.1,0.701
+QJM,Lincolnshire,Aug_2023,58.5,0.585
+QK1,"Leicester, Leicestershire and Rutland",Aug_2023,55.6,0.556
+QKK,South East London,Aug_2023,50.2,0.502
+QKS,Kent and Medway,Aug_2023,65.4,0.654
+QM7,Hertfordshire and West Essex,Aug_2023,64.2,0.642
+QMF,North East London,Aug_2023,28.4,0.284
+QMJ,North Central London,Aug_2023,25.4,0.254
+QMM,Norfolk and Waveney,Aug_2023,78.0,0.78
+QNC,Staffordshire and Stoke-on-Trent,Aug_2023,60.8,0.608
+QNQ,Frimley,Aug_2023,59.6,0.596
+QNX,Sussex,Aug_2023,71.2,0.7120000000000001
+QOC,"Shropshire, Telford and Wrekin",Aug_2023,76.6,0.7659999999999999
+QOP,Greater Manchester,Aug_2023,48.1,0.48100000000000004
+QOQ,Humber and North Yorkshire,Aug_2023,68.3,0.6829999999999999
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Aug_2023,49.9,0.499
+QPM,Northamptonshire,Aug_2023,49.7,0.49700000000000005
+QR1,Gloucestershire,Aug_2023,60.8,0.608
+QRL,Hampshire and Isle of Wight,Aug_2023,71.3,0.713
+QRV,North West London,Aug_2023,34.6,0.34600000000000003
+QSL,Somerset,Aug_2023,64.7,0.647
+QT1,Nottingham and Nottinghamshire,Aug_2023,60.0,0.6
+QT6,Cornwall and the Isles of Scilly,Aug_2023,62.3,0.623
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Aug_2023,70.9,0.7090000000000001
+QUA,Black Country,Aug_2023,57.5,0.575
+QUE,Cambridgeshire and Peterborough,Aug_2023,60.4,0.604
+QUY,"Bristol, North Somerset and South Gloucestershire",Aug_2023,72.8,0.728
+QVV,Dorset,Aug_2023,71.4,0.7140000000000001
+QWE,South West London,Aug_2023,48.5,0.485
+QWO,West Yorkshire,Aug_2023,65.4,0.654
+QWU,Coventry and Warwickshire,Aug_2023,56.8,0.568
+QXU,Surrey Heartlands,Aug_2023,70.3,0.703
+QYG,Cheshire and Merseyside,Aug_2023,60.8,0.608
+QE1,Lancashire and South Cumbria,Sep_2023,56.7,0.5670000000000001
+QF7,South Yorkshire,Sep_2023,66.3,0.6629999999999999
+QGH,Herefordshire and Worcestershire,Sep_2023,61.0,0.61
+QH8,Mid and South Essex,Sep_2023,60.1,0.601
+QHG,"Bedfordshire, Luton and Milton Keynes",Sep_2023,58.1,0.581
+QHL,Birmingham and Solihull,Sep_2023,43.2,0.43200000000000005
+QHM,North East and North Cumbria,Sep_2023,59.9,0.599
+QJ2,Derby and Derbyshire,Sep_2023,77.7,0.777
+QJG,Suffolk and North East Essex,Sep_2023,64.4,0.644
+QJK,Devon,Sep_2023,69.0,0.69
+QJM,Lincolnshire,Sep_2023,59.9,0.599
+QK1,"Leicester, Leicestershire and Rutland",Sep_2023,57.2,0.5720000000000001
+QKK,South East London,Sep_2023,48.7,0.48700000000000004
+QKS,Kent and Medway,Sep_2023,65.8,0.6579999999999999
+QM7,Hertfordshire and West Essex,Sep_2023,63.6,0.636
+QMF,North East London,Sep_2023,28.4,0.284
+QMJ,North Central London,Sep_2023,22.3,0.223
+QMM,Norfolk and Waveney,Sep_2023,75.2,0.752
+QNC,Staffordshire and Stoke-on-Trent,Sep_2023,59.4,0.594
+QNQ,Frimley,Sep_2023,58.4,0.584
+QNX,Sussex,Sep_2023,67.4,0.674
+QOC,"Shropshire, Telford and Wrekin",Sep_2023,71.4,0.7140000000000001
+QOP,Greater Manchester,Sep_2023,50.1,0.501
+QOQ,Humber and North Yorkshire,Sep_2023,70.5,0.705
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Sep_2023,43.8,0.43799999999999994
+QPM,Northamptonshire,Sep_2023,52.1,0.521
+QR1,Gloucestershire,Sep_2023,59.6,0.596
+QRL,Hampshire and Isle of Wight,Sep_2023,70.4,0.7040000000000001
+QRV,North West London,Sep_2023,34.0,0.34
+QSL,Somerset,Sep_2023,64.7,0.647
+QT1,Nottingham and Nottinghamshire,Sep_2023,68.1,0.6809999999999999
+QT6,Cornwall and the Isles of Scilly,Sep_2023,61.0,0.61
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Sep_2023,69.3,0.693
+QUA,Black Country,Sep_2023,56.9,0.569
+QUE,Cambridgeshire and Peterborough,Sep_2023,59.1,0.591
+QUY,"Bristol, North Somerset and South Gloucestershire",Sep_2023,70.2,0.7020000000000001
+QVV,Dorset,Sep_2023,68.4,0.684
+QWE,South West London,Sep_2023,46.7,0.467
+QWO,West Yorkshire,Sep_2023,66.1,0.6609999999999999
+QWU,Coventry and Warwickshire,Sep_2023,56.4,0.564
+QXU,Surrey Heartlands,Sep_2023,69.0,0.69
+QYG,Cheshire and Merseyside,Sep_2023,63.0,0.63
+QE1,Lancashire and South Cumbria,Oct_2023,57.1,0.5710000000000001
+QF7,South Yorkshire,Oct_2023,64.7,0.647
+QGH,Herefordshire and Worcestershire,Oct_2023,65.9,0.659
+QH8,Mid and South Essex,Oct_2023,65.1,0.6509999999999999
+QHG,"Bedfordshire, Luton and Milton Keynes",Oct_2023,59.3,0.593
+QHL,Birmingham and Solihull,Oct_2023,44.1,0.441
+QHM,North East and North Cumbria,Oct_2023,63.2,0.632
+QJ2,Derby and Derbyshire,Oct_2023,81.1,0.8109999999999999
+QJG,Suffolk and North East Essex,Oct_2023,64.0,0.64
+QJK,Devon,Oct_2023,67.3,0.6729999999999999
+QJM,Lincolnshire,Oct_2023,61.1,0.611
+QK1,"Leicester, Leicestershire and Rutland",Oct_2023,56.3,0.563
+QKK,South East London,Oct_2023,49.8,0.498
+QKS,Kent and Medway,Oct_2023,65.2,0.652
+QM7,Hertfordshire and West Essex,Oct_2023,66.5,0.665
+QMF,North East London,Oct_2023,29.9,0.299
+QMJ,North Central London,Oct_2023,25.9,0.259
+QMM,Norfolk and Waveney,Oct_2023,78.5,0.785
+QNC,Staffordshire and Stoke-on-Trent,Oct_2023,62.5,0.625
+QNQ,Frimley,Oct_2023,58.0,0.58
+QNX,Sussex,Oct_2023,65.7,0.657
+QOC,"Shropshire, Telford and Wrekin",Oct_2023,73.8,0.738
+QOP,Greater Manchester,Oct_2023,51.7,0.517
+QOQ,Humber and North Yorkshire,Oct_2023,72.8,0.728
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Oct_2023,50.1,0.501
+QPM,Northamptonshire,Oct_2023,48.7,0.48700000000000004
+QR1,Gloucestershire,Oct_2023,64.5,0.645
+QRL,Hampshire and Isle of Wight,Oct_2023,70.6,0.706
+QRV,North West London,Oct_2023,32.5,0.325
+QSL,Somerset,Oct_2023,57.2,0.5720000000000001
+QT1,Nottingham and Nottinghamshire,Oct_2023,64.6,0.6459999999999999
+QT6,Cornwall and the Isles of Scilly,Oct_2023,58.4,0.584
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Oct_2023,68.8,0.688
+QUA,Black Country,Oct_2023,56.1,0.561
+QUE,Cambridgeshire and Peterborough,Oct_2023,65.2,0.652
+QUY,"Bristol, North Somerset and South Gloucestershire",Oct_2023,69.9,0.6990000000000001
+QVV,Dorset,Oct_2023,69.2,0.6920000000000001
+QWE,South West London,Oct_2023,46.5,0.465
+QWO,West Yorkshire,Oct_2023,67.2,0.672
+QWU,Coventry and Warwickshire,Oct_2023,62.1,0.621
+QXU,Surrey Heartlands,Oct_2023,70.1,0.701
+QYG,Cheshire and Merseyside,Oct_2023,64.9,0.649
+QE1,Lancashire and South Cumbria,Nov_2023,62.3,0.623
+QF7,South Yorkshire,Nov_2023,66.8,0.6679999999999999
+QGH,Herefordshire and Worcestershire,Nov_2023,61.4,0.614
+QH8,Mid and South Essex,Nov_2023,61.6,0.616
+QHG,"Bedfordshire, Luton and Milton Keynes",Nov_2023,63.4,0.634
+QHL,Birmingham and Solihull,Nov_2023,46.8,0.46799999999999997
+QHM,North East and North Cumbria,Nov_2023,64.3,0.643
+QJ2,Derby and Derbyshire,Nov_2023,80.3,0.8029999999999999
+QJG,Suffolk and North East Essex,Nov_2023,63.2,0.632
+QJK,Devon,Nov_2023,69.4,0.6940000000000001
+QJM,Lincolnshire,Nov_2023,61.5,0.615
+QK1,"Leicester, Leicestershire and Rutland",Nov_2023,57.3,0.573
+QKK,South East London,Nov_2023,52.3,0.523
+QKS,Kent and Medway,Nov_2023,64.6,0.6459999999999999
+QM7,Hertfordshire and West Essex,Nov_2023,64.8,0.648
+QMF,North East London,Nov_2023,28.8,0.28800000000000003
+QMJ,North Central London,Nov_2023,24.5,0.245
+QMM,Norfolk and Waveney,Nov_2023,73.5,0.735
+QNC,Staffordshire and Stoke-on-Trent,Nov_2023,63.1,0.631
+QNQ,Frimley,Nov_2023,59.1,0.591
+QNX,Sussex,Nov_2023,58.1,0.581
+QOC,"Shropshire, Telford and Wrekin",Nov_2023,74.1,0.741
+QOP,Greater Manchester,Nov_2023,54.5,0.545
+QOQ,Humber and North Yorkshire,Nov_2023,73.1,0.731
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Nov_2023,47.1,0.47100000000000003
+QPM,Northamptonshire,Nov_2023,53.8,0.5379999999999999
+QR1,Gloucestershire,Nov_2023,64.9,0.649
+QRL,Hampshire and Isle of Wight,Nov_2023,72.1,0.721
+QRV,North West London,Nov_2023,35.2,0.35200000000000004
+QSL,Somerset,Nov_2023,66.4,0.664
+QT1,Nottingham and Nottinghamshire,Nov_2023,68.0,0.68
+QT6,Cornwall and the Isles of Scilly,Nov_2023,63.2,0.632
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Nov_2023,70.6,0.706
+QUA,Black Country,Nov_2023,57.8,0.578
+QUE,Cambridgeshire and Peterborough,Nov_2023,65.9,0.659
+QUY,"Bristol, North Somerset and South Gloucestershire",Nov_2023,69.2,0.6920000000000001
+QVV,Dorset,Nov_2023,71.8,0.718
+QWE,South West London,Nov_2023,47.5,0.475
+QWO,West Yorkshire,Nov_2023,67.6,0.6759999999999999
+QWU,Coventry and Warwickshire,Nov_2023,55.5,0.555
+QXU,Surrey Heartlands,Nov_2023,70.8,0.708
+QYG,Cheshire and Merseyside,Nov_2023,65.0,0.65
+QE1,Lancashire and South Cumbria,Dec_2023,60.4,0.604
+QF7,South Yorkshire,Dec_2023,66.3,0.6629999999999999
+QGH,Herefordshire and Worcestershire,Dec_2023,66.3,0.6629999999999999
+QH8,Mid and South Essex,Dec_2023,64.4,0.644
+QHG,"Bedfordshire, Luton and Milton Keynes",Dec_2023,62.2,0.622
+QHL,Birmingham and Solihull,Dec_2023,49.5,0.495
+QHM,North East and North Cumbria,Dec_2023,64.8,0.648
+QJ2,Derby and Derbyshire,Dec_2023,80.1,0.8009999999999999
+QJG,Suffolk and North East Essex,Dec_2023,66.6,0.6659999999999999
+QJK,Devon,Dec_2023,68.1,0.6809999999999999
+QJM,Lincolnshire,Dec_2023,64.0,0.64
+QK1,"Leicester, Leicestershire and Rutland",Dec_2023,62.0,0.62
+QKK,South East London,Dec_2023,50.0,0.5
+QKS,Kent and Medway,Dec_2023,64.3,0.643
+QM7,Hertfordshire and West Essex,Dec_2023,65.4,0.654
+QMF,North East London,Dec_2023,29.9,0.299
+QMJ,North Central London,Dec_2023,25.0,0.25
+QMM,Norfolk and Waveney,Dec_2023,75.0,0.75
+QNC,Staffordshire and Stoke-on-Trent,Dec_2023,65.7,0.657
+QNQ,Frimley,Dec_2023,62.3,0.623
+QNX,Sussex,Dec_2023,57.0,0.57
+QOC,"Shropshire, Telford and Wrekin",Dec_2023,75.3,0.753
+QOP,Greater Manchester,Dec_2023,53.5,0.535
+QOQ,Humber and North Yorkshire,Dec_2023,73.4,0.7340000000000001
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Dec_2023,52.4,0.524
+QPM,Northamptonshire,Dec_2023,55.3,0.5529999999999999
+QR1,Gloucestershire,Dec_2023,65.8,0.6579999999999999
+QRL,Hampshire and Isle of Wight,Dec_2023,69.4,0.6940000000000001
+QRV,North West London,Dec_2023,34.5,0.345
+QSL,Somerset,Dec_2023,61.6,0.616
+QT1,Nottingham and Nottinghamshire,Dec_2023,69.4,0.6940000000000001
+QT6,Cornwall and the Isles of Scilly,Dec_2023,54.2,0.542
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Dec_2023,68.2,0.682
+QUA,Black Country,Dec_2023,59.7,0.597
+QUE,Cambridgeshire and Peterborough,Dec_2023,65.5,0.655
+QUY,"Bristol, North Somerset and South Gloucestershire",Dec_2023,67.8,0.6779999999999999
+QVV,Dorset,Dec_2023,72.5,0.725
+QWE,South West London,Dec_2023,46.5,0.465
+QWO,West Yorkshire,Dec_2023,67.6,0.6759999999999999
+QWU,Coventry and Warwickshire,Dec_2023,58.7,0.5870000000000001
+QXU,Surrey Heartlands,Dec_2023,71.9,0.7190000000000001
+QYG,Cheshire and Merseyside,Dec_2023,63.4,0.634
+QE1,Lancashire and South Cumbria,Jan_2024,63.3,0.633
+QF7,South Yorkshire,Jan_2024,68.2,0.682
+QGH,Herefordshire and Worcestershire,Jan_2024,65.7,0.657
+QH8,Mid and South Essex,Jan_2024,66.3,0.6629999999999999
+QHG,"Bedfordshire, Luton and Milton Keynes",Jan_2024,64.3,0.643
+QHL,Birmingham and Solihull,Jan_2024,50.5,0.505
+QHM,North East and North Cumbria,Jan_2024,61.5,0.615
+QJ2,Derby and Derbyshire,Jan_2024,83.1,0.831
+QJG,Suffolk and North East Essex,Jan_2024,59.7,0.597
+QJK,Devon,Jan_2024,70.5,0.705
+QJM,Lincolnshire,Jan_2024,60.3,0.603
+QK1,"Leicester, Leicestershire and Rutland",Jan_2024,60.9,0.609
+QKK,South East London,Jan_2024,48.7,0.48700000000000004
+QKS,Kent and Medway,Jan_2024,64.4,0.644
+QM7,Hertfordshire and West Essex,Jan_2024,65.9,0.659
+QMF,North East London,Jan_2024,32.2,0.322
+QMJ,North Central London,Jan_2024,25.7,0.257
+QMM,Norfolk and Waveney,Jan_2024,78.2,0.782
+QNC,Staffordshire and Stoke-on-Trent,Jan_2024,62.8,0.628
+QNQ,Frimley,Jan_2024,59.1,0.591
+QNX,Sussex,Jan_2024,54.7,0.547
+QOC,"Shropshire, Telford and Wrekin",Jan_2024,77.6,0.7759999999999999
+QOP,Greater Manchester,Jan_2024,53.8,0.5379999999999999
+QOQ,Humber and North Yorkshire,Jan_2024,71.6,0.716
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Jan_2024,49.2,0.49200000000000005
+QPM,Northamptonshire,Jan_2024,55.8,0.5579999999999999
+QR1,Gloucestershire,Jan_2024,67.4,0.674
+QRL,Hampshire and Isle of Wight,Jan_2024,69.7,0.6970000000000001
+QRV,North West London,Jan_2024,39.5,0.395
+QSL,Somerset,Jan_2024,68.7,0.687
+QT1,Nottingham and Nottinghamshire,Jan_2024,63.5,0.635
+QT6,Cornwall and the Isles of Scilly,Jan_2024,54.1,0.541
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Jan_2024,69.1,0.691
+QUA,Black Country,Jan_2024,59.8,0.598
+QUE,Cambridgeshire and Peterborough,Jan_2024,67.1,0.6709999999999999
+QUY,"Bristol, North Somerset and South Gloucestershire",Jan_2024,60.7,0.607
+QVV,Dorset,Jan_2024,67.9,0.679
+QWE,South West London,Jan_2024,46.4,0.46399999999999997
+QWO,West Yorkshire,Jan_2024,68.0,0.68
+QWU,Coventry and Warwickshire,Jan_2024,62.5,0.625
+QXU,Surrey Heartlands,Jan_2024,72.8,0.728
+QYG,Cheshire and Merseyside,Jan_2024,65.7,0.657
+QE1,Lancashire and South Cumbria,Feb_2024,60.9,0.609
+QF7,South Yorkshire,Feb_2024,69.6,0.696
+QGH,Herefordshire and Worcestershire,Feb_2024,63.0,0.63
+QH8,Mid and South Essex,Feb_2024,63.8,0.638
+QHG,"Bedfordshire, Luton and Milton Keynes",Feb_2024,61.3,0.613
+QHL,Birmingham and Solihull,Feb_2024,49.5,0.495
+QHM,North East and North Cumbria,Feb_2024,59.0,0.59
+QJ2,Derby and Derbyshire,Feb_2024,78.5,0.785
+QJG,Suffolk and North East Essex,Feb_2024,63.8,0.638
+QJK,Devon,Feb_2024,70.9,0.7090000000000001
+QJM,Lincolnshire,Feb_2024,60.5,0.605
+QK1,"Leicester, Leicestershire and Rutland",Feb_2024,60.3,0.603
+QKK,South East London,Feb_2024,48.7,0.48700000000000004
+QKS,Kent and Medway,Feb_2024,64.7,0.647
+QM7,Hertfordshire and West Essex,Feb_2024,67.0,0.67
+QMF,North East London,Feb_2024,31.9,0.319
+QMJ,North Central London,Feb_2024,24.0,0.24
+QMM,Norfolk and Waveney,Feb_2024,74.3,0.743
+QNC,Staffordshire and Stoke-on-Trent,Feb_2024,66.2,0.662
+QNQ,Frimley,Feb_2024,54.1,0.541
+QNX,Sussex,Feb_2024,60.7,0.607
+QOC,"Shropshire, Telford and Wrekin",Feb_2024,78.2,0.782
+QOP,Greater Manchester,Feb_2024,51.9,0.519
+QOQ,Humber and North Yorkshire,Feb_2024,74.7,0.747
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Feb_2024,48.7,0.48700000000000004
+QPM,Northamptonshire,Feb_2024,51.3,0.513
+QR1,Gloucestershire,Feb_2024,64.2,0.642
+QRL,Hampshire and Isle of Wight,Feb_2024,73.8,0.738
+QRV,North West London,Feb_2024,42.7,0.42700000000000005
+QSL,Somerset,Feb_2024,59.5,0.595
+QT1,Nottingham and Nottinghamshire,Feb_2024,69.6,0.696
+QT6,Cornwall and the Isles of Scilly,Feb_2024,52.1,0.521
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Feb_2024,66.1,0.6609999999999999
+QUA,Black Country,Feb_2024,57.2,0.5720000000000001
+QUE,Cambridgeshire and Peterborough,Feb_2024,64.3,0.643
+QUY,"Bristol, North Somerset and South Gloucestershire",Feb_2024,55.7,0.557
+QVV,Dorset,Feb_2024,70.2,0.7020000000000001
+QWE,South West London,Feb_2024,46.9,0.469
+QWO,West Yorkshire,Feb_2024,65.3,0.653
+QWU,Coventry and Warwickshire,Feb_2024,60.2,0.602
+QXU,Surrey Heartlands,Feb_2024,69.3,0.693
+QYG,Cheshire and Merseyside,Feb_2024,66.0,0.66
+QE1,Lancashire and South Cumbria,Mar_2024,62.9,0.629
+QF7,South Yorkshire,Mar_2024,63.5,0.635
+QGH,Herefordshire and Worcestershire,Mar_2024,60.8,0.608
+QH8,Mid and South Essex,Mar_2024,67.0,0.67
+QHG,"Bedfordshire, Luton and Milton Keynes",Mar_2024,59.5,0.595
+QHL,Birmingham and Solihull,Mar_2024,50.1,0.501
+QHM,North East and North Cumbria,Mar_2024,59.8,0.598
+QJ2,Derby and Derbyshire,Mar_2024,79.2,0.792
+QJG,Suffolk and North East Essex,Mar_2024,61.6,0.616
+QJK,Devon,Mar_2024,67.4,0.674
+QJM,Lincolnshire,Mar_2024,58.6,0.586
+QK1,"Leicester, Leicestershire and Rutland",Mar_2024,56.8,0.568
+QKK,South East London,Mar_2024,49.0,0.49
+QKS,Kent and Medway,Mar_2024,66.3,0.6629999999999999
+QM7,Hertfordshire and West Essex,Mar_2024,62.8,0.628
+QMF,North East London,Mar_2024,34.5,0.345
+QMJ,North Central London,Mar_2024,25.0,0.25
+QMM,Norfolk and Waveney,Mar_2024,78.0,0.78
+QNC,Staffordshire and Stoke-on-Trent,Mar_2024,64.2,0.642
+QNQ,Frimley,Mar_2024,58.5,0.585
+QNX,Sussex,Mar_2024,68.5,0.685
+QOC,"Shropshire, Telford and Wrekin",Mar_2024,73.4,0.7340000000000001
+QOP,Greater Manchester,Mar_2024,51.5,0.515
+QOQ,Humber and North Yorkshire,Mar_2024,71.3,0.713
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Mar_2024,50.0,0.5
+QPM,Northamptonshire,Mar_2024,52.0,0.52
+QR1,Gloucestershire,Mar_2024,66.6,0.6659999999999999
+QRL,Hampshire and Isle of Wight,Mar_2024,68.6,0.6859999999999999
+QRV,North West London,Mar_2024,43.5,0.435
+QSL,Somerset,Mar_2024,62.1,0.621
+QT1,Nottingham and Nottinghamshire,Mar_2024,66.6,0.6659999999999999
+QT6,Cornwall and the Isles of Scilly,Mar_2024,48.7,0.48700000000000004
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Mar_2024,69.8,0.698
+QUA,Black Country,Mar_2024,56.8,0.568
+QUE,Cambridgeshire and Peterborough,Mar_2024,64.0,0.64
+QUY,"Bristol, North Somerset and South Gloucestershire",Mar_2024,42.7,0.42700000000000005
+QVV,Dorset,Mar_2024,64.7,0.647
+QWE,South West London,Mar_2024,52.0,0.52
+QWO,West Yorkshire,Mar_2024,68.1,0.6809999999999999
+QWU,Coventry and Warwickshire,Mar_2024,60.9,0.609
+QXU,Surrey Heartlands,Mar_2024,69.7,0.6970000000000001
+QYG,Cheshire and Merseyside,Mar_2024,61.7,0.617
+QE1,Lancashire and South Cumbria,Apr_2024,62.2,0.622
+QF7,South Yorkshire,Apr_2024,65.4,0.654
+QGH,Herefordshire and Worcestershire,Apr_2024,56.2,0.562
+QH8,Mid and South Essex,Apr_2024,63.0,0.63
+QHG,"Bedfordshire, Luton and Milton Keynes",Apr_2024,59.2,0.5920000000000001
+QHL,Birmingham and Solihull,Apr_2024,49.8,0.498
+QHM,North East and North Cumbria,Apr_2024,57.5,0.575
+QJ2,Derby and Derbyshire,Apr_2024,79.4,0.794
+QJG,Suffolk and North East Essex,Apr_2024,58.5,0.585
+QJK,Devon,Apr_2024,69.1,0.691
+QJM,Lincolnshire,Apr_2024,60.4,0.604
+QK1,"Leicester, Leicestershire and Rutland",Apr_2024,56.1,0.561
+QKK,South East London,Apr_2024,48.5,0.485
+QKS,Kent and Medway,Apr_2024,65.7,0.657
+QM7,Hertfordshire and West Essex,Apr_2024,63.4,0.634
+QMF,North East London,Apr_2024,37.3,0.373
+QMJ,North Central London,Apr_2024,23.3,0.233
+QMM,Norfolk and Waveney,Apr_2024,75.6,0.7559999999999999
+QNC,Staffordshire and Stoke-on-Trent,Apr_2024,64.5,0.645
+QNQ,Frimley,Apr_2024,58.2,0.5820000000000001
+QNX,Sussex,Apr_2024,68.0,0.68
+QOC,"Shropshire, Telford and Wrekin",Apr_2024,74.6,0.746
+QOP,Greater Manchester,Apr_2024,49.5,0.495
+QOQ,Humber and North Yorkshire,Apr_2024,70.8,0.708
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Apr_2024,52.8,0.528
+QPM,Northamptonshire,Apr_2024,52.8,0.528
+QR1,Gloucestershire,Apr_2024,63.8,0.638
+QRL,Hampshire and Isle of Wight,Apr_2024,69.0,0.69
+QRV,North West London,Apr_2024,39.3,0.39299999999999996
+QSL,Somerset,Apr_2024,58.2,0.5820000000000001
+QT1,Nottingham and Nottinghamshire,Apr_2024,67.9,0.679
+QT6,Cornwall and the Isles of Scilly,Apr_2024,52.8,0.528
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Apr_2024,71.4,0.7140000000000001
+QUA,Black Country,Apr_2024,59.9,0.599
+QUE,Cambridgeshire and Peterborough,Apr_2024,68.0,0.68
+QUY,"Bristol, North Somerset and South Gloucestershire",Apr_2024,58.1,0.581
+QVV,Dorset,Apr_2024,63.9,0.639
+QWE,South West London,Apr_2024,49.1,0.491
+QWO,West Yorkshire,Apr_2024,65.5,0.655
+QWU,Coventry and Warwickshire,Apr_2024,65.4,0.654
+QXU,Surrey Heartlands,Apr_2024,71.5,0.715
+QYG,Cheshire and Merseyside,Apr_2024,63.3,0.633
+QE1,Lancashire and South Cumbria,May_2024,62.6,0.626
+QF7,South Yorkshire,May_2024,64.0,0.64
+QGH,Herefordshire and Worcestershire,May_2024,58.2,0.5820000000000001
+QH8,Mid and South Essex,May_2024,63.4,0.634
+QHG,"Bedfordshire, Luton and Milton Keynes",May_2024,58.6,0.586
+QHL,Birmingham and Solihull,May_2024,49.3,0.493
+QHM,North East and North Cumbria,May_2024,59.3,0.593
+QJ2,Derby and Derbyshire,May_2024,77.3,0.773
+QJG,Suffolk and North East Essex,May_2024,53.4,0.534
+QJK,Devon,May_2024,68.8,0.688
+QJM,Lincolnshire,May_2024,52.6,0.526
+QK1,"Leicester, Leicestershire and Rutland",May_2024,56.5,0.565
+QKK,South East London,May_2024,46.7,0.467
+QKS,Kent and Medway,May_2024,65.4,0.654
+QM7,Hertfordshire and West Essex,May_2024,62.2,0.622
+QMF,North East London,May_2024,35.7,0.35700000000000004
+QMJ,North Central London,May_2024,25.5,0.255
+QMM,Norfolk and Waveney,May_2024,77.2,0.772
+QNC,Staffordshire and Stoke-on-Trent,May_2024,63.5,0.635
+QNQ,Frimley,May_2024,59.5,0.595
+QNX,Sussex,May_2024,69.3,0.693
+QOC,"Shropshire, Telford and Wrekin",May_2024,76.6,0.7659999999999999
+QOP,Greater Manchester,May_2024,50.9,0.509
+QOQ,Humber and North Yorkshire,May_2024,73.9,0.7390000000000001
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",May_2024,56.0,0.56
+QPM,Northamptonshire,May_2024,50.9,0.509
+QR1,Gloucestershire,May_2024,63.4,0.634
+QRL,Hampshire and Isle of Wight,May_2024,71.5,0.715
+QRV,North West London,May_2024,40.3,0.40299999999999997
+QSL,Somerset,May_2024,60.6,0.606
+QT1,Nottingham and Nottinghamshire,May_2024,63.9,0.639
+QT6,Cornwall and the Isles of Scilly,May_2024,58.2,0.5820000000000001
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",May_2024,69.5,0.695
+QUA,Black Country,May_2024,59.7,0.597
+QUE,Cambridgeshire and Peterborough,May_2024,60.5,0.605
+QUY,"Bristol, North Somerset and South Gloucestershire",May_2024,67.4,0.674
+QVV,Dorset,May_2024,68.0,0.68
+QWE,South West London,May_2024,52.3,0.523
+QWO,West Yorkshire,May_2024,64.8,0.648
+QWU,Coventry and Warwickshire,May_2024,62.6,0.626
+QXU,Surrey Heartlands,May_2024,71.0,0.71
+QYG,Cheshire and Merseyside,May_2024,63.9,0.639
+QE1,Lancashire and South Cumbria,Jun_2024,61.7,0.617
+QF7,South Yorkshire,Jun_2024,66.9,0.669
+QGH,Herefordshire and Worcestershire,Jun_2024,64.2,0.642
+QH8,Mid and South Essex,Jun_2024,65.4,0.654
+QHG,"Bedfordshire, Luton and Milton Keynes",Jun_2024,57.1,0.5710000000000001
+QHL,Birmingham and Solihull,Jun_2024,50.0,0.5
+QHM,North East and North Cumbria,Jun_2024,61.2,0.612
+QJ2,Derby and Derbyshire,Jun_2024,78.7,0.787
+QJG,Suffolk and North East Essex,Jun_2024,56.6,0.5660000000000001
+QJK,Devon,Jun_2024,69.5,0.695
+QJM,Lincolnshire,Jun_2024,64.0,0.64
+QK1,"Leicester, Leicestershire and Rutland",Jun_2024,60.4,0.604
+QKK,South East London,Jun_2024,48.7,0.48700000000000004
+QKS,Kent and Medway,Jun_2024,66.9,0.669
+QM7,Hertfordshire and West Essex,Jun_2024,63.4,0.634
+QMF,North East London,Jun_2024,40.0,0.4
+QMJ,North Central London,Jun_2024,23.2,0.23199999999999998
+QMM,Norfolk and Waveney,Jun_2024,79.6,0.7959999999999999
+QNC,Staffordshire and Stoke-on-Trent,Jun_2024,65.8,0.6579999999999999
+QNQ,Frimley,Jun_2024,61.6,0.616
+QNX,Sussex,Jun_2024,70.4,0.7040000000000001
+QOC,"Shropshire, Telford and Wrekin",Jun_2024,79.8,0.7979999999999999
+QOP,Greater Manchester,Jun_2024,51.9,0.519
+QOQ,Humber and North Yorkshire,Jun_2024,75.5,0.755
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Jun_2024,61.7,0.617
+QPM,Northamptonshire,Jun_2024,50.9,0.509
+QR1,Gloucestershire,Jun_2024,64.2,0.642
+QRL,Hampshire and Isle of Wight,Jun_2024,71.3,0.713
+QRV,North West London,Jun_2024,41.4,0.414
+QSL,Somerset,Jun_2024,66.3,0.6629999999999999
+QT1,Nottingham and Nottinghamshire,Jun_2024,65.8,0.6579999999999999
+QT6,Cornwall and the Isles of Scilly,Jun_2024,52.7,0.527
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Jun_2024,72.4,0.7240000000000001
+QUA,Black Country,Jun_2024,59.4,0.594
+QUE,Cambridgeshire and Peterborough,Jun_2024,66.2,0.662
+QUY,"Bristol, North Somerset and South Gloucestershire",Jun_2024,73.6,0.736
+QVV,Dorset,Jun_2024,71.5,0.715
+QWE,South West London,Jun_2024,50.6,0.506
+QWO,West Yorkshire,Jun_2024,68.2,0.682
+QWU,Coventry and Warwickshire,Jun_2024,63.4,0.634
+QXU,Surrey Heartlands,Jun_2024,73.3,0.733
+QYG,Cheshire and Merseyside,Jun_2024,66.1,0.6609999999999999
+QE1,Lancashire and South Cumbria,Jul_2024,66.5,0.665
+QF7,South Yorkshire,Jul_2024,67.9,0.679
+QGH,Herefordshire and Worcestershire,Jul_2024,68.0,0.68
+QH8,Mid and South Essex,Jul_2024,67.4,0.674
+QHG,"Bedfordshire, Luton and Milton Keynes",Jul_2024,61.2,0.612
+QHL,Birmingham and Solihull,Jul_2024,53.0,0.53
+QHM,North East and North Cumbria,Jul_2024,65.1,0.6509999999999999
+QJ2,Derby and Derbyshire,Jul_2024,78.9,0.789
+QJG,Suffolk and North East Essex,Jul_2024,60.6,0.606
+QJK,Devon,Jul_2024,67.8,0.6779999999999999
+QJM,Lincolnshire,Jul_2024,64.6,0.6459999999999999
+QK1,"Leicester, Leicestershire and Rutland",Jul_2024,67.6,0.6759999999999999
+QKK,South East London,Jul_2024,47.5,0.475
+QKS,Kent and Medway,Jul_2024,68.0,0.68
+QM7,Hertfordshire and West Essex,Jul_2024,64.7,0.647
+QMF,North East London,Jul_2024,39.0,0.39
+QMJ,North Central London,Jul_2024,25.6,0.256
+QMM,Norfolk and Waveney,Jul_2024,77.3,0.773
+QNC,Staffordshire and Stoke-on-Trent,Jul_2024,61.5,0.615
+QNQ,Frimley,Jul_2024,61.9,0.619
+QNX,Sussex,Jul_2024,73.9,0.7390000000000001
+QOC,"Shropshire, Telford and Wrekin",Jul_2024,83.3,0.833
+QOP,Greater Manchester,Jul_2024,55.8,0.5579999999999999
+QOQ,Humber and North Yorkshire,Jul_2024,77.8,0.778
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Jul_2024,69.2,0.6920000000000001
+QPM,Northamptonshire,Jul_2024,57.0,0.57
+QR1,Gloucestershire,Jul_2024,63.6,0.636
+QRL,Hampshire and Isle of Wight,Jul_2024,73.5,0.735
+QRV,North West London,Jul_2024,39.9,0.39899999999999997
+QSL,Somerset,Jul_2024,63.8,0.638
+QT1,Nottingham and Nottinghamshire,Jul_2024,66.1,0.6609999999999999
+QT6,Cornwall and the Isles of Scilly,Jul_2024,69.1,0.691
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Jul_2024,75.0,0.75
+QUA,Black Country,Jul_2024,58.9,0.589
+QUE,Cambridgeshire and Peterborough,Jul_2024,64.8,0.648
+QUY,"Bristol, North Somerset and South Gloucestershire",Jul_2024,75.9,0.759
+QVV,Dorset,Jul_2024,71.9,0.7190000000000001
+QWE,South West London,Jul_2024,53.3,0.5329999999999999
+QWO,West Yorkshire,Jul_2024,72.0,0.72
+QWU,Coventry and Warwickshire,Jul_2024,67.2,0.672
+QXU,Surrey Heartlands,Jul_2024,76.2,0.762
+QYG,Cheshire and Merseyside,Jul_2024,65.4,0.654
+QE1,Lancashire and South Cumbria,Aug_2024,67.9,0.679
+QF7,South Yorkshire,Aug_2024,70.7,0.7070000000000001
+QGH,Herefordshire and Worcestershire,Aug_2024,67.1,0.6709999999999999
+QH8,Mid and South Essex,Aug_2024,68.6,0.6859999999999999
+QHG,"Bedfordshire, Luton and Milton Keynes",Aug_2024,63.4,0.634
+QHL,Birmingham and Solihull,Aug_2024,55.0,0.55
+QHM,North East and North Cumbria,Aug_2024,68.1,0.6809999999999999
+QJ2,Derby and Derbyshire,Aug_2024,79.5,0.795
+QJG,Suffolk and North East Essex,Aug_2024,66.7,0.667
+QJK,Devon,Aug_2024,74.6,0.746
+QJM,Lincolnshire,Aug_2024,61.1,0.611
+QK1,"Leicester, Leicestershire and Rutland",Aug_2024,64.0,0.64
+QKK,South East London,Aug_2024,54.0,0.54
+QKS,Kent and Medway,Aug_2024,71.6,0.716
+QM7,Hertfordshire and West Essex,Aug_2024,65.0,0.65
+QMF,North East London,Aug_2024,39.3,0.39299999999999996
+QMJ,North Central London,Aug_2024,26.3,0.263
+QMM,Norfolk and Waveney,Aug_2024,79.5,0.795
+QNC,Staffordshire and Stoke-on-Trent,Aug_2024,65.6,0.6559999999999999
+QNQ,Frimley,Aug_2024,64.1,0.6409999999999999
+QNX,Sussex,Aug_2024,76.1,0.7609999999999999
+QOC,"Shropshire, Telford and Wrekin",Aug_2024,83.0,0.83
+QOP,Greater Manchester,Aug_2024,60.0,0.6
+QOQ,Humber and North Yorkshire,Aug_2024,77.6,0.7759999999999999
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Aug_2024,74.4,0.7440000000000001
+QPM,Northamptonshire,Aug_2024,51.7,0.517
+QR1,Gloucestershire,Aug_2024,67.1,0.6709999999999999
+QRL,Hampshire and Isle of Wight,Aug_2024,75.0,0.75
+QRV,North West London,Aug_2024,42.5,0.425
+QSL,Somerset,Aug_2024,67.6,0.6759999999999999
+QT1,Nottingham and Nottinghamshire,Aug_2024,65.9,0.659
+QT6,Cornwall and the Isles of Scilly,Aug_2024,59.3,0.593
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Aug_2024,74.0,0.74
+QUA,Black Country,Aug_2024,61.5,0.615
+QUE,Cambridgeshire and Peterborough,Aug_2024,70.0,0.7
+QUY,"Bristol, North Somerset and South Gloucestershire",Aug_2024,75.1,0.7509999999999999
+QVV,Dorset,Aug_2024,77.6,0.7759999999999999
+QWE,South West London,Aug_2024,54.1,0.541
+QWO,West Yorkshire,Aug_2024,73.2,0.732
+QWU,Coventry and Warwickshire,Aug_2024,65.2,0.652
+QXU,Surrey Heartlands,Aug_2024,77.1,0.7709999999999999
+QYG,Cheshire and Merseyside,Aug_2024,67.7,0.677
+QE1,Lancashire and South Cumbria,Sep_2024,65.4,0.654
+QF7,South Yorkshire,Sep_2024,72.0,0.72
+QGH,Herefordshire and Worcestershire,Sep_2024,73.8,0.738
+QH8,Mid and South Essex,Sep_2024,72.9,0.7290000000000001
+QHG,"Bedfordshire, Luton and Milton Keynes",Sep_2024,63.5,0.635
+QHL,Birmingham and Solihull,Sep_2024,55.9,0.5589999999999999
+QHM,North East and North Cumbria,Sep_2024,66.5,0.665
+QJ2,Derby and Derbyshire,Sep_2024,80.3,0.8029999999999999
+QJG,Suffolk and North East Essex,Sep_2024,66.4,0.664
+QJK,Devon,Sep_2024,76.0,0.76
+QJM,Lincolnshire,Sep_2024,67.7,0.677
+QK1,"Leicester, Leicestershire and Rutland",Sep_2024,67.2,0.672
+QKK,South East London,Sep_2024,56.4,0.564
+QKS,Kent and Medway,Sep_2024,69.8,0.698
+QM7,Hertfordshire and West Essex,Sep_2024,68.5,0.685
+QMF,North East London,Sep_2024,39.0,0.39
+QMJ,North Central London,Sep_2024,27.5,0.275
+QMM,Norfolk and Waveney,Sep_2024,80.5,0.805
+QNC,Staffordshire and Stoke-on-Trent,Sep_2024,62.9,0.629
+QNQ,Frimley,Sep_2024,69.3,0.693
+QNX,Sussex,Sep_2024,76.5,0.765
+QOC,"Shropshire, Telford and Wrekin",Sep_2024,84.7,0.847
+QOP,Greater Manchester,Sep_2024,62.8,0.628
+QOQ,Humber and North Yorkshire,Sep_2024,81.9,0.8190000000000001
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Sep_2024,76.3,0.763
+QPM,Northamptonshire,Sep_2024,58.2,0.5820000000000001
+QR1,Gloucestershire,Sep_2024,66.2,0.662
+QRL,Hampshire and Isle of Wight,Sep_2024,78.8,0.7879999999999999
+QRV,North West London,Sep_2024,42.7,0.42700000000000005
+QSL,Somerset,Sep_2024,71.1,0.711
+QT1,Nottingham and Nottinghamshire,Sep_2024,67.3,0.6729999999999999
+QT6,Cornwall and the Isles of Scilly,Sep_2024,60.9,0.609
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Sep_2024,77.5,0.775
+QUA,Black Country,Sep_2024,62.4,0.624
+QUE,Cambridgeshire and Peterborough,Sep_2024,71.2,0.7120000000000001
+QUY,"Bristol, North Somerset and South Gloucestershire",Sep_2024,78.0,0.78
+QVV,Dorset,Sep_2024,75.9,0.759
+QWE,South West London,Sep_2024,57.9,0.579
+QWO,West Yorkshire,Sep_2024,72.1,0.721
+QWU,Coventry and Warwickshire,Sep_2024,64.9,0.649
+QXU,Surrey Heartlands,Sep_2024,81.4,0.8140000000000001
+QYG,Cheshire and Merseyside,Sep_2024,68.1,0.6809999999999999
+QE1,Lancashire and South Cumbria,Oct_2024,67.2,0.672
+QF7,South Yorkshire,Oct_2024,73.1,0.731
+QGH,Herefordshire and Worcestershire,Oct_2024,71.3,0.713
+QH8,Mid and South Essex,Oct_2024,72.2,0.722
+QHG,"Bedfordshire, Luton and Milton Keynes",Oct_2024,67.1,0.6709999999999999
+QHL,Birmingham and Solihull,Oct_2024,58.2,0.5820000000000001
+QHM,North East and North Cumbria,Oct_2024,69.3,0.693
+QJ2,Derby and Derbyshire,Oct_2024,80.6,0.8059999999999999
+QJG,Suffolk and North East Essex,Oct_2024,60.9,0.609
+QJK,Devon,Oct_2024,75.5,0.755
+QJM,Lincolnshire,Oct_2024,71.0,0.71
+QK1,"Leicester, Leicestershire and Rutland",Oct_2024,65.5,0.655
+QKK,South East London,Oct_2024,56.1,0.561
+QKS,Kent and Medway,Oct_2024,72.9,0.7290000000000001
+QM7,Hertfordshire and West Essex,Oct_2024,71.9,0.7190000000000001
+QMF,North East London,Oct_2024,40.7,0.40700000000000003
+QMJ,North Central London,Oct_2024,32.9,0.32899999999999996
+QMM,Norfolk and Waveney,Oct_2024,79.9,0.799
+QNC,Staffordshire and Stoke-on-Trent,Oct_2024,71.3,0.713
+QNQ,Frimley,Oct_2024,64.6,0.6459999999999999
+QNX,Sussex,Oct_2024,75.6,0.7559999999999999
+QOC,"Shropshire, Telford and Wrekin",Oct_2024,86.1,0.861
+QOP,Greater Manchester,Oct_2024,63.6,0.636
+QOQ,Humber and North Yorkshire,Oct_2024,79.9,0.799
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Oct_2024,75.5,0.755
+QPM,Northamptonshire,Oct_2024,60.7,0.607
+QR1,Gloucestershire,Oct_2024,67.9,0.679
+QRL,Hampshire and Isle of Wight,Oct_2024,79.1,0.7909999999999999
+QRV,North West London,Oct_2024,46.9,0.469
+QSL,Somerset,Oct_2024,66.9,0.669
+QT1,Nottingham and Nottinghamshire,Oct_2024,73.5,0.735
+QT6,Cornwall and the Isles of Scilly,Oct_2024,72.5,0.725
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Oct_2024,78.5,0.785
+QUA,Black Country,Oct_2024,63.4,0.634
+QUE,Cambridgeshire and Peterborough,Oct_2024,73.3,0.733
+QUY,"Bristol, North Somerset and South Gloucestershire",Oct_2024,80.0,0.8
+QVV,Dorset,Oct_2024,79.2,0.792
+QWE,South West London,Oct_2024,59.8,0.598
+QWO,West Yorkshire,Oct_2024,72.0,0.72
+QWU,Coventry and Warwickshire,Oct_2024,65.4,0.654
+QXU,Surrey Heartlands,Oct_2024,77.5,0.775
+QYG,Cheshire and Merseyside,Oct_2024,71.6,0.716
+QE1,Lancashire and South Cumbria,Nov_2024,68.1,0.6809999999999999
+QF7,South Yorkshire,Nov_2024,70.7,0.7070000000000001
+QGH,Herefordshire and Worcestershire,Nov_2024,76.8,0.768
+QH8,Mid and South Essex,Nov_2024,73.0,0.73
+QHG,"Bedfordshire, Luton and Milton Keynes",Nov_2024,65.8,0.6579999999999999
+QHL,Birmingham and Solihull,Nov_2024,58.0,0.58
+QHM,North East and North Cumbria,Nov_2024,71.9,0.7190000000000001
+QJ2,Derby and Derbyshire,Nov_2024,78.0,0.78
+QJG,Suffolk and North East Essex,Nov_2024,54.4,0.544
+QJK,Devon,Nov_2024,77.5,0.775
+QJM,Lincolnshire,Nov_2024,71.1,0.711
+QK1,"Leicester, Leicestershire and Rutland",Nov_2024,67.2,0.672
+QKK,South East London,Nov_2024,59.2,0.5920000000000001
+QKS,Kent and Medway,Nov_2024,73.6,0.736
+QM7,Hertfordshire and West Essex,Nov_2024,70.0,0.7
+QMF,North East London,Nov_2024,41.7,0.41700000000000004
+QMJ,North Central London,Nov_2024,32.6,0.326
+QMM,Norfolk and Waveney,Nov_2024,77.8,0.778
+QNC,Staffordshire and Stoke-on-Trent,Nov_2024,73.0,0.73
+QNQ,Frimley,Nov_2024,67.7,0.677
+QNX,Sussex,Nov_2024,77.5,0.775
+QOC,"Shropshire, Telford and Wrekin",Nov_2024,84.0,0.84
+QOP,Greater Manchester,Nov_2024,64.8,0.648
+QOQ,Humber and North Yorkshire,Nov_2024,82.4,0.8240000000000001
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Nov_2024,71.9,0.7190000000000001
+QPM,Northamptonshire,Nov_2024,66.0,0.66
+QR1,Gloucestershire,Nov_2024,69.5,0.695
+QRL,Hampshire and Isle of Wight,Nov_2024,79.2,0.792
+QRV,North West London,Nov_2024,47.1,0.47100000000000003
+QSL,Somerset,Nov_2024,67.8,0.6779999999999999
+QT1,Nottingham and Nottinghamshire,Nov_2024,73.5,0.735
+QT6,Cornwall and the Isles of Scilly,Nov_2024,65.9,0.659
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Nov_2024,78.9,0.789
+QUA,Black Country,Nov_2024,64.4,0.644
+QUE,Cambridgeshire and Peterborough,Nov_2024,70.4,0.7040000000000001
+QUY,"Bristol, North Somerset and South Gloucestershire",Nov_2024,77.2,0.772
+QVV,Dorset,Nov_2024,77.0,0.77
+QWE,South West London,Nov_2024,59.8,0.598
+QWO,West Yorkshire,Nov_2024,70.8,0.708
+QWU,Coventry and Warwickshire,Nov_2024,66.5,0.665
+QXU,Surrey Heartlands,Nov_2024,75.1,0.7509999999999999
+QYG,Cheshire and Merseyside,Nov_2024,71.8,0.718
+QE1,Lancashire and South Cumbria,Dec_2024,67.1,0.6709999999999999
+QF7,South Yorkshire,Dec_2024,72.6,0.726
+QGH,Herefordshire and Worcestershire,Dec_2024,72.9,0.7290000000000001
+QH8,Mid and South Essex,Dec_2024,73.4,0.7340000000000001
+QHG,"Bedfordshire, Luton and Milton Keynes",Dec_2024,67.9,0.679
+QHL,Birmingham and Solihull,Dec_2024,58.8,0.588
+QHM,North East and North Cumbria,Dec_2024,73.4,0.7340000000000001
+QJ2,Derby and Derbyshire,Dec_2024,72.4,0.7240000000000001
+QJG,Suffolk and North East Essex,Dec_2024,60.9,0.609
+QJK,Devon,Dec_2024,78.4,0.784
+QJM,Lincolnshire,Dec_2024,68.4,0.684
+QK1,"Leicester, Leicestershire and Rutland",Dec_2024,72.1,0.721
+QKK,South East London,Dec_2024,58.7,0.5870000000000001
+QKS,Kent and Medway,Dec_2024,74.8,0.748
+QM7,Hertfordshire and West Essex,Dec_2024,68.9,0.6890000000000001
+QMF,North East London,Dec_2024,44.1,0.441
+QMJ,North Central London,Dec_2024,43.0,0.43
+QMM,Norfolk and Waveney,Dec_2024,76.7,0.767
+QNC,Staffordshire and Stoke-on-Trent,Dec_2024,76.1,0.7609999999999999
+QNQ,Frimley,Dec_2024,70.3,0.703
+QNX,Sussex,Dec_2024,78.8,0.7879999999999999
+QOC,"Shropshire, Telford and Wrekin",Dec_2024,81.8,0.818
+QOP,Greater Manchester,Dec_2024,64.8,0.648
+QOQ,Humber and North Yorkshire,Dec_2024,83.1,0.831
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Dec_2024,76.2,0.762
+QPM,Northamptonshire,Dec_2024,64.0,0.64
+QR1,Gloucestershire,Dec_2024,71.3,0.713
+QRL,Hampshire and Isle of Wight,Dec_2024,76.4,0.764
+QRV,North West London,Dec_2024,51.0,0.51
+QSL,Somerset,Dec_2024,69.6,0.696
+QT1,Nottingham and Nottinghamshire,Dec_2024,70.1,0.701
+QT6,Cornwall and the Isles of Scilly,Dec_2024,61.8,0.618
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Dec_2024,76.5,0.765
+QUA,Black Country,Dec_2024,63.0,0.63
+QUE,Cambridgeshire and Peterborough,Dec_2024,74.2,0.742
+QUY,"Bristol, North Somerset and South Gloucestershire",Dec_2024,76.4,0.764
+QVV,Dorset,Dec_2024,77.0,0.77
+QWE,South West London,Dec_2024,64.4,0.644
+QWO,West Yorkshire,Dec_2024,72.7,0.727
+QWU,Coventry and Warwickshire,Dec_2024,71.1,0.711
+QXU,Surrey Heartlands,Dec_2024,75.2,0.752
+QYG,Cheshire and Merseyside,Dec_2024,68.4,0.684
+QE1,Lancashire and South Cumbria,Jan_2025,66.8,0.6679999999999999
+QF7,South Yorkshire,Jan_2025,69.5,0.695
+QGH,Herefordshire and Worcestershire,Jan_2025,73.8,0.738
+QH8,Mid and South Essex,Jan_2025,67.6,0.6759999999999999
+QHG,"Bedfordshire, Luton and Milton Keynes",Jan_2025,69.6,0.696
+QHL,Birmingham and Solihull,Jan_2025,57.0,0.57
+QHM,North East and North Cumbria,Jan_2025,74.4,0.7440000000000001
+QJ2,Derby and Derbyshire,Jan_2025,69.8,0.698
+QJG,Suffolk and North East Essex,Jan_2025,62.8,0.628
+QJK,Devon,Jan_2025,75.8,0.758
+QJM,Lincolnshire,Jan_2025,71.7,0.7170000000000001
+QK1,"Leicester, Leicestershire and Rutland",Jan_2025,71.2,0.7120000000000001
+QKK,South East London,Jan_2025,61.5,0.615
+QKS,Kent and Medway,Jan_2025,75.1,0.7509999999999999
+QM7,Hertfordshire and West Essex,Jan_2025,73.2,0.732
+QMF,North East London,Jan_2025,54.1,0.541
+QMJ,North Central London,Jan_2025,47.2,0.47200000000000003
+QMM,Norfolk and Waveney,Jan_2025,81.0,0.81
+QNC,Staffordshire and Stoke-on-Trent,Jan_2025,76.0,0.76
+QNQ,Frimley,Jan_2025,69.2,0.6920000000000001
+QNX,Sussex,Jan_2025,79.3,0.7929999999999999
+QOC,"Shropshire, Telford and Wrekin",Jan_2025,83.9,0.8390000000000001
+QOP,Greater Manchester,Jan_2025,64.0,0.64
+QOQ,Humber and North Yorkshire,Jan_2025,81.1,0.8109999999999999
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Jan_2025,75.3,0.753
+QPM,Northamptonshire,Jan_2025,71.6,0.716
+QR1,Gloucestershire,Jan_2025,69.4,0.6940000000000001
+QRL,Hampshire and Isle of Wight,Jan_2025,79.5,0.795
+QRV,North West London,Jan_2025,59.1,0.591
+QSL,Somerset,Jan_2025,73.3,0.733
+QT1,Nottingham and Nottinghamshire,Jan_2025,72.7,0.727
+QT6,Cornwall and the Isles of Scilly,Jan_2025,66.6,0.6659999999999999
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Jan_2025,79.6,0.7959999999999999
+QUA,Black Country,Jan_2025,63.8,0.638
+QUE,Cambridgeshire and Peterborough,Jan_2025,71.1,0.711
+QUY,"Bristol, North Somerset and South Gloucestershire",Jan_2025,78.7,0.787
+QVV,Dorset,Jan_2025,80.2,0.802
+QWE,South West London,Jan_2025,69.2,0.6920000000000001
+QWO,West Yorkshire,Jan_2025,71.4,0.7140000000000001
+QWU,Coventry and Warwickshire,Jan_2025,73.7,0.737
+QXU,Surrey Heartlands,Jan_2025,76.4,0.764
+QYG,Cheshire and Merseyside,Jan_2025,71.8,0.718
+QE1,Lancashire and South Cumbria,Feb_2025,68.6,0.6859999999999999
+QF7,South Yorkshire,Feb_2025,69.5,0.695
+QGH,Herefordshire and Worcestershire,Feb_2025,79.3,0.7929999999999999
+QH8,Mid and South Essex,Feb_2025,68.2,0.682
+QHG,"Bedfordshire, Luton and Milton Keynes",Feb_2025,69.4,0.6940000000000001
+QHL,Birmingham and Solihull,Feb_2025,60.7,0.607
+QHM,North East and North Cumbria,Feb_2025,75.9,0.759
+QJ2,Derby and Derbyshire,Feb_2025,69.3,0.693
+QJG,Suffolk and North East Essex,Feb_2025,63.9,0.639
+QJK,Devon,Feb_2025,77.5,0.775
+QJM,Lincolnshire,Feb_2025,75.5,0.755
+QK1,"Leicester, Leicestershire and Rutland",Feb_2025,72.8,0.728
+QKK,South East London,Feb_2025,66.2,0.662
+QKS,Kent and Medway,Feb_2025,75.1,0.7509999999999999
+QM7,Hertfordshire and West Essex,Feb_2025,74.6,0.746
+QMF,North East London,Feb_2025,59.9,0.599
+QMJ,North Central London,Feb_2025,53.8,0.5379999999999999
+QMM,Norfolk and Waveney,Feb_2025,81.1,0.8109999999999999
+QNC,Staffordshire and Stoke-on-Trent,Feb_2025,79.9,0.799
+QNQ,Frimley,Feb_2025,71.1,0.711
+QNX,Sussex,Feb_2025,81.1,0.8109999999999999
+QOC,"Shropshire, Telford and Wrekin",Feb_2025,87.8,0.878
+QOP,Greater Manchester,Feb_2025,65.1,0.6509999999999999
+QOQ,Humber and North Yorkshire,Feb_2025,80.8,0.8079999999999999
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Feb_2025,75.7,0.757
+QPM,Northamptonshire,Feb_2025,75.7,0.757
+QR1,Gloucestershire,Feb_2025,69.4,0.6940000000000001
+QRL,Hampshire and Isle of Wight,Feb_2025,79.4,0.794
+QRV,North West London,Feb_2025,61.1,0.611
+QSL,Somerset,Feb_2025,78.2,0.782
+QT1,Nottingham and Nottinghamshire,Feb_2025,74.1,0.741
+QT6,Cornwall and the Isles of Scilly,Feb_2025,67.8,0.6779999999999999
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Feb_2025,78.0,0.78
+QUA,Black Country,Feb_2025,63.9,0.639
+QUE,Cambridgeshire and Peterborough,Feb_2025,72.0,0.72
+QUY,"Bristol, North Somerset and South Gloucestershire",Feb_2025,81.4,0.8140000000000001
+QVV,Dorset,Feb_2025,80.9,0.809
+QWE,South West London,Feb_2025,74.9,0.7490000000000001
+QWO,West Yorkshire,Feb_2025,71.1,0.711
+QWU,Coventry and Warwickshire,Feb_2025,76.8,0.768
+QXU,Surrey Heartlands,Feb_2025,81.6,0.816
+QYG,Cheshire and Merseyside,Feb_2025,74.3,0.743
+QE1,Lancashire and South Cumbria,Mar_2025,69.5,0.695
+QF7,South Yorkshire,Mar_2025,74.0,0.74
+QGH,Herefordshire and Worcestershire,Mar_2025,77.9,0.779
+QH8,Mid and South Essex,Mar_2025,68.7,0.687
+QHG,"Bedfordshire, Luton and Milton Keynes",Mar_2025,65.0,0.65
+QHL,Birmingham and Solihull,Mar_2025,56.6,0.5660000000000001
+QHM,North East and North Cumbria,Mar_2025,77.4,0.774
+QJ2,Derby and Derbyshire,Mar_2025,80.5,0.805
+QJG,Suffolk and North East Essex,Mar_2025,72.9,0.7290000000000001
+QJK,Devon,Mar_2025,82.8,0.828
+QJM,Lincolnshire,Mar_2025,84.9,0.8490000000000001
+QK1,"Leicester, Leicestershire and Rutland",Mar_2025,74.7,0.747
+QKK,South East London,Mar_2025,66.3,0.6629999999999999
+QKS,Kent and Medway,Mar_2025,75.6,0.7559999999999999
+QM7,Hertfordshire and West Essex,Mar_2025,74.6,0.746
+QMF,North East London,Mar_2025,60.7,0.607
+QMJ,North Central London,Mar_2025,57.6,0.5760000000000001
+QMM,Norfolk and Waveney,Mar_2025,80.7,0.807
+QNC,Staffordshire and Stoke-on-Trent,Mar_2025,76.9,0.769
+QNQ,Frimley,Mar_2025,72.0,0.72
+QNX,Sussex,Mar_2025,79.6,0.7959999999999999
+QOC,"Shropshire, Telford and Wrekin",Mar_2025,83.4,0.8340000000000001
+QOP,Greater Manchester,Mar_2025,65.7,0.657
+QOQ,Humber and North Yorkshire,Mar_2025,80.7,0.807
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Mar_2025,82.8,0.828
+QPM,Northamptonshire,Mar_2025,80.3,0.8029999999999999
+QR1,Gloucestershire,Mar_2025,72.0,0.72
+QRL,Hampshire and Isle of Wight,Mar_2025,80.5,0.805
+QRV,North West London,Mar_2025,64.5,0.645
+QSL,Somerset,Mar_2025,78.2,0.782
+QT1,Nottingham and Nottinghamshire,Mar_2025,72.6,0.726
+QT6,Cornwall and the Isles of Scilly,Mar_2025,83.9,0.8390000000000001
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Mar_2025,75.7,0.757
+QUA,Black Country,Mar_2025,66.3,0.6629999999999999
+QUE,Cambridgeshire and Peterborough,Mar_2025,75.9,0.759
+QUY,"Bristol, North Somerset and South Gloucestershire",Mar_2025,81.0,0.81
+QVV,Dorset,Mar_2025,81.4,0.8140000000000001
+QWE,South West London,Mar_2025,72.3,0.723
+QWO,West Yorkshire,Mar_2025,69.2,0.6920000000000001
+QWU,Coventry and Warwickshire,Mar_2025,78.1,0.7809999999999999
+QXU,Surrey Heartlands,Mar_2025,80.9,0.809
+QYG,Cheshire and Merseyside,Mar_2025,71.3,0.713
+QE1,Lancashire and South Cumbria,Apr_2025,66.5,0.665
+QF7,South Yorkshire,Apr_2025,71.0,0.71
+QGH,Herefordshire and Worcestershire,Apr_2025,79.1,0.7909999999999999
+QH8,Mid and South Essex,Apr_2025,70.6,0.706
+QHG,"Bedfordshire, Luton and Milton Keynes",Apr_2025,64.8,0.648
+QHL,Birmingham and Solihull,Apr_2025,56.8,0.568
+QHM,North East and North Cumbria,Apr_2025,77.4,0.774
+QJ2,Derby and Derbyshire,Apr_2025,83.6,0.836
+QJG,Suffolk and North East Essex,Apr_2025,72.7,0.727
+QJK,Devon,Apr_2025,79.6,0.7959999999999999
+QJM,Lincolnshire,Apr_2025,82.5,0.825
+QK1,"Leicester, Leicestershire and Rutland",Apr_2025,75.7,0.757
+QKK,South East London,Apr_2025,68.4,0.684
+QKS,Kent and Medway,Apr_2025,73.6,0.736
+QM7,Hertfordshire and West Essex,Apr_2025,72.1,0.721
+QMF,North East London,Apr_2025,60.3,0.603
+QMJ,North Central London,Apr_2025,57.3,0.573
+QMM,Norfolk and Waveney,Apr_2025,82.7,0.8270000000000001
+QNC,Staffordshire and Stoke-on-Trent,Apr_2025,81.3,0.813
+QNQ,Frimley,Apr_2025,70.9,0.7090000000000001
+QNX,Sussex,Apr_2025,79.7,0.797
+QOC,"Shropshire, Telford and Wrekin",Apr_2025,82.5,0.825
+QOP,Greater Manchester,Apr_2025,66.1,0.6609999999999999
+QOQ,Humber and North Yorkshire,Apr_2025,77.8,0.778
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Apr_2025,78.6,0.7859999999999999
+QPM,Northamptonshire,Apr_2025,79.5,0.795
+QR1,Gloucestershire,Apr_2025,72.2,0.722
+QRL,Hampshire and Isle of Wight,Apr_2025,82.8,0.828
+QRV,North West London,Apr_2025,63.3,0.633
+QSL,Somerset,Apr_2025,76.4,0.764
+QT1,Nottingham and Nottinghamshire,Apr_2025,70.3,0.703
+QT6,Cornwall and the Isles of Scilly,Apr_2025,73.4,0.7340000000000001
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Apr_2025,78.1,0.7809999999999999
+QUA,Black Country,Apr_2025,61.9,0.619
+QUE,Cambridgeshire and Peterborough,Apr_2025,76.6,0.7659999999999999
+QUY,"Bristol, North Somerset and South Gloucestershire",Apr_2025,82.4,0.8240000000000001
+QVV,Dorset,Apr_2025,82.2,0.8220000000000001
+QWE,South West London,Apr_2025,72.0,0.72
+QWO,West Yorkshire,Apr_2025,69.7,0.6970000000000001
+QWU,Coventry and Warwickshire,Apr_2025,75.1,0.7509999999999999
+QXU,Surrey Heartlands,Apr_2025,82.0,0.82
+QYG,Cheshire and Merseyside,Apr_2025,72.0,0.72
+QE1,Lancashire and South Cumbria,May_2025,64.6,0.6459999999999999
+QF7,South Yorkshire,May_2025,73.6,0.736
+QGH,Herefordshire and Worcestershire,May_2025,77.2,0.772
+QH8,Mid and South Essex,May_2025,69.0,0.69
+QHG,"Bedfordshire, Luton and Milton Keynes",May_2025,64.4,0.644
+QHL,Birmingham and Solihull,May_2025,52.7,0.527
+QHM,North East and North Cumbria,May_2025,76.6,0.7659999999999999
+QJ2,Derby and Derbyshire,May_2025,82.1,0.821
+QJG,Suffolk and North East Essex,May_2025,67.9,0.679
+QJK,Devon,May_2025,78.6,0.7859999999999999
+QJM,Lincolnshire,May_2025,79.0,0.79
+QK1,"Leicester, Leicestershire and Rutland",May_2025,73.5,0.735
+QKK,South East London,May_2025,68.1,0.6809999999999999
+QKS,Kent and Medway,May_2025,70.3,0.703
+QM7,Hertfordshire and West Essex,May_2025,71.3,0.713
+QMF,North East London,May_2025,60.8,0.608
+QMJ,North Central London,May_2025,54.6,0.546
+QMM,Norfolk and Waveney,May_2025,82.5,0.825
+QNC,Staffordshire and Stoke-on-Trent,May_2025,77.2,0.772
+QNQ,Frimley,May_2025,68.4,0.684
+QNX,Sussex,May_2025,78.0,0.78
+QOC,"Shropshire, Telford and Wrekin",May_2025,81.7,0.8170000000000001
+QOP,Greater Manchester,May_2025,68.9,0.6890000000000001
+QOQ,Humber and North Yorkshire,May_2025,77.7,0.777
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",May_2025,80.2,0.802
+QPM,Northamptonshire,May_2025,76.2,0.762
+QR1,Gloucestershire,May_2025,72.6,0.726
+QRL,Hampshire and Isle of Wight,May_2025,81.8,0.818
+QRV,North West London,May_2025,64.6,0.6459999999999999
+QSL,Somerset,May_2025,75.9,0.759
+QT1,Nottingham and Nottinghamshire,May_2025,71.4,0.7140000000000001
+QT6,Cornwall and the Isles of Scilly,May_2025,70.2,0.7020000000000001
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",May_2025,78.0,0.78
+QUA,Black Country,May_2025,64.2,0.642
+QUE,Cambridgeshire and Peterborough,May_2025,70.8,0.708
+QUY,"Bristol, North Somerset and South Gloucestershire",May_2025,81.0,0.81
+QVV,Dorset,May_2025,82.6,0.826
+QWE,South West London,May_2025,72.2,0.722
+QWO,West Yorkshire,May_2025,66.1,0.6609999999999999
+QWU,Coventry and Warwickshire,May_2025,72.5,0.725
+QXU,Surrey Heartlands,May_2025,81.6,0.816
+QYG,Cheshire and Merseyside,May_2025,71.6,0.716
+QE1,Lancashire and South Cumbria,Jun_2025,62.1,0.621
+QF7,South Yorkshire,Jun_2025,71.8,0.718
+QGH,Herefordshire and Worcestershire,Jun_2025,80.7,0.807
+QH8,Mid and South Essex,Jun_2025,66.3,0.6629999999999999
+QHG,"Bedfordshire, Luton and Milton Keynes",Jun_2025,64.8,0.648
+QHL,Birmingham and Solihull,Jun_2025,53.0,0.53
+QHM,North East and North Cumbria,Jun_2025,74.5,0.745
+QJ2,Derby and Derbyshire,Jun_2025,77.8,0.778
+QJG,Suffolk and North East Essex,Jun_2025,67.3,0.6729999999999999
+QJK,Devon,Jun_2025,79.2,0.792
+QJM,Lincolnshire,Jun_2025,80.2,0.802
+QK1,"Leicester, Leicestershire and Rutland",Jun_2025,73.2,0.732
+QKK,South East London,Jun_2025,66.6,0.6659999999999999
+QKS,Kent and Medway,Jun_2025,72.4,0.7240000000000001
+QM7,Hertfordshire and West Essex,Jun_2025,70.8,0.708
+QMF,North East London,Jun_2025,60.9,0.609
+QMJ,North Central London,Jun_2025,55.0,0.55
+QMM,Norfolk and Waveney,Jun_2025,73.1,0.731
+QNC,Staffordshire and Stoke-on-Trent,Jun_2025,76.1,0.7609999999999999
+QNQ,Frimley,Jun_2025,68.4,0.684
+QNX,Sussex,Jun_2025,78.1,0.7809999999999999
+QOC,"Shropshire, Telford and Wrekin",Jun_2025,85.3,0.853
+QOP,Greater Manchester,Jun_2025,66.7,0.667
+QOQ,Humber and North Yorkshire,Jun_2025,78.3,0.7829999999999999
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Jun_2025,76.3,0.763
+QPM,Northamptonshire,Jun_2025,78.0,0.78
+QR1,Gloucestershire,Jun_2025,69.8,0.698
+QRL,Hampshire and Isle of Wight,Jun_2025,82.0,0.82
+QRV,North West London,Jun_2025,63.5,0.635
+QSL,Somerset,Jun_2025,75.8,0.758
+QT1,Nottingham and Nottinghamshire,Jun_2025,69.2,0.6920000000000001
+QT6,Cornwall and the Isles of Scilly,Jun_2025,79.3,0.7929999999999999
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Jun_2025,77.2,0.772
+QUA,Black Country,Jun_2025,62.4,0.624
+QUE,Cambridgeshire and Peterborough,Jun_2025,72.4,0.7240000000000001
+QUY,"Bristol, North Somerset and South Gloucestershire",Jun_2025,82.1,0.821
+QVV,Dorset,Jun_2025,79.3,0.7929999999999999
+QWE,South West London,Jun_2025,69.0,0.69
+QWO,West Yorkshire,Jun_2025,61.3,0.613
+QWU,Coventry and Warwickshire,Jun_2025,73.6,0.736
+QXU,Surrey Heartlands,Jun_2025,79.7,0.797
+QYG,Cheshire and Merseyside,Jun_2025,68.8,0.688
+QE1,Lancashire and South Cumbria,Jul_2025,63.3,0.633
+QF7,South Yorkshire,Jul_2025,73.7,0.737
+QGH,Herefordshire and Worcestershire,Jul_2025,79.8,0.7979999999999999
+QH8,Mid and South Essex,Jul_2025,69.6,0.696
+QHG,"Bedfordshire, Luton and Milton Keynes",Jul_2025,63.5,0.635
+QHL,Birmingham and Solihull,Jul_2025,53.2,0.532
+QHM,North East and North Cumbria,Jul_2025,75.6,0.7559999999999999
+QJ2,Derby and Derbyshire,Jul_2025,82.2,0.8220000000000001
+QJG,Suffolk and North East Essex,Jul_2025,69.2,0.6920000000000001
+QJK,Devon,Jul_2025,74.6,0.746
+QJM,Lincolnshire,Jul_2025,76.3,0.763
+QK1,"Leicester, Leicestershire and Rutland",Jul_2025,70.5,0.705
+QKK,South East London,Jul_2025,66.8,0.6679999999999999
+QKS,Kent and Medway,Jul_2025,72.0,0.72
+QM7,Hertfordshire and West Essex,Jul_2025,72.7,0.727
+QMF,North East London,Jul_2025,62.3,0.623
+QMJ,North Central London,Jul_2025,59.3,0.593
+QMM,Norfolk and Waveney,Jul_2025,79.7,0.797
+QNC,Staffordshire and Stoke-on-Trent,Jul_2025,76.6,0.7659999999999999
+QNQ,Frimley,Jul_2025,73.3,0.733
+QNX,Sussex,Jul_2025,74.8,0.748
+QOC,"Shropshire, Telford and Wrekin",Jul_2025,80.5,0.805
+QOP,Greater Manchester,Jul_2025,65.9,0.659
+QOQ,Humber and North Yorkshire,Jul_2025,76.7,0.767
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Jul_2025,76.7,0.767
+QPM,Northamptonshire,Jul_2025,72.1,0.721
+QR1,Gloucestershire,Jul_2025,70.8,0.708
+QRL,Hampshire and Isle of Wight,Jul_2025,83.8,0.838
+QRV,North West London,Jul_2025,64.6,0.6459999999999999
+QSL,Somerset,Jul_2025,72.3,0.723
+QT1,Nottingham and Nottinghamshire,Jul_2025,72.1,0.721
+QT6,Cornwall and the Isles of Scilly,Jul_2025,78.0,0.78
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Jul_2025,79.3,0.7929999999999999
+QUA,Black Country,Jul_2025,61.9,0.619
+QUE,Cambridgeshire and Peterborough,Jul_2025,75.8,0.758
+QUY,"Bristol, North Somerset and South Gloucestershire",Jul_2025,82.3,0.823
+QVV,Dorset,Jul_2025,80.3,0.8029999999999999
+QWE,South West London,Jul_2025,69.1,0.691
+QWO,West Yorkshire,Jul_2025,63.8,0.638
+QWU,Coventry and Warwickshire,Jul_2025,73.9,0.7390000000000001
+QXU,Surrey Heartlands,Jul_2025,80.1,0.8009999999999999
+QYG,Cheshire and Merseyside,Jul_2025,72.2,0.722
+QE1,Lancashire and South Cumbria,Aug_2025,64.7,0.647
+QF7,South Yorkshire,Aug_2025,74.9,0.7490000000000001
+QGH,Herefordshire and Worcestershire,Aug_2025,76.7,0.767
+QH8,Mid and South Essex,Aug_2025,72.7,0.727
+QHG,"Bedfordshire, Luton and Milton Keynes",Aug_2025,67.0,0.67
+QHL,Birmingham and Solihull,Aug_2025,54.9,0.5489999999999999
+QHM,North East and North Cumbria,Aug_2025,77.3,0.773
+QJ2,Derby and Derbyshire,Aug_2025,82.7,0.8270000000000001
+QJG,Suffolk and North East Essex,Aug_2025,71.2,0.7120000000000001
+QJK,Devon,Aug_2025,81.6,0.816
+QJM,Lincolnshire,Aug_2025,79.7,0.797
+QK1,"Leicester, Leicestershire and Rutland",Aug_2025,72.2,0.722
+QKK,South East London,Aug_2025,65.1,0.6509999999999999
+QKS,Kent and Medway,Aug_2025,71.2,0.7120000000000001
+QM7,Hertfordshire and West Essex,Aug_2025,72.2,0.722
+QMF,North East London,Aug_2025,63.0,0.63
+QMJ,North Central London,Aug_2025,56.8,0.568
+QMM,Norfolk and Waveney,Aug_2025,83.2,0.8320000000000001
+QNC,Staffordshire and Stoke-on-Trent,Aug_2025,77.2,0.772
+QNQ,Frimley,Aug_2025,72.1,0.721
+QNX,Sussex,Aug_2025,78.4,0.784
+QOC,"Shropshire, Telford and Wrekin",Aug_2025,79.9,0.799
+QOP,Greater Manchester,Aug_2025,69.2,0.6920000000000001
+QOQ,Humber and North Yorkshire,Aug_2025,78.9,0.789
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Aug_2025,80.5,0.805
+QPM,Northamptonshire,Aug_2025,77.8,0.778
+QR1,Gloucestershire,Aug_2025,75.2,0.752
+QRL,Hampshire and Isle of Wight,Aug_2025,83.1,0.831
+QRV,North West London,Aug_2025,64.0,0.64
+QSL,Somerset,Aug_2025,75.4,0.754
+QT1,Nottingham and Nottinghamshire,Aug_2025,72.5,0.725
+QT6,Cornwall and the Isles of Scilly,Aug_2025,79.6,0.7959999999999999
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Aug_2025,77.9,0.779
+QUA,Black Country,Aug_2025,63.2,0.632
+QUE,Cambridgeshire and Peterborough,Aug_2025,74.7,0.747
+QUY,"Bristol, North Somerset and South Gloucestershire",Aug_2025,80.9,0.809
+QVV,Dorset,Aug_2025,79.5,0.795
+QWE,South West London,Aug_2025,69.5,0.695
+QWO,West Yorkshire,Aug_2025,64.4,0.644
+QWU,Coventry and Warwickshire,Aug_2025,74.4,0.7440000000000001
+QXU,Surrey Heartlands,Aug_2025,82.8,0.828
+QYG,Cheshire and Merseyside,Aug_2025,71.7,0.7170000000000001
+QE1,Lancashire and South Cumbria,Sep_2025,63.8,0.638
+QF7,South Yorkshire,Sep_2025,74.3,0.743
+QGH,Herefordshire and Worcestershire,Sep_2025,79.6,0.7959999999999999
+QH8,Mid and South Essex,Sep_2025,69.5,0.695
+QHG,"Bedfordshire, Luton and Milton Keynes",Sep_2025,69.1,0.691
+QHL,Birmingham and Solihull,Sep_2025,54.1,0.541
+QHM,North East and North Cumbria,Sep_2025,79.6,0.7959999999999999
+QJ2,Derby and Derbyshire,Sep_2025,80.5,0.805
+QJG,Suffolk and North East Essex,Sep_2025,71.9,0.7190000000000001
+QJK,Devon,Sep_2025,78.0,0.78
+QJM,Lincolnshire,Sep_2025,82.9,0.8290000000000001
+QK1,"Leicester, Leicestershire and Rutland",Sep_2025,68.6,0.6859999999999999
+QKK,South East London,Sep_2025,66.9,0.669
+QKS,Kent and Medway,Sep_2025,73.3,0.733
+QM7,Hertfordshire and West Essex,Sep_2025,73.6,0.736
+QMF,North East London,Sep_2025,62.9,0.629
+QMJ,North Central London,Sep_2025,63.4,0.634
+QMM,Norfolk and Waveney,Sep_2025,80.7,0.807
+QNC,Staffordshire and Stoke-on-Trent,Sep_2025,79.4,0.794
+QNQ,Frimley,Sep_2025,67.2,0.672
+QNX,Sussex,Sep_2025,79.3,0.7929999999999999
+QOC,"Shropshire, Telford and Wrekin",Sep_2025,79.6,0.7959999999999999
+QOP,Greater Manchester,Sep_2025,71.7,0.7170000000000001
+QOQ,Humber and North Yorkshire,Sep_2025,79.2,0.792
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Sep_2025,80.0,0.8
+QPM,Northamptonshire,Sep_2025,79.7,0.797
+QR1,Gloucestershire,Sep_2025,79.9,0.799
+QRL,Hampshire and Isle of Wight,Sep_2025,84.6,0.846
+QRV,North West London,Sep_2025,64.3,0.643
+QSL,Somerset,Sep_2025,82.4,0.8240000000000001
+QT1,Nottingham and Nottinghamshire,Sep_2025,70.3,0.703
+QT6,Cornwall and the Isles of Scilly,Sep_2025,82.0,0.82
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Sep_2025,80.0,0.8
+QUA,Black Country,Sep_2025,63.5,0.635
+QUE,Cambridgeshire and Peterborough,Sep_2025,76.5,0.765
+QUY,"Bristol, North Somerset and South Gloucestershire",Sep_2025,81.3,0.813
+QVV,Dorset,Sep_2025,81.9,0.8190000000000001
+QWE,South West London,Sep_2025,69.4,0.6940000000000001
+QWO,West Yorkshire,Sep_2025,67.2,0.672
+QWU,Coventry and Warwickshire,Sep_2025,75.5,0.755
+QXU,Surrey Heartlands,Sep_2025,81.1,0.8109999999999999
+QYG,Cheshire and Merseyside,Sep_2025,75.3,0.753
+QE1,Lancashire and South Cumbria,Oct_2025,68.6,0.6859999999999999
+QF7,South Yorkshire,Oct_2025,77.2,0.772
+QGH,Herefordshire and Worcestershire,Oct_2025,78.1,0.7809999999999999
+QH8,Mid and South Essex,Oct_2025,73.0,0.73
+QHG,"Bedfordshire, Luton and Milton Keynes",Oct_2025,67.8,0.6779999999999999
+QHL,Birmingham and Solihull,Oct_2025,57.2,0.5720000000000001
+QHM,North East and North Cumbria,Oct_2025,79.4,0.794
+QJ2,Derby and Derbyshire,Oct_2025,79.9,0.799
+QJG,Suffolk and North East Essex,Oct_2025,75.5,0.755
+QJK,Devon,Oct_2025,82.6,0.826
+QJM,Lincolnshire,Oct_2025,80.7,0.807
+QK1,"Leicester, Leicestershire and Rutland",Oct_2025,76.0,0.76
+QKK,South East London,Oct_2025,69.8,0.698
+QKS,Kent and Medway,Oct_2025,75.1,0.7509999999999999
+QM7,Hertfordshire and West Essex,Oct_2025,77.4,0.774
+QMF,North East London,Oct_2025,64.0,0.64
+QMJ,North Central London,Oct_2025,60.4,0.604
+QMM,Norfolk and Waveney,Oct_2025,82.9,0.8290000000000001
+QNC,Staffordshire and Stoke-on-Trent,Oct_2025,82.2,0.8220000000000001
+QNQ,Frimley,Oct_2025,76.4,0.764
+QNX,Sussex,Oct_2025,82.0,0.82
+QOC,"Shropshire, Telford and Wrekin",Oct_2025,86.6,0.866
+QOP,Greater Manchester,Oct_2025,73.6,0.736
+QOQ,Humber and North Yorkshire,Oct_2025,82.0,0.82
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Oct_2025,79.4,0.794
+QPM,Northamptonshire,Oct_2025,80.3,0.8029999999999999
+QR1,Gloucestershire,Oct_2025,83.2,0.8320000000000001
+QRL,Hampshire and Isle of Wight,Oct_2025,85.4,0.8540000000000001
+QRV,North West London,Oct_2025,64.8,0.648
+QSL,Somerset,Oct_2025,81.0,0.81
+QT1,Nottingham and Nottinghamshire,Oct_2025,75.9,0.759
+QT6,Cornwall and the Isles of Scilly,Oct_2025,83.6,0.836
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Oct_2025,81.5,0.815
+QUA,Black Country,Oct_2025,64.7,0.647
+QUE,Cambridgeshire and Peterborough,Oct_2025,77.8,0.778
+QUY,"Bristol, North Somerset and South Gloucestershire",Oct_2025,83.5,0.835
+QVV,Dorset,Oct_2025,81.0,0.81
+QWE,South West London,Oct_2025,73.0,0.73
+QWO,West Yorkshire,Oct_2025,70.7,0.7070000000000001
+QWU,Coventry and Warwickshire,Oct_2025,78.0,0.78
+QXU,Surrey Heartlands,Oct_2025,81.3,0.813
+QYG,Cheshire and Merseyside,Oct_2025,75.4,0.754
+QE1,Lancashire and South Cumbria,Nov_2025,70.4,0.7040000000000001
+QF7,South Yorkshire,Nov_2025,78.1,0.7809999999999999
+QGH,Herefordshire and Worcestershire,Nov_2025,78.6,0.7859999999999999
+QH8,Mid and South Essex,Nov_2025,74.2,0.742
+QHG,"Bedfordshire, Luton and Milton Keynes",Nov_2025,68.7,0.687
+QHL,Birmingham and Solihull,Nov_2025,59.3,0.593
+QHM,North East and North Cumbria,Nov_2025,80.4,0.804
+QJ2,Derby and Derbyshire,Nov_2025,85.1,0.851
+QJG,Suffolk and North East Essex,Nov_2025,74.1,0.741
+QJK,Devon,Nov_2025,81.5,0.815
+QJM,Lincolnshire,Nov_2025,81.1,0.8109999999999999
+QK1,"Leicester, Leicestershire and Rutland",Nov_2025,76.0,0.76
+QKK,South East London,Nov_2025,70.7,0.7070000000000001
+QKS,Kent and Medway,Nov_2025,75.4,0.754
+QM7,Hertfordshire and West Essex,Nov_2025,76.4,0.764
+QMF,North East London,Nov_2025,64.5,0.645
+QMJ,North Central London,Nov_2025,62.2,0.622
+QMM,Norfolk and Waveney,Nov_2025,80.6,0.8059999999999999
+QNC,Staffordshire and Stoke-on-Trent,Nov_2025,82.0,0.82
+QNQ,Frimley,Nov_2025,71.8,0.718
+QNX,Sussex,Nov_2025,80.6,0.8059999999999999
+QOC,"Shropshire, Telford and Wrekin",Nov_2025,87.1,0.871
+QOP,Greater Manchester,Nov_2025,72.9,0.7290000000000001
+QOQ,Humber and North Yorkshire,Nov_2025,82.4,0.8240000000000001
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Nov_2025,83.5,0.835
+QPM,Northamptonshire,Nov_2025,80.4,0.804
+QR1,Gloucestershire,Nov_2025,83.9,0.8390000000000001
+QRL,Hampshire and Isle of Wight,Nov_2025,86.7,0.867
+QRV,North West London,Nov_2025,66.3,0.6629999999999999
+QSL,Somerset,Nov_2025,82.4,0.8240000000000001
+QT1,Nottingham and Nottinghamshire,Nov_2025,76.0,0.76
+QT6,Cornwall and the Isles of Scilly,Nov_2025,81.1,0.8109999999999999
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Nov_2025,80.6,0.8059999999999999
+QUA,Black Country,Nov_2025,67.6,0.6759999999999999
+QUE,Cambridgeshire and Peterborough,Nov_2025,78.6,0.7859999999999999
+QUY,"Bristol, North Somerset and South Gloucestershire",Nov_2025,83.6,0.836
+QVV,Dorset,Nov_2025,83.1,0.831
+QWE,South West London,Nov_2025,72.6,0.726
+QWO,West Yorkshire,Nov_2025,70.6,0.706
+QWU,Coventry and Warwickshire,Nov_2025,78.1,0.7809999999999999
+QXU,Surrey Heartlands,Nov_2025,81.8,0.818
+QYG,Cheshire and Merseyside,Nov_2025,76.6,0.7659999999999999
+QE1,Lancashire and South Cumbria,Dec_2025,67.0,0.67
+QF7,South Yorkshire,Dec_2025,77.4,0.774
+QGH,Herefordshire and Worcestershire,Dec_2025,80.2,0.802
+QH8,Mid and South Essex,Dec_2025,74.3,0.743
+QHG,"Bedfordshire, Luton and Milton Keynes",Dec_2025,72.4,0.7240000000000001
+QHL,Birmingham and Solihull,Dec_2025,59.1,0.591
+QHM,North East and North Cumbria,Dec_2025,79.6,0.7959999999999999
+QJ2,Derby and Derbyshire,Dec_2025,84.4,0.8440000000000001
+QJG,Suffolk and North East Essex,Dec_2025,72.2,0.722
+QJK,Devon,Dec_2025,83.0,0.83
+QJM,Lincolnshire,Dec_2025,82.1,0.821
+QK1,"Leicester, Leicestershire and Rutland",Dec_2025,73.4,0.7340000000000001
+QKK,South East London,Dec_2025,70.2,0.7020000000000001
+QKS,Kent and Medway,Dec_2025,76.6,0.7659999999999999
+QM7,Hertfordshire and West Essex,Dec_2025,75.4,0.754
+QMF,North East London,Dec_2025,65.0,0.65
+QMJ,North Central London,Dec_2025,61.6,0.616
+QMM,Norfolk and Waveney,Dec_2025,81.6,0.816
+QNC,Staffordshire and Stoke-on-Trent,Dec_2025,78.9,0.789
+QNQ,Frimley,Dec_2025,71.9,0.7190000000000001
+QNX,Sussex,Dec_2025,82.1,0.821
+QOC,"Shropshire, Telford and Wrekin",Dec_2025,85.2,0.852
+QOP,Greater Manchester,Dec_2025,72.9,0.7290000000000001
+QOQ,Humber and North Yorkshire,Dec_2025,80.8,0.8079999999999999
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Dec_2025,80.5,0.805
+QPM,Northamptonshire,Dec_2025,80.1,0.8009999999999999
+QR1,Gloucestershire,Dec_2025,80.5,0.805
+QRL,Hampshire and Isle of Wight,Dec_2025,86.2,0.862
+QRV,North West London,Dec_2025,66.6,0.6659999999999999
+QSL,Somerset,Dec_2025,81.7,0.8170000000000001
+QT1,Nottingham and Nottinghamshire,Dec_2025,76.2,0.762
+QT6,Cornwall and the Isles of Scilly,Dec_2025,84.9,0.8490000000000001
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Dec_2025,80.2,0.802
+QUA,Black Country,Dec_2025,67.1,0.6709999999999999
+QUE,Cambridgeshire and Peterborough,Dec_2025,78.2,0.782
+QUY,"Bristol, North Somerset and South Gloucestershire",Dec_2025,83.4,0.8340000000000001
+QVV,Dorset,Dec_2025,83.6,0.836
+QWE,South West London,Dec_2025,76.6,0.7659999999999999
+QWO,West Yorkshire,Dec_2025,71.3,0.713
+QWU,Coventry and Warwickshire,Dec_2025,76.6,0.7659999999999999
+QXU,Surrey Heartlands,Dec_2025,83.2,0.8320000000000001
+QYG,Cheshire and Merseyside,Dec_2025,74.5,0.745
+QE1,Lancashire and South Cumbria,Jan_2026,69.3,0.693
+QF7,South Yorkshire,Jan_2026,75.2,0.752
+QGH,Herefordshire and Worcestershire,Jan_2026,78.6,0.7859999999999999
+QH8,Mid and South Essex,Jan_2026,75.7,0.757
+QHG,"Bedfordshire, Luton and Milton Keynes",Jan_2026,71.2,0.7120000000000001
+QHL,Birmingham and Solihull,Jan_2026,59.6,0.596
+QHM,North East and North Cumbria,Jan_2026,80.1,0.8009999999999999
+QJ2,Derby and Derbyshire,Jan_2026,79.8,0.7979999999999999
+QJG,Suffolk and North East Essex,Jan_2026,70.7,0.7070000000000001
+QJK,Devon,Jan_2026,84.1,0.841
+QJM,Lincolnshire,Jan_2026,85.9,0.8590000000000001
+QK1,"Leicester, Leicestershire and Rutland",Jan_2026,70.2,0.7020000000000001
+QKK,South East London,Jan_2026,72.1,0.721
+QKS,Kent and Medway,Jan_2026,77.3,0.773
+QM7,Hertfordshire and West Essex,Jan_2026,75.4,0.754
+QMF,North East London,Jan_2026,64.2,0.642
+QMJ,North Central London,Jan_2026,61.4,0.614
+QMM,Norfolk and Waveney,Jan_2026,81.3,0.813
+QNC,Staffordshire and Stoke-on-Trent,Jan_2026,80.0,0.8
+QNQ,Frimley,Jan_2026,73.5,0.735
+QNX,Sussex,Jan_2026,81.4,0.8140000000000001
+QOC,"Shropshire, Telford and Wrekin",Jan_2026,85.0,0.85
+QOP,Greater Manchester,Jan_2026,73.9,0.7390000000000001
+QOQ,Humber and North Yorkshire,Jan_2026,79.6,0.7959999999999999
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Jan_2026,79.7,0.797
+QPM,Northamptonshire,Jan_2026,79.3,0.7929999999999999
+QR1,Gloucestershire,Jan_2026,81.0,0.81
+QRL,Hampshire and Isle of Wight,Jan_2026,85.5,0.855
+QRV,North West London,Jan_2026,64.8,0.648
+QSL,Somerset,Jan_2026,76.7,0.767
+QT1,Nottingham and Nottinghamshire,Jan_2026,74.7,0.747
+QT6,Cornwall and the Isles of Scilly,Jan_2026,85.5,0.855
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Jan_2026,79.6,0.7959999999999999
+QUA,Black Country,Jan_2026,65.2,0.652
+QUE,Cambridgeshire and Peterborough,Jan_2026,75.5,0.755
+QUY,"Bristol, North Somerset and South Gloucestershire",Jan_2026,83.2,0.8320000000000001
+QVV,Dorset,Jan_2026,81.4,0.8140000000000001
+QWE,South West London,Jan_2026,73.8,0.738
+QWO,West Yorkshire,Jan_2026,67.4,0.674
+QWU,Coventry and Warwickshire,Jan_2026,73.8,0.738
+QXU,Surrey Heartlands,Jan_2026,80.2,0.802
+QYG,Cheshire and Merseyside,Jan_2026,72.6,0.726
+QE1,Lancashire and South Cumbria,Feb_2026,70.7,0.7070000000000001
+QF7,South Yorkshire,Feb_2026,75.9,0.759
+QGH,Herefordshire and Worcestershire,Feb_2026,78.2,0.782
+QH8,Mid and South Essex,Feb_2026,74.6,0.746
+QHG,"Bedfordshire, Luton and Milton Keynes",Feb_2026,68.5,0.685
+QHL,Birmingham and Solihull,Feb_2026,57.3,0.573
+QHM,North East and North Cumbria,Feb_2026,77.6,0.7759999999999999
+QJ2,Derby and Derbyshire,Feb_2026,82.6,0.826
+QJG,Suffolk and North East Essex,Feb_2026,69.7,0.6970000000000001
+QJK,Devon,Feb_2026,81.7,0.8170000000000001
+QJM,Lincolnshire,Feb_2026,87.2,0.872
+QK1,"Leicester, Leicestershire and Rutland",Feb_2026,71.3,0.713
+QKK,South East London,Feb_2026,70.6,0.706
+QKS,Kent and Medway,Feb_2026,74.5,0.745
+QM7,Hertfordshire and West Essex,Feb_2026,75.9,0.759
+QMF,North East London,Feb_2026,63.1,0.631
+QMJ,North Central London,Feb_2026,58.3,0.583
+QMM,Norfolk and Waveney,Feb_2026,85.0,0.85
+QNC,Staffordshire and Stoke-on-Trent,Feb_2026,78.5,0.785
+QNQ,Frimley,Feb_2026,73.1,0.731
+QNX,Sussex,Feb_2026,80.1,0.8009999999999999
+QOC,"Shropshire, Telford and Wrekin",Feb_2026,86.9,0.8690000000000001
+QOP,Greater Manchester,Feb_2026,72.6,0.726
+QOQ,Humber and North Yorkshire,Feb_2026,82.4,0.8240000000000001
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Feb_2026,79.9,0.799
+QPM,Northamptonshire,Feb_2026,78.4,0.784
+QR1,Gloucestershire,Feb_2026,84.4,0.8440000000000001
+QRL,Hampshire and Isle of Wight,Feb_2026,83.8,0.838
+QRV,North West London,Feb_2026,65.0,0.65
+QSL,Somerset,Feb_2026,80.9,0.809
+QT1,Nottingham and Nottinghamshire,Feb_2026,73.0,0.73
+QT6,Cornwall and the Isles of Scilly,Feb_2026,83.7,0.8370000000000001
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Feb_2026,80.0,0.8
+QUA,Black Country,Feb_2026,67.0,0.67
+QUE,Cambridgeshire and Peterborough,Feb_2026,75.9,0.759
+QUY,"Bristol, North Somerset and South Gloucestershire",Feb_2026,81.5,0.815
+QVV,Dorset,Feb_2026,81.3,0.813
+QWE,South West London,Feb_2026,72.6,0.726
+QWO,West Yorkshire,Feb_2026,67.7,0.677
+QWU,Coventry and Warwickshire,Feb_2026,75.6,0.7559999999999999
+QXU,Surrey Heartlands,Feb_2026,81.4,0.8140000000000001
+QYG,Cheshire and Merseyside,Feb_2026,73.2,0.732
+QE1,Lancashire and South Cumbria,Mar_2026,70.7,0.7070000000000001
+QF7,South Yorkshire,Mar_2026,72.5,0.725
+QGH,Herefordshire and Worcestershire,Mar_2026,81.5,0.815
+QH8,Mid and South Essex,Mar_2026,73.1,0.731
+QHG,"Bedfordshire, Luton and Milton Keynes",Mar_2026,67.3,0.6729999999999999
+QHL,Birmingham and Solihull,Mar_2026,54.4,0.544
+QHM,North East and North Cumbria,Mar_2026,77.0,0.77
+QJ2,Derby and Derbyshire,Mar_2026,82.7,0.8270000000000001
+QJG,Suffolk and North East Essex,Mar_2026,71.1,0.711
+QJK,Devon,Mar_2026,84.4,0.8440000000000001
+QJM,Lincolnshire,Mar_2026,82.4,0.8240000000000001
+QK1,"Leicester, Leicestershire and Rutland",Mar_2026,71.2,0.7120000000000001
+QKK,South East London,Mar_2026,68.9,0.6890000000000001
+QKS,Kent and Medway,Mar_2026,74.4,0.7440000000000001
+QM7,Hertfordshire and West Essex,Mar_2026,73.3,0.733
+QMF,North East London,Mar_2026,63.4,0.634
+QMJ,North Central London,Mar_2026,60.8,0.608
+QMM,Norfolk and Waveney,Mar_2026,80.7,0.807
+QNC,Staffordshire and Stoke-on-Trent,Mar_2026,80.8,0.8079999999999999
+QNQ,Frimley,Mar_2026,76.0,0.76
+QNX,Sussex,Mar_2026,84.5,0.845
+QOC,"Shropshire, Telford and Wrekin",Mar_2026,84.9,0.8490000000000001
+QOP,Greater Manchester,Mar_2026,71.4,0.7140000000000001
+QOQ,Humber and North Yorkshire,Mar_2026,79.7,0.797
+QOX,"Bath and North East Somerset, Swindon and Wiltshire",Mar_2026,80.1,0.8009999999999999
+QPM,Northamptonshire,Mar_2026,76.8,0.768
+QR1,Gloucestershire,Mar_2026,82.9,0.8290000000000001
+QRL,Hampshire and Isle of Wight,Mar_2026,84.4,0.8440000000000001
+QRV,North West London,Mar_2026,63.8,0.638
+QSL,Somerset,Mar_2026,81.0,0.81
+QT1,Nottingham and Nottinghamshire,Mar_2026,74.1,0.741
+QT6,Cornwall and the Isles of Scilly,Mar_2026,82.2,0.8220000000000001
+QU9,"Buckinghamshire, Oxfordshire and Berkshire West",Mar_2026,79.9,0.799
+QUA,Black Country,Mar_2026,65.5,0.655
+QUE,Cambridgeshire and Peterborough,Mar_2026,78.8,0.7879999999999999
+QUY,"Bristol, North Somerset and South Gloucestershire",Mar_2026,84.0,0.84
+QVV,Dorset,Mar_2026,85.1,0.851
+QWE,South West London,Mar_2026,73.2,0.732
+QWO,West Yorkshire,Mar_2026,69.6,0.696
+QWU,Coventry and Warwickshire,Mar_2026,73.4,0.7340000000000001
+QXU,Surrey Heartlands,Mar_2026,82.8,0.828
+QYG,Cheshire and Merseyside,Mar_2026,72.9,0.7290000000000001
